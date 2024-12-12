@@ -399,11 +399,11 @@ var app = (function () {
     			t0 = text("В НОВЫЙ ГОД");
     			br = element("br");
     			t1 = text("\n      С ЛИГОЙ СТАВОК");
-    			attr_dev(br, "class", "svelte-uxl1kt");
+    			attr_dev(br, "class", "svelte-ta8js3");
     			add_location(br, file$1, 6, 17, 133);
-    			attr_dev(h1, "class", "title svelte-uxl1kt");
+    			attr_dev(h1, "class", "title svelte-ta8js3");
     			add_location(h1, file$1, 5, 4, 97);
-    			attr_dev(section, "class", "screen svelte-uxl1kt");
+    			attr_dev(section, "class", "screen svelte-ta8js3");
     			add_location(section, file$1, 4, 2, 68);
     		},
     		l: function claim(nodes) {

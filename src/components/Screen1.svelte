@@ -32,31 +32,10 @@
       content: "";
     }
 
-    /* Большие десктопные экраны */
-    @media (min-width: 1200px) {
-      .title {
-        font-size: 80px;
-      }
-    }
-
-    /* Планшеты в альбомной ориентации */
-    @media (max-width: 1024px) {
-      .title {
-        font-size: 50px;
-      }
-    }
-
-    /* Планшеты в портретной ориентации */
+    /* Мобильные устройства */
     @media (max-width: 768px) {
       .title {
         font-size: 40px;
-      }
-    }
-
-    /* Мобильные устройства */
-    @media (max-width: 480px) {
-      .title {
-        font-size: 30px;
       }
     }
   </style>
