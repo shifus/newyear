@@ -24,6 +24,14 @@ var app = (function () {
     function safe_not_equal(a, b) {
         return a != a ? b == b : a !== b || ((a && typeof a === 'object') || typeof a === 'function');
     }
+    let src_url_equal_anchor;
+    function src_url_equal(element_src, url) {
+        if (!src_url_equal_anchor) {
+            src_url_equal_anchor = document.createElement('a');
+        }
+        src_url_equal_anchor.href = url;
+        return element_src === src_url_equal_anchor.href;
+    }
     function is_empty(obj) {
         return Object.keys(obj).length === 0;
     }
@@ -43,6 +51,9 @@ var app = (function () {
     }
     function text(data) {
         return document.createTextNode(data);
+    }
+    function space() {
+        return text(' ');
     }
     function attr(node, attribute, value) {
         if (value == null)
@@ -387,23 +398,58 @@ var app = (function () {
 
     function create_fragment$1(ctx) {
     	let section;
+    	let div2;
+    	let div0;
     	let h1;
     	let t0;
     	let br;
     	let t1;
+    	let t2;
+    	let p;
+    	let t4;
+    	let button;
+    	let t6;
+    	let div1;
+    	let img;
+    	let img_src_value;
 
     	const block = {
     		c: function create() {
     			section = element("section");
+    			div2 = element("div");
+    			div0 = element("div");
     			h1 = element("h1");
     			t0 = text("В НОВЫЙ ГОД");
     			br = element("br");
-    			t1 = text("\n      С ЛИГОЙ СТАВОК");
-    			attr_dev(br, "class", "svelte-ta8js3");
-    			add_location(br, file$1, 6, 17, 133);
-    			attr_dev(h1, "class", "title svelte-ta8js3");
-    			add_location(h1, file$1, 5, 4, 97);
-    			attr_dev(section, "class", "screen svelte-ta8js3");
+    			t1 = text("\n          С ЛИГОЙ СТАВОК");
+    			t2 = space();
+    			p = element("p");
+    			p.textContent = "Лига ставок, поздравляет всех с Новым Годом! Желает всего да побольше, особенно больше высоких выигрышных кэфов! \n          И анонсирует новый спецпроект, где больше однозначно лучше! \n          Получите уникальный промокод для участия в розыгрыше";
+    			t4 = space();
+    			button = element("button");
+    			button.textContent = "Получить промокод";
+    			t6 = space();
+    			div1 = element("div");
+    			img = element("img");
+    			attr_dev(br, "class", "svelte-1amr01i");
+    			add_location(br, file$1, 8, 21, 197);
+    			attr_dev(h1, "class", "title svelte-1amr01i");
+    			add_location(h1, file$1, 7, 8, 157);
+    			attr_dev(p, "class", "description svelte-1amr01i");
+    			add_location(p, file$1, 11, 8, 249);
+    			attr_dev(button, "class", "promo-button svelte-1amr01i");
+    			add_location(button, file$1, 16, 8, 552);
+    			attr_dev(div0, "class", "left-side svelte-1amr01i");
+    			add_location(div0, file$1, 6, 6, 125);
+    			if (!src_url_equal(img.src, img_src_value = "/images/christmas-tree.png")) attr_dev(img, "src", img_src_value);
+    			attr_dev(img, "alt", "Новогодняя ёлка");
+    			attr_dev(img, "class", "tree-image svelte-1amr01i");
+    			add_location(img, file$1, 21, 8, 680);
+    			attr_dev(div1, "class", "right-side");
+    			add_location(div1, file$1, 20, 6, 647);
+    			attr_dev(div2, "class", "content svelte-1amr01i");
+    			add_location(div2, file$1, 5, 4, 97);
+    			attr_dev(section, "class", "screen svelte-1amr01i");
     			add_location(section, file$1, 4, 2, 68);
     		},
     		l: function claim(nodes) {
@@ -411,10 +457,19 @@ var app = (function () {
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, section, anchor);
-    			append_dev(section, h1);
+    			append_dev(section, div2);
+    			append_dev(div2, div0);
+    			append_dev(div0, h1);
     			append_dev(h1, t0);
     			append_dev(h1, br);
     			append_dev(h1, t1);
+    			append_dev(div0, t2);
+    			append_dev(div0, p);
+    			append_dev(div0, t4);
+    			append_dev(div0, button);
+    			append_dev(div2, t6);
+    			append_dev(div2, div1);
+    			append_dev(div1, img);
     		},
     		p: noop,
     		i: noop,
