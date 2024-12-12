@@ -14,6 +14,9 @@
           И анонсирует новый спецпроект, где больше однозначно лучше! 
           Получите уникальный промокод для участия в розыгрыше
         </p>
+        <p class="description">
+          Заключайте пари на высокие коэффициенты. Призы достанутся 100 обладателям самых больших выигрышных кэфов!
+        </p>
         <button class="promo-button">
           Получить промокод
         </button>
@@ -31,6 +34,8 @@
       justify-content: flex-start;
       align-items: flex-start;
       padding: 20px;
+      border: 2px solid purple;
+      background: rgba(128, 0, 128, 0.1);
     }
 
     .content {
@@ -39,19 +44,28 @@
       align-items: flex-start;
       max-width: 1200px;
       margin: 0 auto;
+      justify-content: space-between;
+      border: 2px solid orange;
+      background: rgba(255, 165, 0, 0.1);
     }
 
     .left-side {
-      flex: 1;
+      flex: 0 1 auto;
+      max-width: 600px;
+      border: 2px solid red;
+      background: rgba(255, 0, 0, 0.1);
     }
 
     .title {
       font-size: 60px;
       line-height: 1.2;
       white-space: pre-line;
-      color: #ffffff;
+      color: #0ff658;
       text-align: left;
       margin-bottom: 30px;
+      min-width: max-content;
+      border: 2px solid blue;
+      background: rgba(0, 0, 255, 0.1);
     }
 
     .title br {
@@ -65,17 +79,20 @@
       font-size: 18px;
       line-height: 1.5;
       margin-bottom: 30px;
+      border: 2px solid green;
+      background: rgba(0, 255, 0, 0.1);
     }
 
     .promo-button {
       background-color: #00FF00;
       color: #ffffff;
       padding: 15px 30px;
-      border: none;
+      border: 2px solid yellow !important;
       border-radius: 5px;
       font-size: 18px;
       cursor: pointer;
       transition: background-color 0.3s;
+      width: 400px;
     }
 
     .promo-button:hover {
@@ -83,8 +100,19 @@
     }
 
     .tree-image {
-      max-height: 100%;
+      max-height: 70%;
       object-fit: contain;
+      border: 2px solid cyan;
+    }
+
+    .right-side {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: -30px;
+      margin-left: -150px;
+      border: 2px solid pink;
+      background: rgba(255, 192, 203, 0.1);
     }
 
     /* Мобильные устройства */
