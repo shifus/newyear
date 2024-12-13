@@ -398,65 +398,74 @@ var app = (function () {
 
     function create_fragment$1(ctx) {
     	let section;
+    	let img0;
+    	let img0_src_value;
+    	let t0;
     	let div2;
     	let div0;
     	let h1;
-    	let t0;
-    	let br;
     	let t1;
+    	let br;
     	let t2;
+    	let t3;
     	let p0;
-    	let t4;
+    	let t5;
     	let p1;
-    	let t6;
+    	let t7;
     	let button;
-    	let t8;
+    	let t9;
     	let div1;
-    	let img;
-    	let img_src_value;
+    	let img1;
+    	let img1_src_value;
 
     	const block = {
     		c: function create() {
     			section = element("section");
+    			img0 = element("img");
+    			t0 = space();
     			div2 = element("div");
     			div0 = element("div");
     			h1 = element("h1");
-    			t0 = text("В НОВЫЙ ГОД");
+    			t1 = text("В НОВЫЙ ГОД");
     			br = element("br");
-    			t1 = text("\n          С ЛИГОЙ СТАВОК");
-    			t2 = space();
+    			t2 = text("\n          С ЛИГОЙ СТАВОК");
+    			t3 = space();
     			p0 = element("p");
     			p0.textContent = "Лига ставок, поздравляет всех с Новым Годом! Желает всего да побольше, особенно больше высоких выигрышных кэфов! \n          И анонсирует новый спецпроект, где больше однозначно лучше! \n          Получите уникальный промокод для участия в розыгрыше";
-    			t4 = space();
+    			t5 = space();
     			p1 = element("p");
     			p1.textContent = "Заключайте пари на высокие коэффициенты. Призы достанутся 100 обладателям самых больших выигрышных кэфов!";
-    			t6 = space();
+    			t7 = space();
     			button = element("button");
     			button.textContent = "Получить промокод";
-    			t8 = space();
+    			t9 = space();
     			div1 = element("div");
-    			img = element("img");
-    			attr_dev(br, "class", "svelte-ruaa7k");
-    			add_location(br, file$1, 8, 21, 197);
-    			attr_dev(h1, "class", "title svelte-ruaa7k");
-    			add_location(h1, file$1, 7, 8, 157);
-    			attr_dev(p0, "class", "description svelte-ruaa7k");
-    			add_location(p0, file$1, 11, 8, 249);
-    			attr_dev(p1, "class", "description svelte-ruaa7k");
-    			add_location(p1, file$1, 16, 8, 552);
-    			attr_dev(button, "class", "promo-button svelte-ruaa7k");
-    			add_location(button, file$1, 19, 8, 713);
-    			attr_dev(div0, "class", "left-side svelte-ruaa7k");
-    			add_location(div0, file$1, 6, 6, 125);
-    			if (!src_url_equal(img.src, img_src_value = "/images/christmas-tree.png")) attr_dev(img, "src", img_src_value);
-    			attr_dev(img, "alt", "Новогодняя ёлка");
-    			attr_dev(img, "class", "tree-image svelte-ruaa7k");
-    			add_location(img, file$1, 24, 8, 841);
-    			attr_dev(div1, "class", "right-side svelte-ruaa7k");
-    			add_location(div1, file$1, 23, 6, 808);
-    			attr_dev(div2, "class", "content svelte-ruaa7k");
-    			add_location(div2, file$1, 5, 4, 97);
-    			attr_dev(section, "class", "screen svelte-ruaa7k");
+    			img1 = element("img");
+    			if (!src_url_equal(img0.src, img0_src_value = "/images/header.png")) attr_dev(img0, "src", img0_src_value);
+    			attr_dev(img0, "alt", "Header");
+    			attr_dev(img0, "class", "header-image");
+    			add_location(img0, file$1, 6, 6, 100);
+    			attr_dev(br, "class", "svelte-1n5holc");
+    			add_location(br, file$1, 11, 21, 272);
+    			attr_dev(h1, "class", "title svelte-1n5holc");
+    			add_location(h1, file$1, 10, 8, 232);
+    			attr_dev(p0, "class", "description svelte-1n5holc");
+    			add_location(p0, file$1, 14, 8, 324);
+    			attr_dev(p1, "class", "description svelte-1n5holc");
+    			add_location(p1, file$1, 19, 8, 627);
+    			attr_dev(button, "class", "promo-button svelte-1n5holc");
+    			add_location(button, file$1, 22, 8, 788);
+    			attr_dev(div0, "class", "left-side svelte-1n5holc");
+    			add_location(div0, file$1, 9, 6, 200);
+    			if (!src_url_equal(img1.src, img1_src_value = "/images/christmas-tree.png")) attr_dev(img1, "src", img1_src_value);
+    			attr_dev(img1, "alt", "Новогодняя ёлка");
+    			attr_dev(img1, "class", "tree-image svelte-1n5holc");
+    			add_location(img1, file$1, 27, 8, 916);
+    			attr_dev(div1, "class", "right-side svelte-1n5holc");
+    			add_location(div1, file$1, 26, 6, 883);
+    			attr_dev(div2, "class", "content svelte-1n5holc");
+    			add_location(div2, file$1, 8, 4, 172);
+    			attr_dev(section, "class", "screen svelte-1n5holc");
     			add_location(section, file$1, 4, 2, 68);
     		},
     		l: function claim(nodes) {
@@ -464,21 +473,23 @@ var app = (function () {
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, section, anchor);
+    			append_dev(section, img0);
+    			append_dev(section, t0);
     			append_dev(section, div2);
     			append_dev(div2, div0);
     			append_dev(div0, h1);
-    			append_dev(h1, t0);
-    			append_dev(h1, br);
     			append_dev(h1, t1);
-    			append_dev(div0, t2);
+    			append_dev(h1, br);
+    			append_dev(h1, t2);
+    			append_dev(div0, t3);
     			append_dev(div0, p0);
-    			append_dev(div0, t4);
+    			append_dev(div0, t5);
     			append_dev(div0, p1);
-    			append_dev(div0, t6);
+    			append_dev(div0, t7);
     			append_dev(div0, button);
-    			append_dev(div2, t8);
+    			append_dev(div2, t9);
     			append_dev(div2, div1);
-    			append_dev(div1, img);
+    			append_dev(div1, img1);
     		},
     		p: noop,
     		i: noop,
