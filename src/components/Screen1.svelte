@@ -22,7 +22,7 @@
       Получите уникальный промокод для участия в розыгрыше
     </p>
     <p class="description">
-      Заключайте пари на высокие коэффициенты. Призы достанутся 100 обладателям самых больших выигрышных кэфов!
+      Заключайте пари на высокие коэффициенты. Призы достанутся 100 о��ладателям самых больших выигрышных кэфов!
     </p>
     <button class="promo-button">
       Получить промокод
@@ -139,47 +139,55 @@ background: rgba(255, 192, 203, 0.1);
 
 /* Мобильная версия */
 @media (max-width: 768px) {
-.content {
-  flex-direction: column;
-  gap: 20px;
+  .title, .description, .promo-button {
+    text-align: left;
+  }
 
-  /* Убираем отступы и центрирование на мобильных,
-     чтобы картинка могла растянуться на всю ширину */
-  max-width: 100%;
-  margin: 0;
-  padding: 0;
-}
+  .content {
+    flex-direction: column;
+    gap: 20px;
+    max-width: 100%;
+    margin: 0;
+    padding: 20px;
+  }
 
-.right-side {
-  margin-left: 0; /* Убираем отрицательный отступ на мобильном */
-}
+  .left-side {
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 0;
+  }
 
-.header-image {
-  width: 100%;
-  margin: 0;
-  border: none;
-  background: none;
-}
+  .right-side {
+    margin-left: 0;
+    width: 100%;
+  }
 
-.title {
-  font-size: 8vw;
-  margin-bottom: 20px;
-}
+  .header-image {
+    width: 100%;
+    margin: 0;
+    border: none;
+    background: none;
+  }
 
-.description {
-  font-size: 4vw;
-  margin-bottom: 20px;
-}
+  .title {
+    font-size: 8vw;
+    margin-bottom: 20px;
+  }
 
-.promo-button {
-  width: 80vw;
-  font-size: 4vw;
-}
+  .description {
+    font-size: 4vw;
+    margin-bottom: 20px;
+  }
 
-.tree-image {
-  width: 100%;
-  height: auto;
-  margin-top: 20px;
-}
+  .promo-button {
+    width: 80vw;
+    font-size: 4vw;
+  }
+
+  .tree-image {
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+  }
 }
 </style>
