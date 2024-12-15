@@ -22,7 +22,7 @@
       Получите уникальный промокод для участия в розыгрыше
     </p>
     <p class="description">
-      Заключайте пари на высокие коэффициенты. Призы достанутся 100 одателям самых больших выигрышных кэфов!
+      Заключайте пари на высокие коэффициенты. Призы достануся 100 одателям самых больших выигрышных кэфов!
     </p>
     <button class="promo-button">
       Получить промокод
@@ -265,13 +265,14 @@ background: rgba(255, 192, 203, 0.1);
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 80px;
+  padding: 5vw;
+  background: linear-gradient(180deg, #0F0F37 0%, #1A1A4F 100%);
 }
 
 .leaderboard-container {
   display: flex;
-  gap: 80px;
-  max-width: 2400px;
+  gap: 4vw;
+  max-width: 95vw;
   width: 100%;
 }
 
@@ -279,66 +280,61 @@ background: rgba(255, 192, 203, 0.1);
   flex: 1;
 }
 
-.table-frame {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  padding: 48px;
-  gap: 48px;
-  isolation: isolate;
-  width: 1808px;
-  height: 1066px;
-  background: #0F0F37;
-  border-radius: 32px;
-}
-
-.leaderboard-right {
-  width: 600px;
-}
-
 .leaderboard-title {
-  font-size: 64px;
-  color: #ffffff;
-  margin-bottom: 32px;
+  font-size: 4vw;
+  margin-bottom: 2vh;
+  font-weight: bold;
+  text-transform: uppercase;
 }
 
 .leaderboard-description {
-  font-size: 36px;
-  color: #ffffff;
-  margin-bottom: 32px;
+  font-size: 2vw;
+  margin-bottom: 2vh;
+  line-height: 1.4;
+  opacity: 0.9;
 }
 
 .previous-winners-link {
-  color: #0ff658;
-  text-decoration: underline;
-  font-size: 32px;
-  margin-bottom: 48px;
-  display: inline-block;
+  font-size: 1.8vw;
+  margin-bottom: 3vh;
+}
+
+.table-frame {
+  padding: 3vw;
+  gap: 2vw;
+  width: 60vw;
+  height: auto;
+  min-height: 60vh;
+  background: rgba(15, 15, 55, 0.7);
+  border-radius: 2vw;
+}
+
+.leaderboard-right {
+  width: 25vw;
 }
 
 .action-button {
   width: 100%;
-  padding: 24px;
-  margin-bottom: 24px;
-  background: #0ff658;
-  border: none;
-  border-radius: 16px;
-  color: #000000;
-  cursor: pointer;
-  font-size: 32px;
+  padding: 1.5vh 2vw;
+  margin-bottom: 2vh;
+  border-radius: 1vw;
+  font-size: 1.8vw;
 }
 
 .promo-description {
-  font-size: 24px;
-  color: #ffffff;
-  margin-bottom: 48px;
+  font-size: 1.2vw;
+  margin-bottom: 3vh;
+  line-height: 1.4;
+}
+
+.additional-info {
+  padding: 2vw;
+  border-radius: 1vw;
 }
 
 .additional-info p {
-  font-size: 20px;
-  color: #ffffff;
-  margin-bottom: 16px;
+  font-size: 1vw;
+  margin-bottom: 1vh;
 }
 
 @media (max-width: 768px) {
