@@ -22,7 +22,7 @@
       Получите уникальный промокод для участия в розыгрыше
     </p>
     <p class="description">
-      Заключайте пари на высокие коэффициенты. Призы достану��ся 100 одателям самых больших выигрышных кэфов!
+      Заключайте пари на высокие коэффициенты. Призы достануся 100 одателям самых больших выигрышных кэфов!
     </p>
     <button class="promo-button">
       Получить промокод
@@ -34,7 +34,7 @@
 </div>
 </section>
 
-<section class="screen second-screen">
+<section class="second-screen">
   <img src="/images/второй_экран.png" alt="Описание призов" class="second-screen-image">
 </section>
 
@@ -200,24 +200,25 @@ background: rgba(255, 192, 203, 0.1);
 }
 
 .second-screen {
-  min-height: 100vh;
   width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  margin-top: 0;
 }
 
 .second-screen-image {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
+  height: auto;
+  display: block;
 }
 
 @media (max-width: 768px) {
+  .second-screen {
+    width: 100%;
+    margin-top: 0;
+  }
+
   .second-screen-image {
     width: 100%;
-    height: 100%;
-    object-fit: cover;
+    height: auto;
   }
 }
 </style>
