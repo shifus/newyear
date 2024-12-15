@@ -397,7 +397,7 @@ var app = (function () {
     const file$1 = "src/components/Screen1.svelte";
 
     function create_fragment$1(ctx) {
-    	let section;
+    	let section0;
     	let picture;
     	let source;
     	let t0;
@@ -420,10 +420,14 @@ var app = (function () {
     	let div1;
     	let img1;
     	let img1_src_value;
+    	let t11;
+    	let section1;
+    	let img2;
+    	let img2_src_value;
 
     	const block = {
     		c: function create() {
-    			section = element("section");
+    			section0 = element("section");
     			picture = element("picture");
     			source = element("source");
     			t0 = space();
@@ -440,55 +444,64 @@ var app = (function () {
     			p0.textContent = "Лига ставок, поздравляет всех с Новым Годом! Желает всего да побольше, особенно больше высоких выигрышных кэфов! \n      И анонсирует новый спецпроект, где больше однозначно лучше! \n      Получите уникальный промокод для участия в розыгрыше";
     			t6 = space();
     			p1 = element("p");
-    			p1.textContent = "Заключайте пари на высокие коэффициенты. Призы достанутся 100 о��ладателям самых больших выигрышных кэфов!";
+    			p1.textContent = "Заключайте пари на высокие коэффициенты. Призы достану��ся 100 одателям самых больших выигрышных кэфов!";
     			t8 = space();
     			button = element("button");
     			button.textContent = "Получить промокод";
     			t10 = space();
     			div1 = element("div");
     			img1 = element("img");
+    			t11 = space();
+    			section1 = element("section");
+    			img2 = element("img");
     			attr_dev(source, "srcset", "/images/header_mob.png");
     			attr_dev(source, "media", "(max-width: 768px)");
-    			add_location(source, file$1, 7, 2, 125);
+    			add_location(source, file$1, 7, 2, 138);
     			if (!src_url_equal(img0.src, img0_src_value = "/images/header.png")) attr_dev(img0, "src", img0_src_value);
     			attr_dev(img0, "alt", "Header");
-    			attr_dev(img0, "class", "header-image svelte-1lqu9zx");
-    			add_location(img0, file$1, 9, 2, 224);
-    			add_location(picture, file$1, 5, 0, 85);
-    			attr_dev(br, "class", "svelte-1lqu9zx");
-    			add_location(br, file$1, 15, 17, 391);
-    			attr_dev(h1, "class", "title svelte-1lqu9zx");
-    			add_location(h1, file$1, 14, 4, 355);
-    			attr_dev(p0, "class", "description svelte-1lqu9zx");
-    			add_location(p0, file$1, 18, 4, 431);
-    			attr_dev(p1, "class", "description svelte-1lqu9zx");
-    			add_location(p1, file$1, 23, 4, 714);
-    			attr_dev(button, "class", "promo-button svelte-1lqu9zx");
-    			add_location(button, file$1, 26, 4, 864);
-    			attr_dev(div0, "class", "left-side svelte-1lqu9zx");
-    			add_location(div0, file$1, 13, 2, 327);
+    			attr_dev(img0, "class", "header-image svelte-1aqb905");
+    			add_location(img0, file$1, 9, 2, 237);
+    			add_location(picture, file$1, 5, 0, 98);
+    			attr_dev(br, "class", "svelte-1aqb905");
+    			add_location(br, file$1, 15, 17, 404);
+    			attr_dev(h1, "class", "title svelte-1aqb905");
+    			add_location(h1, file$1, 14, 4, 368);
+    			attr_dev(p0, "class", "description svelte-1aqb905");
+    			add_location(p0, file$1, 18, 4, 444);
+    			attr_dev(p1, "class", "description svelte-1aqb905");
+    			add_location(p1, file$1, 23, 4, 727);
+    			attr_dev(button, "class", "promo-button svelte-1aqb905");
+    			add_location(button, file$1, 26, 4, 874);
+    			attr_dev(div0, "class", "left-side svelte-1aqb905");
+    			add_location(div0, file$1, 13, 2, 340);
     			if (!src_url_equal(img1.src, img1_src_value = "/images/christmas-tree.png")) attr_dev(img1, "src", img1_src_value);
     			attr_dev(img1, "alt", "Новогодняя ёлка");
-    			attr_dev(img1, "class", "tree-image svelte-1lqu9zx");
-    			add_location(img1, file$1, 31, 4, 972);
-    			attr_dev(div1, "class", "right-side svelte-1lqu9zx");
-    			add_location(div1, file$1, 30, 2, 943);
-    			attr_dev(div2, "class", "content svelte-1lqu9zx");
-    			add_location(div2, file$1, 12, 0, 303);
-    			attr_dev(section, "class", "screen svelte-1lqu9zx");
-    			add_location(section, file$1, 4, 0, 60);
+    			attr_dev(img1, "class", "tree-image svelte-1aqb905");
+    			add_location(img1, file$1, 31, 4, 982);
+    			attr_dev(div1, "class", "right-side svelte-1aqb905");
+    			add_location(div1, file$1, 30, 2, 953);
+    			attr_dev(div2, "class", "content svelte-1aqb905");
+    			add_location(div2, file$1, 12, 0, 316);
+    			attr_dev(section0, "class", "screen first-screen svelte-1aqb905");
+    			add_location(section0, file$1, 4, 0, 60);
+    			if (!src_url_equal(img2.src, img2_src_value = "/images/второй_экран.png")) attr_dev(img2, "src", img2_src_value);
+    			attr_dev(img2, "alt", "Описание призов");
+    			attr_dev(img2, "class", "second-screen-image svelte-1aqb905");
+    			add_location(img2, file$1, 37, 2, 1131);
+    			attr_dev(section1, "class", "screen second-screen svelte-1aqb905");
+    			add_location(section1, file$1, 36, 0, 1090);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
     		},
     		m: function mount(target, anchor) {
-    			insert_dev(target, section, anchor);
-    			append_dev(section, picture);
+    			insert_dev(target, section0, anchor);
+    			append_dev(section0, picture);
     			append_dev(picture, source);
     			append_dev(picture, t0);
     			append_dev(picture, img0);
-    			append_dev(section, t1);
-    			append_dev(section, div2);
+    			append_dev(section0, t1);
+    			append_dev(section0, div2);
     			append_dev(div2, div0);
     			append_dev(div0, h1);
     			append_dev(h1, t2);
@@ -503,12 +516,17 @@ var app = (function () {
     			append_dev(div2, t10);
     			append_dev(div2, div1);
     			append_dev(div1, img1);
+    			insert_dev(target, t11, anchor);
+    			insert_dev(target, section1, anchor);
+    			append_dev(section1, img2);
     		},
     		p: noop,
     		i: noop,
     		o: noop,
     		d: function destroy(detaching) {
-    			if (detaching) detach_dev(section);
+    			if (detaching) detach_dev(section0);
+    			if (detaching) detach_dev(t11);
+    			if (detaching) detach_dev(section1);
     		}
     	};
 

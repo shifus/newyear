@@ -2,7 +2,7 @@
   // Логика компонента, если необходимо
 </script>
 
-<section class="screen">
+<section class="screen first-screen">
 <picture>
   <!-- Мобильная версия -->
   <source srcset="/images/header_mob.png" media="(max-width: 768px)">
@@ -22,7 +22,7 @@
       Получите уникальный промокод для участия в розыгрыше
     </p>
     <p class="description">
-      Заключайте пари на высокие коэффициенты. Призы достанутся 100 о��ладателям самых больших выигрышных кэфов!
+      Заключайте пари на высокие коэффициенты. Призы достану��ся 100 одателям самых больших выигрышных кэфов!
     </p>
     <button class="promo-button">
       Получить промокод
@@ -34,16 +34,23 @@
 </div>
 </section>
 
+<section class="screen second-screen">
+  <img src="/images/второй_экран.png" alt="Описание призов" class="second-screen-image">
+</section>
+
 <style>
 .screen {
 display: flex;
 flex-direction: column;
 align-items: stretch;
 justify-content: flex-start;
-height: 100vh;
 padding: 0;
-border: 2px solid purple;
-background: rgba(128, 0, 128, 0.1);
+}
+
+.first-screen {
+  border: 2px solid purple;
+  background: rgba(128, 0, 128, 0.1);
+  min-height: 100vh;
 }
 
 .header-image {
@@ -158,8 +165,9 @@ background: rgba(255, 192, 203, 0.1);
   }
 
   .right-side {
-    margin-left: 0;
+    margin-left: -5vw; /* Отрицательный отступ слева сдвинет елку влево */
     width: 100%;
+    margin-top: 0vh;
   }
 
   .header-image {
@@ -187,7 +195,29 @@ background: rgba(255, 192, 203, 0.1);
   .tree-image {
     width: 100%;
     height: auto;
-    margin-top: 20px;
+    margin-top: 0;
+  }
+}
+
+.second-screen {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.second-screen-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  .second-screen-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
 }
 </style>
