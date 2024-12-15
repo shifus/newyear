@@ -22,7 +22,7 @@
       Получите уникальный промокод для участия в розыгрыше
     </p>
     <p class="description">
-      Заключайте пари на высокие коэффициенты. Призы достану��ся 100 одателям самых больших выигрышных кэфов!
+      Заключайте пари на высокие коэффициенты. Призы достануся 100 одателям самых больших выигрышных кэфов!
     </p>
     <button class="promo-button">
       Получить промокод
@@ -294,6 +294,7 @@ background: rgba(255, 192, 203, 0.1);
 .leaderboard-description {
   font-size: 1.6vw;
   margin-bottom: 2vh;
+  color: #a20b9a;
   line-height: 1.4;
   opacity: 0.9;
   max-width: 90%;
@@ -326,34 +327,27 @@ background: rgba(255, 192, 203, 0.1);
   width: 100%;
   padding: 1.2vh 1.5vw;
   margin-bottom: 1.5vh;
-  border-radius: 0.8vw;
   font-size: 1.6vw;
-  letter-spacing: 0.02em;
 }
 
 .promo-description {
   font-size: 1.3vw;
-  margin-bottom: 2.5vh;
-  line-height: 1.5;
-  opacity: 0.85;
+  margin-bottom: 2vh;
 }
 
 .additional-info {
-  padding: 1.8vw;
-  border-radius: 0.8vw;
+  padding: 2vw;
   background: rgba(15, 15, 55, 0.6);
+  border-radius: 1vw;
 }
 
 .additional-info p {
   font-size: 1.1vw;
-  margin-bottom: 1.2vh;
-  line-height: 1.6;
-  opacity: 0.75;
+  margin-bottom: 1vh;
 }
 
 @media (max-width: 768px) {
   .leaderboard-container {
-    flex-direction: column;
     max-width: 85vw;
   }
 
