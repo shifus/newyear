@@ -22,7 +22,7 @@
       Получите уникальный промокод для участия в розыгрыше
     </p>
     <p class="description">
-      Заключайте пари на высокие коэффициенты. Призы достануся 100 одателям самых больших выигрышных кэфов!
+      Заключайте пари на высокие коэффициенты. Призы достану��ся 100 одателям самых больших выигрышных кэфов!
     </p>
     <button class="promo-button">
       Получить промокод
@@ -265,81 +265,96 @@ background: rgba(255, 192, 203, 0.1);
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 5vw;
+  padding: 3vw;
   background: linear-gradient(180deg, #0F0F37 0%, #1A1A4F 100%);
 }
 
 .leaderboard-container {
   display: flex;
-  gap: 4vw;
-  max-width: 95vw;
+  gap: 3vw;
+  max-width: 80vw;
   width: 100%;
+  align-items: flex-start;
+  margin: 0 auto;
 }
 
 .leaderboard-left {
   flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 2vh;
 }
 
 .leaderboard-title {
-  font-size: 4vw;
-  margin-bottom: 2vh;
-  font-weight: bold;
-  text-transform: uppercase;
+  font-size: 3.2vw;
+  margin-bottom: 1.5vh;
+  color: #ffffff;
 }
 
 .leaderboard-description {
-  font-size: 2vw;
+  font-size: 1.6vw;
   margin-bottom: 2vh;
   line-height: 1.4;
   opacity: 0.9;
+  max-width: 90%;
 }
 
 .previous-winners-link {
-  font-size: 1.8vw;
-  margin-bottom: 3vh;
+  font-size: 1.6vw;
+  margin-bottom: 2vh;
+  display: inline-block;
+  padding: 0.5vh 1vw;
 }
 
 .table-frame {
-  padding: 3vw;
-  gap: 2vw;
-  width: 60vw;
-  height: auto;
-  min-height: 60vh;
+  padding: 2.5vw;
+  gap: 1.5vw;
+  width: 50vw;
+  min-height: 55vh;
   background: rgba(15, 15, 55, 0.7);
-  border-radius: 2vw;
+  border-radius: 1.5vw;
+  box-shadow: 0 0 2vw rgba(0, 0, 0, 0.2);
 }
 
 .leaderboard-right {
-  width: 25vw;
+  width: 20vw;
+  position: sticky;
+  top: 2vh;
 }
 
 .action-button {
   width: 100%;
-  padding: 1.5vh 2vw;
-  margin-bottom: 2vh;
-  border-radius: 1vw;
-  font-size: 1.8vw;
+  padding: 1.2vh 1.5vw;
+  margin-bottom: 1.5vh;
+  border-radius: 0.8vw;
+  font-size: 1.6vw;
+  letter-spacing: 0.02em;
 }
 
 .promo-description {
-  font-size: 1.2vw;
-  margin-bottom: 3vh;
-  line-height: 1.4;
+  font-size: 1.3vw;
+  margin-bottom: 2.5vh;
+  line-height: 1.5;
+  opacity: 0.85;
 }
 
 .additional-info {
-  padding: 2vw;
-  border-radius: 1vw;
+  padding: 1.8vw;
+  border-radius: 0.8vw;
+  background: rgba(15, 15, 55, 0.6);
 }
 
 .additional-info p {
-  font-size: 1vw;
-  margin-bottom: 1vh;
+  font-size: 1.1vw;
+  margin-bottom: 1.2vh;
+  line-height: 1.6;
+  opacity: 0.75;
 }
 
 @media (max-width: 768px) {
   .leaderboard-container {
     flex-direction: column;
+    max-width: 85vw;
   }
 
   .table-frame {
