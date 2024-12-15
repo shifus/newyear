@@ -22,7 +22,7 @@
       Получите уникальный промокод для участия в розыгрыше
     </p>
     <p class="description">
-      Заключайте пари на высокие коэффициенты. Призы достануся 100 одателям самых больших выигрышных кэфов!
+      Заключайте пари на высокие коэффициенты. Призы достанутся 100 одателям самых больших выигрышных кэфов!
     </p>
     <button class="promo-button">
       Получить промокод
@@ -36,6 +36,43 @@
 
 <section class="second-screen">
   <img src="/images/второй_экран.png" alt="Описание призов" class="second-screen-image">
+</section>
+
+<section class="third-screen">
+  <div class="leaderboard-container">
+    <div class="leaderboard-left">
+      <h2 class="leaderboard-title">Таблица конкурса</h2>
+      <p class="leaderboard-description">
+        100 призов достанутся участникам, с самыми большими выигрышными коэффициентами
+      </p>
+      <a href="#" class="previous-winners-link">Смотреть предыдущих победителей</a>
+      
+      <div class="leaderboard-table">
+        <!-- Здесь будет таблица -->
+        <div class="table-frame">
+          <!-- Таблица будет добавлена позже -->
+        </div>
+      </div>
+    </div>
+
+    <div class="leaderboard-right">
+      <div class="actions-container">
+        <button class="action-button">Введите промокод</button>
+        <button class="action-button">Узнать место</button>
+        
+        <p class="promo-description">
+          Введите уникальный промокод, чтобы узнать своё место в таблице. 
+          Промокод находится в личном кабинете БК «Лига Ставок» в разделе «Промокоды».
+        </p>
+
+        <div class="additional-info">
+          <p>Участники акции занимают место в таблице согласно наиболее высокому выигрышному коэффициенту</p>
+          <p>Приз за первое место iPhone 14 Pro</p>
+          <p>Розыгрыш призов проходит на лайв-стримах канала twitch.tv/cq_ru. Расписание стримов смотрите ниже</p>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
 
 <style>
@@ -219,6 +256,123 @@ background: rgba(255, 192, 203, 0.1);
   .second-screen-image {
     width: 100%;
     height: auto;
+  }
+}
+
+.third-screen {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 80px;
+}
+
+.leaderboard-container {
+  display: flex;
+  gap: 80px;
+  max-width: 2400px;
+  width: 100%;
+}
+
+.leaderboard-left {
+  flex: 1;
+}
+
+.table-frame {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 48px;
+  gap: 48px;
+  isolation: isolate;
+  width: 1808px;
+  height: 1066px;
+  background: #0F0F37;
+  border-radius: 32px;
+}
+
+.leaderboard-right {
+  width: 600px;
+}
+
+.leaderboard-title {
+  font-size: 64px;
+  color: #ffffff;
+  margin-bottom: 32px;
+}
+
+.leaderboard-description {
+  font-size: 36px;
+  color: #ffffff;
+  margin-bottom: 32px;
+}
+
+.previous-winners-link {
+  color: #0ff658;
+  text-decoration: underline;
+  font-size: 32px;
+  margin-bottom: 48px;
+  display: inline-block;
+}
+
+.action-button {
+  width: 100%;
+  padding: 24px;
+  margin-bottom: 24px;
+  background: #0ff658;
+  border: none;
+  border-radius: 16px;
+  color: #000000;
+  cursor: pointer;
+  font-size: 32px;
+}
+
+.promo-description {
+  font-size: 24px;
+  color: #ffffff;
+  margin-bottom: 48px;
+}
+
+.additional-info p {
+  font-size: 20px;
+  color: #ffffff;
+  margin-bottom: 16px;
+}
+
+@media (max-width: 768px) {
+  .leaderboard-container {
+    flex-direction: column;
+  }
+
+  .table-frame {
+    width: 100%;
+    height: auto;
+  }
+
+  .leaderboard-right {
+    width: 100%;
+  }
+
+  .leaderboard-title {
+    font-size: 48px;
+  }
+
+  .leaderboard-description {
+    font-size: 24px;
+  }
+
+  .action-button {
+    font-size: 24px;
+  }
+
+  .promo-description {
+    font-size: 18px;
+  }
+
+  .additional-info p {
+    font-size: 16px;
   }
 }
 </style>
