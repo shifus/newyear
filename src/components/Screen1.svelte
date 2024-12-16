@@ -22,7 +22,7 @@
       Получите уникальный промокод для участия в розыгрыше
     </p>
     <p class="description">
-      Заключайте пари на высокие коэффициенты. Призы достануся 100 одателям самых больших выигрышных кэфов!
+      Заключайте пари на высокие коэффициенты. Призы достанутся 100 одателям самых больших выигрышных кэфов!
     </p>
     <button class="promo-button">
       Получить промокод
@@ -35,7 +35,117 @@
 </section>
 
 <section class="second-screen">
-  <img src="/images/второй_экран.png" alt="Описание призов" class="second-screen-image">
+  <div class="main-prize">
+    <div class="prize-header">
+      <span class="prize-label">Главный приз</span>
+    </div>
+    
+    <h2 class="prize-title">iPhone 14 Pro</h2>
+    
+    <div class="specs-container">
+      <div class="specs-column">
+        <div class="spec-item">
+          <span class="spec-label">Объем памяти</span>
+          <span class="spec-value">128 GB</span>
+        </div>
+        <div class="spec-item">
+          <span class="spec-label">Процессор</span>
+          <span class="spec-value">A16 Bionic</span>
+        </div>
+      </div>
+      <div class="specs-column">
+        <div class="spec-item">
+          <span class="spec-label">Цвет</span>
+          <span class="spec-value">Космический черный</span>
+        </div>
+        <div class="spec-item">
+          <span class="spec-label">Камера</span>
+          <span class="spec-value">48 МП</span>
+        </div>
+      </div>
+    </div>
+    
+    <img src="/images/iphone14pro.png" alt="iPhone 14 Pro" class="prize-image">
+  </div>
+
+  <div class="additional-prizes">
+    <div class="prize-card">
+      <h3 class="prize-card-category">Наушники</h3>
+      <h4 class="prize-card-model">Sony WH-1000XM4</h4>
+      <img src="/images/Naychniki.png" alt="Sony WH-1000XM4" class="prize-card-image">
+    </div>
+
+    <div class="prize-card">
+      <h3 class="prize-card-category">Винный шкаф</h3>
+      <h4 class="prize-card-model">Kitfort KT-2403</h4>
+      <img src="/images/wine-fridge.png" alt="Kitfort KT-2403" class="prize-card-image">
+    </div>
+
+    <div class="prize-card">
+      <h3 class="prize-card-category">Фитнес трекер</h3>
+      <h4 class="prize-card-model">Xiaomi Mi Band 7</h4>
+      <img src="/images/mi-band.png" alt="Xiaomi Mi Band 7" class="prize-card-image">
+    </div>
+  </div>
+
+  <div class="leaderboard">
+    <div class="leaderboard-content">
+      <div class="leaderboard-headers">
+        <div class="header-place">Место</div>
+        <div class="header-prize">Приз</div>
+        <div class="header-freebet">Фрибет</div>
+      </div>
+
+      <div class="leaderboard-rows">
+        <div class="leaderboard-row">
+          <div class="place">1</div>
+          <div class="prize">iPhone 14 Pro</div>
+          <div class="freebet">50 000 ₽</div>
+        </div>
+
+        <div class="leaderboard-row">
+          <div class="place">2</div>
+          <div class="prize">Наушники Sony</div>
+          <div class="freebet">40 000 ₽</div>
+        </div>
+
+        <div class="leaderboard-row">
+          <div class="place">3</div>
+          <div class="prize">Наушники Sony</div>
+          <div class="freebet">30 000 ₽</div>
+        </div>
+
+        <div class="leaderboard-row">
+          <div class="place">4</div>
+          <div class="prize">Винный шкаф Kitfort</div>
+          <div class="freebet">20 000 ₽</div>
+        </div>
+
+        <div class="leaderboard-row">
+          <div class="place">5</div>
+          <div class="prize">Винный шкаф Kitfort</div>
+          <div class="freebet">10 000 ₽</div>
+        </div>
+
+        <div class="leaderboard-row">
+          <div class="place">6-10</div>
+          <div class="prize">Фитнес трекер Xiaomi</div>
+          <div class="freebet">7 000 ₽</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="merch-column">
+      <div class="merch-content">
+        <div class="merch-images">
+          <!-- Здесь будут изображения мерча -->
+        </div>
+        <div class="merch-status">
+          <span>Мерч разыгран</span>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
 
 <section class="third-screen">
@@ -61,7 +171,7 @@
         <button class="action-button">Узнать место</button>
         
         <p class="promo-description">
-          Введите уникальный промокод, чтобы узнать своё место в таблице. 
+          Введите уникальны�� промокод, чтобы узнать своё место в таблице. 
           Промокод находится в личном кабинете БК «Лига Ставок» в разделе «Промокоды».
         </p>
 
@@ -238,24 +348,309 @@ background: rgba(255, 192, 203, 0.1);
 
 .second-screen {
   width: 100%;
-  margin-top: 0;
+  padding: 48px;
+  background: #15154D;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
 }
 
-.second-screen-image {
+.main-prize {
   width: 100%;
-  height: auto;
-  display: block;
+  padding: 32px;
+  background: rgba(15, 15, 55, 0.7);
+  border: 1px solid rgba(0, 255, 116, 0.2);
+  backdrop-filter: blur(5px);
+  border-radius: 16px;
+  display: flex;
+  gap: 32px;
+  position: relative;
 }
 
+.prize-header {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.prize-label {
+  display: inline-flex;
+  padding: 8px 16px;
+  background: rgba(0, 255, 116, 0.1);
+  border-radius: 24px;
+  color: #00FF74;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 140%;
+}
+
+.prize-title {
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 110%;
+  color: #FFFFFF;
+  margin: 8px 0;
+}
+
+.specs-container {
+  display: flex;
+  gap: 32px;
+  margin-top: 16px;
+}
+
+.specs-column {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.spec-item {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.spec-label {
+  font-size: 16px;
+  color: #ABBAF0;
+  font-weight: 500;
+  line-height: 140%;
+}
+
+.spec-value {
+  font-size: 24px;
+  color: #FFFFFF;
+  font-weight: 600;
+  line-height: 140%;
+}
+
+.prize-image {
+  width: 162px;
+  height: 182px;
+  object-fit: contain;
+  position: absolute;
+  right: 32px;
+  bottom: 30px;
+}
+
+.additional-prizes {
+  display: flex;
+  gap: 12px;
+  width: 100%;
+  margin-top: 32px;
+}
+
+.prize-card {
+  flex: 1;
+  padding: 32px;
+  background: rgba(15, 15, 55, 0.7);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(5px);
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+}
+
+.prize-card-category {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 110%;
+  color: #FFFFFF;
+}
+
+.prize-card-model {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 110%;
+  color: #FFFFFF;
+  margin-top: 8px;
+}
+
+.prize-card-image {
+  width: 100%;
+  height: 246px;
+  object-fit: contain;
+}
+
+.leaderboard {
+  display: flex;
+  gap: 12px;
+  width: 100%;
+  margin-top: 32px;
+}
+
+.leaderboard-content {
+  flex: 1;
+}
+
+.leaderboard-headers {
+  display: flex;
+  padding: 0 32px;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.header-place,
+.header-prize,
+.header-freebet {
+  font-family: 'TT Travels';
+  font-size: 24px;
+  line-height: 120%;
+  color: #ABBAF0;
+}
+
+.header-place {
+  width: 170px;
+}
+
+.header-prize {
+  flex: 1;
+}
+
+.header-freebet {
+  width: 200px;
+  text-align: right;
+}
+
+.leaderboard-rows {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.leaderboard-row {
+  display: flex;
+  padding: 32px;
+  gap: 8px;
+  background: #0F0F37;
+  border-radius: 16px;
+  align-items: center;
+}
+
+.place,
+.prize,
+.freebet {
+  font-family: 'TT Travels';
+  font-size: 32px;
+  line-height: 120%;
+  color: #FFFFFF;
+}
+
+.place {
+  width: 170px;
+}
+
+.prize {
+  flex: 1;
+}
+
+.freebet {
+  width: 200px;
+  text-align: right;
+  color: #ABBAF0;
+}
+
+.merch-column {
+  width: 427px;
+  background: #0F0F37;
+  border-radius: 16px;
+  padding: 32px;
+}
+
+.merch-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 140px;
+  gap: 16px;
+}
+
+.merch-status {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16px 0px 16px 8px;
+  gap: 8px;
+  background: #00AB4E;
+  border-radius: 100px;
+  width: 100%;
+}
+
+.merch-status span {
+  font-family: 'TT Travels';
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 120%;
+  color: #FFFFFF;
+}
+
+/* Медиа-запросы для адаптивности */
 @media (max-width: 768px) {
   .second-screen {
-    width: 100%;
-    margin-top: 0;
+    padding: 24px;
   }
 
-  .second-screen-image {
+  .main-prize {
+    flex-direction: column;
+    padding: 24px;
+  }
+
+  .prize-title {
+    font-size: 36px;
+  }
+
+  .specs-container {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .prize-image {
+    position: relative;
+    right: auto;
+    bottom: auto;
+    height: 280px;
+    margin-top: 24px;
+  }
+
+  .additional-prizes {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .prize-card {
+    padding: 24px;
+  }
+
+  .prize-card-image {
+    height: 180px;
+  }
+
+  .leaderboard {
+    flex-direction: column;
+  }
+
+  .leaderboard-headers,
+  .leaderboard-rows {
     width: 100%;
-    height: auto;
+  }
+
+  .leaderboard-row {
+    padding: 16px;
+  }
+
+  .place,
+  .prize,
+  .freebet {
+    font-size: 24px;
+  }
+
+  .merch-column {
+    width: 100%;
+    margin-top: 24px;
   }
 }
 
