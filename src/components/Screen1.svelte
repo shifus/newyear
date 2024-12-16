@@ -2,78 +2,82 @@
   // Логика компонента, если необходимо
 </script>
 
-<section class="screen first-screen">
-<picture>
-  <!-- Мобильная версия -->
-  <source srcset="/images/header_mob.png" media="(max-width: 768px)">
-  <!-- Десктопная версия -->
-  <img src="/images/header.png" alt="Header" class="header-image" />
-</picture>
+<div class="page-wrapper">
+  <div class="screen-container">
+    <section class="first-screen">
+      <picture>
+        <!-- Мобильная версия -->
+        <source srcset="/images/header_mob.png" media="(max-width: 768px)">
+        <!-- Десктопная версия -->
+        <img src="/images/header.png" alt="Header" class="header-image" />
+      </picture>
 
-<div class="content">
-  <div class="left-side">
-    <h1 class="title">
-      В НОВЫЙ ГОД<br>
-      С ЛИГОЙ СТАВОК
-    </h1>
-    <p class="description">
-      Лига ставок, поздравляет всех с Новым Годом! Желает всего да побольше, особенно больше высоких выигрышных кэфов! 
-      И анонсирует новый спецпроект, где больше однозначно лучше! 
-      Получите уникальный промокод для участия в розыгрыше
-    </p>
-    <p class="description">
-      Заключайте пари на высокие коэффициенты. Призы достанутся 100 одателям самых больших выигрышных кэфов!
-    </p>
-    <button class="promo-button">
-      Получить промокод
-    </button>
-  </div>
-  <div class="right-side">
-    <img src="/images/christmas-tree.png" alt="Новогодняя ёлка" class="tree-image">
-  </div>
-</div>
-</section>
-
-<section class="second-screen">
-  <div class="main-prize">
-    <div class="prize-header">
-      <span class="prize-label">Главный приз</span>
-    </div>
-    
-    <h2 class="prize-title">iPhone 14 Pro</h2>
-    
-    <div class="specs-container">
-      <div class="specs-column">
-        <div class="spec-item">
-          <span class="spec-label">Объем памяти</span>
-          <span class="spec-value">128 GB</span>
+      <div class="content">
+        <div class="left-side">
+          <h1 class="title">
+            В НОВЫЙ ГОД<br>
+            С ЛИГОЙ СТАВОК
+          </h1>
+          <p class="description">
+            Лига ставок, поздравляет всех с Новым Годом! Желает всего да побольше, особенно больше высоких выигрышных кэфов! 
+            И анонсирует новый спецпроект, где больше однозначно лучше! 
+            Получите уникальный промокод для участия в розыгрыше
+          </p>
+          <p class="description">
+            Заключайте пари на высокие коэффициенты. Призы достанутся 100 одателям самых больших выигрышных кэфов!
+          </p>
+          <button class="promo-button">
+            Получить промокод
+          </button>
         </div>
-        <div class="spec-item">
-          <span class="spec-label">Процессор</span>
-          <span class="spec-value">A16 Bionic</span>
+        <div class="right-side">
+          <img src="/images/christmas-tree.png" alt="Новогодняя ёлка" class="tree-image">
         </div>
       </div>
-      <div class="specs-column">
-        <div class="spec-item">
-          <span class="spec-label">Цвет</span>
-          <span class="spec-value">Космический черный</span>
-        </div>
-        <div class="spec-item">
-          <span class="spec-label">Камера</span>
-          <span class="spec-value">48 МП</span>
-        </div>
-      </div>
-    </div>
-    
-    <img src="/images/iphone14pro.png" alt="iPhone 14 Pro" class="prize-image">
+    </section>
   </div>
+  
+  <div class="screen-container">
+    <section class="second-screen">
+      <div class="main-prize">
+        <div class="prize-header">
+          <span class="prize-label">Главный приз</span>
+        </div>
+        
+        <h2 class="prize-title">iPhone 14 Pro</h2>
+        
+        <div class="specs-container">
+          <div class="specs-column">
+            <div class="spec-item">
+              <span class="spec-label">Объем памяти</span>
+              <span class="spec-value">128 GB</span>
+            </div>
+            <div class="spec-item">
+              <span class="spec-label">Процессор</span>
+              <span class="spec-value">A16 Bionic</span>
+            </div>
+          </div>
+          <div class="specs-column">
+            <div class="spec-item">
+              <span class="spec-label">Цвет</span>
+              <span class="spec-value">Космический черный</span>
+            </div>
+            <div class="spec-item">
+              <span class="spec-label">Камера</span>
+              <span class="spec-value">48 МП</span>
+            </div>
+          </div>
+        </div>
+        
+        <img src="/images/iphone14pro.png" alt="iPhone 14 Pro" class="prize-image">
+      </div>
 
-  <div class="additional-prizes">
-    <div class="prize-card">
-      <h3 class="prize-card-category">Наушники</h3>
-      <h4 class="prize-card-model">Sony WH-1000XM4</h4>
-      <img src="/images/Naychniki.png" alt="Sony WH-1000XM4" class="prize-card-image">
-    </div>
+      <div class="additional-prizes">
+        <div class="prize-card">
+          <h3 class="prize-card-category">Наушники</h3>
+          <h4 class="prize-card-model">Sony WH-1000XM4</h4>
+          <img src="/images/Naychniki.png" alt="Sony WH-1000XM4" class="prize-card-image">
+        </div>
 
     <div class="prize-card">
       <h3 class="prize-card-category">Винный шкаф</h3>
@@ -88,65 +92,67 @@
     </div>
   </div>
 
-  <div class="leaderboard">
-    <div class="leaderboard-content">
-      <div class="leaderboard-headers">
-        <div class="header-place">Место</div>
-        <div class="header-prize">Приз</div>
-        <div class="header-freebet">Фрибет</div>
+      <div class="leaderboard">
+        <div class="leaderboard-content">
+          <div class="leaderboard-headers">
+            <div class="header-place">Место</div>
+            <div class="header-prize">Приз</div>
+            <div class="header-freebet">Фрибет</div>
+          </div>
+
+          <div class="leaderboard-rows">
+            <div class="leaderboard-row">
+              <div class="place">1</div>
+              <div class="prize">iPhone 14 Pro</div>
+              <div class="freebet">50 000 ₽</div>
+            </div>
+
+            <div class="leaderboard-row">
+              <div class="place">2</div>
+              <div class="prize">Наушники Sony</div>
+              <div class="freebet">40 000 ₽</div>
+            </div>
+
+            <div class="leaderboard-row">
+              <div class="place">3</div>
+              <div class="prize">Наушники Sony</div>
+              <div class="freebet">30 000 ₽</div>
+            </div>
+
+              <div class="leaderboard-row">
+                <div class="place">4</div>
+                <div class="prize">Винный шкаф Kitfort</div>
+                <div class="freebet">20 000 ₽</div>
+              </div>
+
+              <div class="leaderboard-row">
+                <div class="place">5</div>
+                <div class="prize">Винный шкаф Kitfort</div>
+                <div class="freebet">10 000 ₽</div>
+              </div>
+
+              <div class="leaderboard-row">
+                <div class="place">6-10</div>
+                <div class="prize">Фитнес трекер Xiaomi</div>
+                <div class="freebet">7 000 ₽</div>
+              </div>
+            </div>
+          </div>
+
+        <div class="merch-column">
+          <div class="merch-content">
+            <div class="merch-images">
+              <!-- Здесь будут изображения мерча -->
+            </div>
+            <div class="merch-status">
+              <span>Мерч разыгран</span>
+            </div>
+          </div>
+        </div>
       </div>
-
-      <div class="leaderboard-rows">
-        <div class="leaderboard-row">
-          <div class="place">1</div>
-          <div class="prize">iPhone 14 Pro</div>
-          <div class="freebet">50 000 ₽</div>
-        </div>
-
-        <div class="leaderboard-row">
-          <div class="place">2</div>
-          <div class="prize">Наушники Sony</div>
-          <div class="freebet">40 000 ₽</div>
-        </div>
-
-        <div class="leaderboard-row">
-          <div class="place">3</div>
-          <div class="prize">Наушники Sony</div>
-          <div class="freebet">30 000 ₽</div>
-        </div>
-
-        <div class="leaderboard-row">
-          <div class="place">4</div>
-          <div class="prize">Винный шкаф Kitfort</div>
-          <div class="freebet">20 000 ₽</div>
-        </div>
-
-        <div class="leaderboard-row">
-          <div class="place">5</div>
-          <div class="prize">Винный шкаф Kitfort</div>
-          <div class="freebet">10 000 ₽</div>
-        </div>
-
-        <div class="leaderboard-row">
-          <div class="place">6-10</div>
-          <div class="prize">Фитнес трекер Xiaomi</div>
-          <div class="freebet">7 000 ₽</div>
-        </div>
-      </div>
-    </div>
-
-    <div class="merch-column">
-      <div class="merch-content">
-        <div class="merch-images">
-          <!-- Здесь будут изображения мерча -->
-        </div>
-        <div class="merch-status">
-          <span>Мерч разыгран</span>
-        </div>
-      </div>
-    </div>
+    </section>
   </div>
-</section>
+</div>
 
 <section class="third-screen">
   <div class="leaderboard-container">
@@ -171,14 +177,14 @@
         <button class="action-button">Узнать место</button>
         
         <p class="promo-description">
-          Введите уникальны�� промокод, чтобы узнать своё место в таблице. 
+          Введите уникальный промокод, чтобы узнать своё место в таблице. 
           Промокод находится в личном кабинете БК «Лига Ставок» в разделе «Промокоды».
         </p>
 
         <div class="additional-info">
           <p>Участники акции занимают место в таблице согласно наиболее высокому выигрышному коэффициенту</p>
           <p>Приз за первое место iPhone 14 Pro</p>
-          <p>Розыгрыш призов проходит на лайв-стримах канала twitch.tv/cq_ru. Расписание стримов смотрите ниже</p>
+          <p>Розыгрыш призов проходит на лайв-стримах канала twitch.tv/cq_ru. Рас��исание стримов смотрите ниже</p>
         </div>
       </div>
     </div>
@@ -186,61 +192,62 @@
 </section>
 
 <style>
-.screen {
-display: flex;
-flex-direction: column;
-align-items: stretch;
-justify-content: flex-start;
-padding: 0;
+.main-container {
+  display: flex;
+  flex-direction: column;
+  gap: 32px; /* Фиксированный отступ между экранами */
+  height: 100%;
+  overflow-y: auto;
 }
 
 .first-screen {
-  border: 2px solid purple;
-  background: rgba(128, 0, 128, 0.1);
   min-height: 100vh;
+  position: relative;
+  padding: 0;
+  border: 2px solid purple;
 }
 
 .header-image {
-display: block;
-width: 100%;
-height: auto;
-margin: 0;
-border: 2px solid #555;
-background: rgba(128, 128, 128, 0.1);
-box-sizing: border-box;
-padding: 0;
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0;
+  border: 2px solid gray;
+  background: rgba(128, 128, 128, 0.1);
+  box-sizing: border-box;
+  padding: 0;
 }
 
 .content {
-display: flex;
-gap: 5vw;
-align-items: flex-start;
-max-width: 95vw;       /* Возвращаем исходную ширину и автоцентрирование для десктопа */
-margin: 0 auto;
-justify-content: space-between;
-padding: 3vh 3vw;
-border: 2px solid orange;
-background: rgba(255, 165, 0, 0.1);
+  display: flex;
+  gap: 5vw;
+  align-items: flex-start;
+  max-width: 95vw;
+  margin: 0 auto;
+  justify-content: space-between;
+  padding: 3vh 3vw;
+  border: 2px solid orange;
+  background: rgba(255, 165, 0, 0.1);
 }
 
 .left-side {
-flex: 0 1 auto;
-max-width: 50vw;
-padding: 2vh 2vw;
-border: 2px solid red;
-background: rgba(255, 0, 0, 0.1);
+  flex: 0 1 auto;
+  max-width: 50vw;
+  padding: 2vh 2vw;
+  border: 2px solid red;
+  background: rgba(255, 0, 0, 0.1);
 }
 
 .title {
-font-size: 5vw;
-line-height: 1.2;
-white-space: pre-line;
-color: #0ff658;
-text-align: left;
-margin-bottom: 3vh;
-min-width: max-content;
-border: 2px solid blue;
-background: rgba(0, 0, 255, 0.1);
+  font-size: 5vw;
+  line-height: 1.2;
+  white-space: pre-line;
+  color: #0ff658;
+  text-align: left;
+  margin-bottom: 3vh;
+  min-width: max-content;
+  border: 2px solid blue;
+  background: rgba(0, 0, 255, 0.1);
 }
 
 .title br {
@@ -250,24 +257,24 @@ content: "";
 }
 
 .description {
-color: #ffffff;
-font-size: 1.5vw;
-line-height: 1.5;
-margin-bottom: 3vh;
-border: 2px solid green;
-background: rgba(0, 255, 0, 0.1);
+  color: #ffffff;
+  font-size: 1.5vw;
+  line-height: 1.5;
+  margin-bottom: 3vh;
+  border: 2px solid green;
+  background: rgba(0, 255, 0, 0.1);
 }
 
 .promo-button {
-background-color: #00FF00;
-color: #ffffff;
-padding: 2vh 3vw;
-border: 2px solid yellow !important;
-border-radius: 5px;
-font-size: 1.5vw;
-cursor: pointer;
-transition: background-color 0.3s;
-width: 30vw;
+  background-color: #00FF00;
+  color: #ffffff;
+  padding: 2vh 3vw;
+  border: 2px solid yellow !important;
+  border-radius: 5px;
+  font-size: 1.5vw;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  width: 30vw;
 }
 
 .promo-button:hover {
@@ -275,20 +282,20 @@ background-color: #00CC00;
 }
 
 .tree-image {
-max-height: 80vh;
-object-fit: contain;
-border: 2px solid cyan;
+  max-height: 80vh;
+  object-fit: contain;
+  border: 2px solid cyan;
 }
 
 .right-side {
-display: flex;
-align-items: center;
-justify-content: center;
-margin-top: 5vh;
-margin-left: -8vw; /* Возвращаем как было на десктопе */
-padding: 2vh 2vw;
-border: 2px solid pink;
-background: rgba(255, 192, 203, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5vh;
+  margin-left: -8vw;
+  padding: 2vh 2vw;
+  border: 2px solid pink;
+  background: rgba(255, 192, 203, 0.1);
 }
 
 /* Мобильная версия */
@@ -355,6 +362,7 @@ background: rgba(255, 192, 203, 0.1);
   flex-direction: column;
   align-items: center;
   gap: 32px;
+  border: 2px solid lime;
 }
 
 .main-prize {
@@ -367,6 +375,7 @@ background: rgba(255, 192, 203, 0.1);
   display: flex;
   gap: 32px;
   position: relative;
+  border: 2px solid navy;
 }
 
 .prize-header {
@@ -427,12 +436,11 @@ background: rgba(255, 192, 203, 0.1);
 }
 
 .prize-image {
-  width: 162px;
-  height: 182px;
-  object-fit: contain;
   position: absolute;
   right: 32px;
-  bottom: 30px;
+  bottom: -59px;
+  height: 364px;
+  object-fit: contain;
 }
 
 .additional-prizes {
@@ -440,6 +448,7 @@ background: rgba(255, 192, 203, 0.1);
   gap: 12px;
   width: 100%;
   margin-top: 32px;
+  border: 2px solid magenta;
 }
 
 .prize-card {
@@ -481,6 +490,7 @@ background: rgba(255, 192, 203, 0.1);
   gap: 12px;
   width: 100%;
   margin-top: 32px;
+  border: 2px solid teal;
 }
 
 .leaderboard-content {
