@@ -224,12 +224,13 @@
 }
 
 .content {
-  height: auto; /* Изменяем высоту на auto для адаптивности */
+  position: relative;
+  height: auto;
   display: flex;
-  flex-wrap: wrap; /* Позволяем элементам переноситься на новую строку */
+  flex-wrap: wrap;
   gap: 5vw;
   align-items: flex-start;
-  max-width: 100%; /* Убираем ограничение ширины */
+  max-width: 100%;
   margin: 0 auto;
   justify-content: space-between;
   padding: 3vh 3vw;
@@ -240,8 +241,8 @@
 }
 
 .left-side {
-  flex: 1 1 50%; /* Позволяем элементу занимать до 50% ширины, но быть гибким */
-  max-width: 100%; /* Убираем ограничение ширины */
+  flex: 1;
+  max-width: 50%;
   padding: 2vh 2vw;
   border: 2px solid red;
   background: rgba(255, 0, 0, 0.1);
@@ -294,17 +295,18 @@ background-color: #00CC00;
 
 .tree-image {
   max-width: 100%;
-  height: auto;
-  display: block;
+  max-height: 80vh;
+  object-fit: contain;
+  border: 2px solid cyan;
 }
 
 .right-side {
+  flex: 0 0 auto;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 5vh;
-  margin-left: -8vw;
   padding: 2vh 2vw;
+  margin-right: 2vw;
   border: 2px solid pink;
   background: rgba(255, 192, 203, 0.1);
   max-height: 80vh;
@@ -695,7 +697,7 @@ background-color: #00CC00;
 .leaderboard-container {
   display: flex;
   gap: 3vw;
-  max-width: 80vw;
+  max-width: 95vw; /* Сужаем до ширины первых двух экранов */
   width: 100%;
   align-items: flex-start;
   margin: 0 auto;
@@ -804,9 +806,16 @@ background-color: #00CC00;
   }
 }
 
-.page-wrapper, .first-screen, .second-screen {
-  width: 100%;
-  overflow-x: hidden; /* Убираем горизонтальный скролл */
+.page-wrapper {
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  gap: 50px; /* Фиксированный отступ между экранами */
+}
+
+.first-screen, .second-screen {
+  flex: 0 1 auto; /* Изменяем flex, чтобы занимать только необходимое пространство */
+  /* Удаляем min-height: 100vh */
 }
 
 .first-screen.svelte-1al5oe5.svelte-1al5oe5, 
@@ -826,4 +835,10 @@ background-color: #00CC00;
   height: auto; /* Устанавливаем высоту в auto */
   flex: 0 1 auto; /* Изменяем flex, чтобы занимать только необходимое пространство */
 }
+
+.page-wrapper, .first-screen, .second-screen, .third-screen {
+  width: 100%;
+  overflow-x: hidden; /* Убираем горизонтальный скролл */
+}
+
 </style>
