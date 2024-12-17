@@ -184,7 +184,7 @@
         <div class="additional-info">
           <p>Участники акции занимают место в таблице согласно наиболее высокому выигрышному коэффициенту</p>
           <p>Приз за первое место iPhone 14 Pro</p>
-          <p>Розыгрыш призов проходит на лайв-стримах канала twitch.tv/cq_ru. Рас��исание стримов смотрите ниже</p>
+          <p>Розыгрыш призов проходит на лайв-стримах канала twitch.tv/cq_ru. Рассказание стримов смотрите ниже</p>
         </div>
       </div>
     </div>
@@ -201,10 +201,15 @@
 }
 
 .first-screen {
-  min-height: 100vh;
   position: relative;
   padding: 0;
   border: 2px solid purple;
+  margin-bottom: 50px; /* Фиксированный отступ между первым и вторым экраном */
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  height: auto; /* Устанавливаем высоту в auto */
+  flex: 0 1 auto; /* Изменяем flex, чтобы занимать только необходимое пространство */
 }
 
 .header-image {
@@ -219,6 +224,7 @@
 }
 
 .content {
+  height: 100%;
   display: flex;
   gap: 5vw;
   align-items: flex-start;
@@ -226,8 +232,10 @@
   margin: 0 auto;
   justify-content: space-between;
   padding: 3vh 3vw;
-  border: 2px solid orange;
+  box-sizing: border-box;
+  border: 2px solid #00ffbe;
   background: rgba(255, 165, 0, 0.1);
+  overflow: hidden;
 }
 
 .left-side {
@@ -236,6 +244,8 @@
   padding: 2vh 2vw;
   border: 2px solid red;
   background: rgba(255, 0, 0, 0.1);
+  max-height: 80vh;
+  overflow: hidden;
 }
 
 .title {
@@ -296,6 +306,8 @@ background-color: #00CC00;
   padding: 2vh 2vw;
   border: 2px solid pink;
   background: rgba(255, 192, 203, 0.1);
+  max-height: 80vh;
+  overflow: hidden;
 }
 
 /* Мобильная версия */
@@ -354,6 +366,11 @@ background-color: #00CC00;
 }
 
 .second-screen {
+  overflow-x: hidden; /* Убираем горизонтальный скролл */
+  display: flex;
+  flex-direction: column;
+  height: auto; /* Устанавливаем высоту в auto */
+  flex: 0 1 auto; /* Изменяем flex, чтобы занимать только необходимое пространство */
   width: 100%;
   padding: 48px;
   background: #15154D;
@@ -784,5 +801,35 @@ background-color: #00CC00;
   .additional-info p {
     font-size: 16px;
   }
+}
+
+.page-wrapper {
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  gap: 50px; /* Фиксированный отступ между экранами */
+}
+
+.first-screen, .second-screen {
+  flex: 0 1 auto; /* Изменяем flex, чтобы занимать только необходимое пространство */
+  /* Удаляем min-height: 100vh */
+}
+
+.first-screen.svelte-1al5oe5.svelte-1al5oe5, 
+.second-screen.svelte-1al5oe5.svelte-1al5oe5 {
+  flex: 0 1 auto; /* Изменяем flex, чтобы занимать только необходимое пространство */
+  /* Удаляем min-height: 100vh */
+}
+
+.first-screen.svelte-1al5oe5.svelte-1al5oe5 {
+  position: relative;
+  padding: 0;
+  border: 2px solid purple;
+  margin-bottom: 50px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  height: auto; /* Устанавливаем высоту в auto */
+  flex: 0 1 auto; /* Изменяем flex, чтобы занимать только необходимое пространство */
 }
 </style>
