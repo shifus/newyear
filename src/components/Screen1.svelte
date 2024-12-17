@@ -224,11 +224,12 @@
 }
 
 .content {
-  height: 100%;
+  height: auto; /* Изменяем высоту на auto для адаптивности */
   display: flex;
+  flex-wrap: wrap; /* Позволяем элементам переноситься на новую строку */
   gap: 5vw;
   align-items: flex-start;
-  max-width: 95vw;
+  max-width: 100%; /* Убираем ограничение ширины */
   margin: 0 auto;
   justify-content: space-between;
   padding: 3vh 3vw;
@@ -239,8 +240,8 @@
 }
 
 .left-side {
-  flex: 0 1 auto;
-  max-width: 50vw;
+  flex: 1 1 50%; /* Позволяем элементу занимать до 50% ширины, но быть гибким */
+  max-width: 100%; /* Убираем ограничение ширины */
   padding: 2vh 2vw;
   border: 2px solid red;
   background: rgba(255, 0, 0, 0.1);
@@ -292,9 +293,9 @@ background-color: #00CC00;
 }
 
 .tree-image {
-  max-height: 80vh;
-  object-fit: contain;
-  border: 2px solid cyan;
+  max-width: 100%;
+  height: auto;
+  display: block;
 }
 
 .right-side {
@@ -803,16 +804,9 @@ background-color: #00CC00;
   }
 }
 
-.page-wrapper {
-  display: flex;
-  flex-direction: column;
-  overflow-y: auto;
-  gap: 50px; /* Фиксированный отступ между экранами */
-}
-
-.first-screen, .second-screen {
-  flex: 0 1 auto; /* Изменяем flex, чтобы занимать только необходимое пространство */
-  /* Удаляем min-height: 100vh */
+.page-wrapper, .first-screen, .second-screen {
+  width: 100%;
+  overflow-x: hidden; /* Убираем горизонтальный скролл */
 }
 
 .first-screen.svelte-1al5oe5.svelte-1al5oe5, 
