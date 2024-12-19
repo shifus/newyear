@@ -65,7 +65,7 @@
     padding: 32px;
     gap: 77px;
     width: 1264px;
-    height: 400px;
+    height: 520px;
     background: #0F0F37;
     border-radius: 16px;
     flex: none;
@@ -132,7 +132,7 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding: 32px 64px;
+    padding: 12px 32px;
     gap: 8px;
     width: 368px;
     height: 83px;
