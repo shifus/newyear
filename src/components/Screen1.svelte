@@ -1,5 +1,5 @@
 <script>
-  // Логика компонента, если необходимо
+  import Screen4 from './Screen4.svelte';
 </script>
 
 <div class="page-wrapper">
@@ -191,6 +191,8 @@
   </div>
 </section>
 
+<Screen4 />
+
 <style>
 * {
   box-sizing: border-box; /* Учитываем рамки и отступы в общей ширине */
@@ -257,7 +259,7 @@ html, body {
 
 .left-side {
   flex: 1;
-  min-width: 300px; /* Устанавливаем ��инимальную ширину */
+  min-width: 300px; /* Устанавливаем инимальную ширину */
   padding: 2vh 2vw;
   border: 2px solid red;
   background: rgba(255, 0, 0, 0.1);
