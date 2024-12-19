@@ -192,6 +192,10 @@
 </section>
 
 <style>
+* {
+  box-sizing: border-box; /* Учитываем рамки и отступы в общей ширине */
+}
+
 html, body {
   margin: 0;
   padding: 0;
@@ -253,7 +257,7 @@ html, body {
 
 .left-side {
   flex: 1;
-  min-width: 300px; /* Устанавливаем минимальную ширину */
+  min-width: 300px; /* Устанавливаем ��инимальную ширину */
   padding: 2vh 2vw;
   border: 2px solid red;
   background: rgba(255, 0, 0, 0.1);
@@ -523,6 +527,8 @@ background-color: #00CC00;
 
 .leaderboard-content {
   flex: 1;
+  max-width: 70%;
+  box-sizing: border-box;
 }
 
 .leaderboard-headers {
@@ -593,10 +599,11 @@ background-color: #00CC00;
 }
 
 .merch-column {
-  width: 427px;
+  flex: 0 0 30%;
   background: #0F0F37;
   border-radius: 16px;
   padding: 32px;
+  box-sizing: border-box;
 }
 
 .merch-content {
@@ -700,15 +707,18 @@ background-color: #00CC00;
   align-items: center;
   padding: 3vw;
   background: linear-gradient(180deg, #0F0F37 0%, #1A1A4F 100%);
+  overflow-x: hidden; /* Убираем горизонтальный скролл */
+  border: 2px solid purple; /* Временная рамка для визуализации */
 }
 
 .leaderboard-container {
   display: flex;
   gap: 3vw;
-  max-width: 80vw;
+  max-width: 95vw;
   width: 100%;
   align-items: flex-start;
   margin: 0 auto;
+  border: 2px solid orange; /* Временная рамка для визуализации */
 }
 
 .leaderboard-left {
