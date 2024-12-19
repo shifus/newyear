@@ -591,19 +591,20 @@ var app = (function () {
     const file$2 = "src/components/FinalSection.svelte";
 
     function create_fragment$2(ctx) {
-    	let div3;
+    	let div4;
     	let h2;
     	let t1;
-    	let div1;
+    	let div2;
+    	let div0;
     	let p0;
     	let t3;
     	let p1;
     	let t5;
     	let a0;
     	let t7;
-    	let div0;
+    	let div1;
     	let t8;
-    	let div2;
+    	let div3;
     	let a1;
     	let t10;
     	let p2;
@@ -613,11 +614,12 @@ var app = (function () {
 
     	const block = {
     		c: function create() {
-    			div3 = element("div");
+    			div4 = element("div");
     			h2 = element("h2");
     			h2.textContent = "Расписание стримов";
     			t1 = space();
-    			div1 = element("div");
+    			div2 = element("div");
+    			div0 = element("div");
     			p0 = element("p");
     			p0.textContent = "14 января 14:00 Мск";
     			t3 = space();
@@ -627,9 +629,9 @@ var app = (function () {
     			a0 = element("a");
     			a0.textContent = "Смотреть";
     			t7 = space();
-    			div0 = element("div");
+    			div1 = element("div");
     			t8 = space();
-    			div2 = element("div");
+    			div3 = element("div");
     			a1 = element("a");
     			a1.textContent = "Пользовательское соглашение";
     			t10 = space();
@@ -637,61 +639,64 @@ var app = (function () {
     			p2.textContent = "Разработчик проекта:";
     			t12 = space();
     			img = element("img");
-    			attr_dev(h2, "class", "schedule-title svelte-11yuucd");
+    			attr_dev(h2, "class", "schedule-title svelte-1lywcm1");
     			add_location(h2, file$2, 5, 2, 90);
-    			attr_dev(p0, "class", "stream-date");
-    			add_location(p0, file$2, 7, 4, 176);
-    			attr_dev(p1, "class", "stream-description");
-    			add_location(p1, file$2, 8, 4, 227);
+    			attr_dev(p0, "class", "stream-date svelte-1lywcm1");
+    			add_location(p0, file$2, 8, 6, 213);
+    			attr_dev(p1, "class", "stream-description svelte-1lywcm1");
+    			add_location(p1, file$2, 9, 6, 266);
     			attr_dev(a0, "href", "#");
-    			attr_dev(a0, "class", "stream-link");
-    			add_location(a0, file$2, 9, 4, 298);
-    			attr_dev(div0, "class", "bell");
-    			add_location(div0, file$2, 10, 4, 347);
-    			attr_dev(div1, "class", "schedule-frame");
-    			add_location(div1, file$2, 6, 2, 143);
+    			attr_dev(a0, "class", "stream-link svelte-1lywcm1");
+    			add_location(a0, file$2, 10, 6, 339);
+    			attr_dev(div0, "class", "schedule-details svelte-1lywcm1");
+    			add_location(div0, file$2, 7, 4, 176);
+    			attr_dev(div1, "class", "bell svelte-1lywcm1");
+    			add_location(div1, file$2, 12, 4, 399);
+    			attr_dev(div2, "class", "schedule-frame svelte-1lywcm1");
+    			add_location(div2, file$2, 6, 2, 143);
     			attr_dev(a1, "href", "#");
-    			attr_dev(a1, "class", "user-agreement svelte-11yuucd");
-    			add_location(a1, file$2, 13, 4, 414);
-    			attr_dev(p2, "class", "developer-text svelte-11yuucd");
-    			add_location(p2, file$2, 14, 4, 485);
+    			attr_dev(a1, "class", "user-agreement svelte-1lywcm1");
+    			add_location(a1, file$2, 15, 4, 466);
+    			attr_dev(p2, "class", "developer-text svelte-1lywcm1");
+    			add_location(p2, file$2, 16, 4, 537);
     			if (!src_url_equal(img.src, img_src_value = "/images/Лого.png")) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "Лого");
-    			attr_dev(img, "class", "logo svelte-11yuucd");
-    			add_location(img, file$2, 15, 4, 540);
-    			attr_dev(div2, "class", "footer-frame svelte-11yuucd");
-    			add_location(div2, file$2, 12, 2, 383);
-    			attr_dev(div3, "class", "final-section svelte-11yuucd");
-    			add_location(div3, file$2, 4, 0, 60);
+    			attr_dev(img, "class", "logo svelte-1lywcm1");
+    			add_location(img, file$2, 17, 4, 592);
+    			attr_dev(div3, "class", "footer-frame svelte-1lywcm1");
+    			add_location(div3, file$2, 14, 2, 435);
+    			attr_dev(div4, "class", "final-section svelte-1lywcm1");
+    			add_location(div4, file$2, 4, 0, 60);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
     		},
     		m: function mount(target, anchor) {
-    			insert_dev(target, div3, anchor);
-    			append_dev(div3, h2);
-    			append_dev(div3, t1);
-    			append_dev(div3, div1);
-    			append_dev(div1, p0);
-    			append_dev(div1, t3);
-    			append_dev(div1, p1);
-    			append_dev(div1, t5);
-    			append_dev(div1, a0);
-    			append_dev(div1, t7);
-    			append_dev(div1, div0);
-    			append_dev(div3, t8);
-    			append_dev(div3, div2);
-    			append_dev(div2, a1);
-    			append_dev(div2, t10);
-    			append_dev(div2, p2);
-    			append_dev(div2, t12);
-    			append_dev(div2, img);
+    			insert_dev(target, div4, anchor);
+    			append_dev(div4, h2);
+    			append_dev(div4, t1);
+    			append_dev(div4, div2);
+    			append_dev(div2, div0);
+    			append_dev(div0, p0);
+    			append_dev(div0, t3);
+    			append_dev(div0, p1);
+    			append_dev(div0, t5);
+    			append_dev(div0, a0);
+    			append_dev(div2, t7);
+    			append_dev(div2, div1);
+    			append_dev(div4, t8);
+    			append_dev(div4, div3);
+    			append_dev(div3, a1);
+    			append_dev(div3, t10);
+    			append_dev(div3, p2);
+    			append_dev(div3, t12);
+    			append_dev(div3, img);
     		},
     		p: noop,
     		i: noop,
     		o: noop,
     		d: function destroy(detaching) {
-    			if (detaching) detach_dev(div3);
+    			if (detaching) detach_dev(div4);
     		}
     	};
 

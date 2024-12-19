@@ -5,9 +5,11 @@
 <div class="final-section">
   <h2 class="schedule-title">Расписание стримов</h2>
   <div class="schedule-frame">
-    <p class="stream-date">14 января 14:00 Мск</p>
-    <p class="stream-description">Расскажем про спецпроект и призы</p>
-    <a href="#" class="stream-link">Смотреть</a>
+    <div class="schedule-details">
+      <p class="stream-date">14 января 14:00 Мск</p>
+      <p class="stream-description">Расскажем про спецпроект и призы</p>
+      <a href="#" class="stream-link">Смотреть</a>
+    </div>
     <div class="bell"></div>
   </div>
   <div class="footer-frame">
@@ -38,7 +40,47 @@
     font-weight: 600;
     font-size: 36px;
     color: #FFFFFF;
-    text-align: center;
+    text-align: left;
+    margin-left: 20px;
+  }
+
+  .schedule-frame {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 32px;
+    gap: 16px;
+    width: 100%;
+    max-width: 1264px;
+    background: #0F0F37;
+    border-radius: 16px;
+  }
+
+  .schedule-details {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    margin-left: 20px;
+  }
+
+  .stream-date, .stream-description, .stream-link {
+    font-family: 'TT Travels';
+    font-size: 18px;
+    color: #FFFFFF;
+  }
+
+  .stream-link {
+    color: #00AB4E;
+    text-decoration: none;
+  }
+
+  .bell {
+    width: 150px;
+    height: 150px;
+    margin-top: -90px;
+    background: url('/images/bell.png') no-repeat center center;
+    background-size: contain;
   }
 
   .footer-frame {
