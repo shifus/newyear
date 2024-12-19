@@ -184,7 +184,7 @@
         <div class="additional-info">
           <p>Участники акции занимают место в таблице согласно наиболее высокому выигрышному коэффициенту</p>
           <p>Приз за первое место iPhone 14 Pro</p>
-          <p>Розыгрыш призов проходит на лайв-стримах канала twitch.tv/cq_ru. Рассказание стримов смотрите ниже</p>
+          <p>Розыгрыш призов проходит на лайв-стримах канала twitch.tv/cq_ru. Рас��казание стримов смотрите ниже</p>
         </div>
       </div>
     </div>
@@ -227,7 +227,7 @@
   position: relative;
   height: auto;
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap; /* Убираем перенос строк */
   gap: 5vw;
   align-items: flex-start;
   max-width: 100%;
@@ -242,7 +242,7 @@
 
 .left-side {
   flex: 1;
-  max-width: 50%;
+  min-width: 300px; /* Устанавливаем минимальную ширину */
   padding: 2vh 2vw;
   border: 2px solid red;
   background: rgba(255, 0, 0, 0.1);
@@ -251,7 +251,7 @@
 }
 
 .title {
-  font-size: 5vw;
+  font-size: 3rem; /* Устанавливаем фиксированный размер шрифта */
   line-height: 1.2;
   white-space: pre-line;
   color: #0ff658;
@@ -302,11 +302,11 @@ background-color: #00CC00;
 
 .right-side {
   flex: 0 0 auto;
+  min-width: 200px; /* Устанавливаем минимальную ширину для ёлки */
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 2vh 2vw;
-  margin-right: 2vw;
   border: 2px solid pink;
   background: rgba(255, 192, 203, 0.1);
   max-height: 80vh;
@@ -373,7 +373,7 @@ background-color: #00CC00;
   display: flex;
   flex-direction: column;
   height: auto; /* Устанавливаем высоту в auto */
-  flex: 0 1 auto; /* Изменяем flex, чтобы занимать только необходимое пространство */
+  flex: 0 1 auto; /* Изменяем flex, чт��бы занимать только необходимое пространство */
   width: 100%;
   padding: 48px;
   background: #15154D;
@@ -697,7 +697,7 @@ background-color: #00CC00;
 .leaderboard-container {
   display: flex;
   gap: 3vw;
-  max-width: 95vw; /* Сужаем до ширины первых двух экранов */
+  max-width: 80vw;
   width: 100%;
   align-items: flex-start;
   margin: 0 auto;
@@ -835,10 +835,4 @@ background-color: #00CC00;
   height: auto; /* Устанавливаем высоту в auto */
   flex: 0 1 auto; /* Изменяем flex, чтобы занимать только необходимое пространство */
 }
-
-.page-wrapper, .first-screen, .second-screen, .third-screen {
-  width: 100%;
-  overflow-x: hidden; /* Убираем горизонтальный скролл */
-}
-
 </style>
