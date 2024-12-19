@@ -1,5 +1,6 @@
 <script>
-  // Логика компонента, если необходимо
+  import Screen4 from './Screen4.svelte';
+  import FinalSection from './FinalSection.svelte';
 </script>
 
 <div class="page-wrapper">
@@ -184,14 +185,33 @@
         <div class="additional-info">
           <p>Участники акции занимают место в таблице согласно наиболее высокому выигрышному коэффициенту</p>
           <p>Приз за первое место iPhone 14 Pro</p>
-          <p>Розыгрыш призов проходит на лайв-стримах канала twitch.tv/cq_ru. Рас��казание стримов смотрите ниже</p>
+          <p>Розыгрыш призов проходит на лайв-стримах канала twitch.tv/cq_ru. Рассказание стримов смотрите ниже</p>
         </div>
       </div>
     </div>
   </div>
 </section>
 
+<Screen4 />
+
+<FinalSection />
+
 <style>
+* {
+  box-sizing: border-box; /* Учитываем рамки и отступы в общей ширине */
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Убираем горизонтальный скролл на уровне документа */
+}
+
+.page-wrapper, .first-screen, .second-screen, .third-screen {
+  width: 100%;
+  overflow-x: hidden; /* Убираем горизонтальный скролл на уровне контейнеров */
+}
+
 .main-container {
   display: flex;
   flex-direction: column;
@@ -201,15 +221,15 @@
 }
 
 .first-screen {
-  height: 100vh;
   position: relative;
   padding: 0;
   border: 2px solid purple;
   margin-bottom: 50px; /* Фиксированный отступ между первым и вторым экраном */
   overflow: hidden;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
+  height: auto; /* Устанавливаем высоту в auto */
+  flex: 0 1 auto; /* Изменяем flex, чтобы занимать только необходимое пространство */
 }
 
 .header-image {
@@ -224,11 +244,13 @@
 }
 
 .content {
-  height: 100%;
+  position: relative;
+  height: auto;
   display: flex;
+  flex-wrap: wrap;
   gap: 5vw;
   align-items: flex-start;
-  max-width: 95vw;
+  max-width: 100%;
   margin: 0 auto;
   justify-content: space-between;
   padding: 3vh 3vw;
@@ -239,8 +261,8 @@
 }
 
 .left-side {
-  flex: 0 1 auto;
-  max-width: 50vw;
+  flex: 1;
+  min-width: 300px; /* Устанавливаем инимальную ширину */
   padding: 2vh 2vw;
   border: 2px solid red;
   background: rgba(255, 0, 0, 0.1);
@@ -249,7 +271,7 @@
 }
 
 .title {
-  font-size: 5vw;
+  font-size: 3rem; /* Устанавливаем фиксированный размер шрифта */
   line-height: 1.2;
   white-space: pre-line;
   color: #0ff658;
@@ -292,18 +314,19 @@ background-color: #00CC00;
 }
 
 .tree-image {
+  max-width: 100%;
   max-height: 80vh;
   object-fit: contain;
   border: 2px solid cyan;
 }
 
 .right-side {
+  flex: 0 0 auto;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 5vh;
-  margin-left: -8vw;
   padding: 2vh 2vw;
+  margin-right: 2vw;
   border: 2px solid pink;
   background: rgba(255, 192, 203, 0.1);
   max-height: 80vh;
@@ -366,19 +389,15 @@ background-color: #00CC00;
 }
 
 .second-screen {
+  display: flex;
+  flex-direction: column;
   width: 100%;
   padding: 48px;
   background: #15154D;
   border-radius: 16px;
-  display: flex;
-  flex-direction: column;
   align-items: center;
   gap: 32px;
-  border: 2px solid lime;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  overflow-x: hidden;
+  overflow-x: hidden; /* Убираем горизонтальный скролл */
 }
 
 .main-prize {
@@ -503,14 +522,18 @@ background-color: #00CC00;
 
 .leaderboard {
   display: flex;
+  flex-direction: row;
   gap: 12px;
   width: 100%;
   margin-top: 32px;
   border: 2px solid teal;
+  overflow-x: hidden; /* Убираем горизонтальный скролл */
 }
 
 .leaderboard-content {
   flex: 1;
+  max-width: 70%;
+  box-sizing: border-box;
 }
 
 .leaderboard-headers {
@@ -581,10 +604,11 @@ background-color: #00CC00;
 }
 
 .merch-column {
-  width: 427px;
+  flex: 0 0 30%;
   background: #0F0F37;
   border-radius: 16px;
   padding: 32px;
+  box-sizing: border-box;
 }
 
 .merch-content {
@@ -688,15 +712,18 @@ background-color: #00CC00;
   align-items: center;
   padding: 3vw;
   background: linear-gradient(180deg, #0F0F37 0%, #1A1A4F 100%);
+  overflow-x: hidden; /* Убираем горизонтальный скролл */
+  border: 2px solid purple; /* Временная рамка для визуализации */
 }
 
 .leaderboard-container {
   display: flex;
   gap: 3vw;
-  max-width: 80vw;
+  max-width: 95vw;
   width: 100%;
   align-items: flex-start;
   margin: 0 auto;
+  border: 2px solid orange; /* Временная рамка для визуализации */
 }
 
 .leaderboard-left {
@@ -810,7 +837,25 @@ background-color: #00CC00;
 }
 
 .first-screen, .second-screen {
-  flex: 0 0 auto;
-  min-height: 100vh;
+  flex: 0 1 auto; /* Изменяем flex, чтобы занимать только необходимое пространство */
+  /* Удаляем min-height: 100vh */
+}
+
+.first-screen.svelte-1al5oe5.svelte-1al5oe5, 
+.second-screen.svelte-1al5oe5.svelte-1al5oe5 {
+  flex: 0 1 auto; /* Изменяем flex, чтобы занимать только необходимое пространство */
+  /* Удаляем min-height: 100vh */
+}
+
+.first-screen.svelte-1al5oe5.svelte-1al5oe5 {
+  position: relative;
+  padding: 0;
+  border: 2px solid purple;
+  margin-bottom: 50px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  height: auto; /* Устанавливаем высоту в auto */
+  flex: 0 1 auto; /* Изменяем flex, чтобы занимать только необходимое пространство */
 }
 </style>
