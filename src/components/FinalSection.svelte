@@ -11,6 +11,7 @@
     <div class="bell"></div>
   </div>
   <div class="footer-frame">
+    <a href="#" class="user-agreement">Пользовательское соглашение</a>
     <p class="developer-text">Разработчик проекта:</p>
     <div class="logo">
       <div class="vector"></div>
@@ -53,10 +54,15 @@
     border-radius: 16px;
   }
 
-  .developer-text {
+  .developer-text, .user-agreement {
     font-family: 'TT Travels';
     font-weight: 500;
     font-size: 18px;
+    color: #FFFFFF;
+  }
+
+  .user-agreement {
+    text-decoration: none;
     color: #FFFFFF;
   }
 
