@@ -3,30 +3,14 @@
 </script>
 
 <div class="final-section">
-  <div class="stream-schedule">
-    <h2 class="schedule-title">Расписание стримов</h2>
-    <div class="schedule-frame">
-      <div class="stream-info">
-        <p class="stream-date">14 января 14:00 Мск</p>
-        <p class="stream-description">Расскажем про спецпроект и призы</p>
-        <a href="#" class="stream-link">Смотреть</a>
-      </div>
-      <div class="bell"></div>
+  <h2 class="schedule-title">Расписание стримов</h2>
+  <div class="schedule-frame">
+    <div class="stream-info">
+      <p class="stream-date">14 января 14:00 Мск</p>
+      <p class="stream-description">Расскажем про спецпроект и призы</p>
+      <a href="#" class="stream-link">Смотреть</a>
     </div>
-  </div>
-  <div class="footer-frame">
-    <div class="footer-content">
-      <p class="agreement-text">Пользовательское соглашение</p>
-      <div class="logo" style="display: none;"></div>
-    </div>
-    <div class="footer-content">
-      <p class="developer-text">Разработчик проекта:</p>
-      <div class="logo">
-        <div class="vector"></div>
-        <div class="vector"></div>
-        <div class="vector"></div>
-      </div>
-    </div>
+    <div class="bell"></div>
   </div>
 </div>
 
@@ -42,10 +26,6 @@
     background: #15154D;
     border-radius: 16px;
     margin: 0 auto;
-  }
-
-  .stream-schedule, .footer-frame {
-    width: 100%;
   }
 
   .schedule-title {
@@ -98,7 +78,6 @@
   }
 
   .bell {
-    position: absolute;
     width: 200px;
     height: 200px;
     background: url('/images/bell.png') no-repeat center center;
