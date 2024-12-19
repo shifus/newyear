@@ -135,4 +135,32 @@
     background-size: cover;
     z-index: 1;
   }
+  
+  @media (max-width: 768px) {
+    .about-project {
+      width: 100%;
+      padding: 16px;
+    }
+    
+    .project-frame {
+      flex-direction: column;
+      gap: 32px;
+    }
+    
+    .project-description, .project-steps {
+      width: 100%;
+    }
+    
+    .promo-button {
+      width: 100%;
+    }
+    
+    .santa {
+      position: relative;
+      width: 100%;
+      height: auto;
+      left: 0;
+      top: 0;
+    }
+  }
   </style>

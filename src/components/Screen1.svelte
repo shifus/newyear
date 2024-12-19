@@ -1,5 +1,6 @@
 <script>
   import Screen4 from './Screen4.svelte';
+  import FinalSection from './FinalSection.svelte';
 </script>
 
 <div class="page-wrapper">
@@ -192,6 +193,8 @@
 </section>
 
 <Screen4 />
+
+<FinalSection />
 
 <style>
 * {
