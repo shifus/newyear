@@ -5,6 +5,9 @@
 <div class="about-project">
   <h2 class="project-title">О проекте</h2>
   <div class="project-frame">
+    <!-- Блок Санты -->
+    <div class="santa-image"></div>
+    
     <div class="project-description">
       <p class="highlight-text">Выбирайте высокие коэффициенты, заключайте пари, получайте яркие эмоции от побед!</p>
       <p class="rules-text">Правила акции</p>
@@ -74,13 +77,13 @@
   }
 
   .project-frame {
+    position: relative; /* Добавлено для позиционирования Санты */
     display: flex;
     flex-direction: row;
     align-items: flex-start;
     padding: 32px;
     gap: 77px;
     width: 1264px;
-    height: auto;
     background: #0F0F37;
     border-radius: 16px;
     flex: none;
@@ -88,6 +91,18 @@
     align-self: stretch;
     flex-grow: 0;
     z-index: 2;
+  }
+
+  .santa-image {
+    position: absolute;
+    top: -100px; /* при необходимости отрегулировать отступ */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 200px; /* при необходимости подогнать под ваш размер */
+    height: 200px; /* при необходимости */
+    background: url('/images/santa.png') no-repeat center center;
+    background-size: contain;
+    z-index: 3;
   }
 
   .project-description {
@@ -255,6 +270,11 @@
     .right-column {
       align-items: center;
     }
+
+    .santa-image {
+      width: 60px;
+      height: 60px;
+      top: -20px;
+    }
   }
 </style>
-```
