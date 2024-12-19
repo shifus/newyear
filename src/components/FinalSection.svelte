@@ -5,12 +5,16 @@
 <div class="final-section">
   <h2 class="schedule-title">Расписание стримов</h2>
   <div class="schedule-frame">
-    <div class="stream-info">
-      <p class="stream-date">14 января 14:00 Мск</p>
-      <p class="stream-description">Расскажем про спецпроект и призы</p>
-      <a href="#" class="stream-link">Смотреть</a>
-    </div>
+    <p class="stream-date">14 января 14:00 Мск</p>
+    <p class="stream-description">Расскажем про спецпроект и призы</p>
+    <a href="#" class="stream-link">Смотреть</a>
     <div class="bell"></div>
+  </div>
+  <div class="footer-frame">
+    <p class="developer-text">Разработчик проекта:</p>
+    <div class="logo">
+      <div class="vector"></div>
+    </div>
   </div>
 </div>
 
@@ -23,83 +27,50 @@
     gap: 32px;
     width: 100%;
     max-width: 1392px;
+    margin: 0 auto;
     background: #15154D;
     border-radius: 16px;
-    margin: 0 auto;
   }
 
   .schedule-title {
+    width: 100%;
+    max-width: 1264px;
     font-family: 'TT Travels';
     font-weight: 600;
     font-size: 36px;
-    line-height: 43px;
     color: #FFFFFF;
-    margin-bottom: 32px;
+    text-align: center;
   }
 
-  .schedule-frame {
+  .footer-frame {
     display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    gap: 24px;
+    justify-content: space-between;
+    align-items: center;
     width: 100%;
+    max-width: 1264px;
+    padding: 16px;
+    background: #0F0F37;
+    border-radius: 16px;
   }
 
-  .stream-info {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-  }
-
-  .stream-date, .stream-description, .stream-link {
+  .developer-text {
     font-family: 'TT Travels';
-  }
-
-  .stream-date {
     font-weight: 500;
     font-size: 18px;
-    line-height: 22px;
-    color: #ABBAF0;
-  }
-
-  .stream-description, .stream-link {
-    font-weight: 600;
-    font-size: 24px;
-    line-height: 29px;
-  }
-
-  .stream-description {
     color: #FFFFFF;
   }
 
-  .stream-link {
-    color: #00AB4E;
-    text-decoration: none;
+  .logo {
+    width: 48px;
+    height: 48px;
+    background: #FFFFFF;
+    border-radius: 4px;
   }
 
-  .bell {
-    width: 200px;
-    height: 200px;
-    background: url('/images/bell.png') no-repeat center center;
-    background-size: cover;
-  }
-
-  @media (max-width: 768px) {
-    .final-section {
-      padding: 32px;
-    }
-
-    .schedule-frame {
-      flex-direction: column;
-      gap: 16px;
-    }
-
-    .schedule-title {
-      font-size: 28px;
-    }
-
-    .stream-description, .stream-link {
-      font-size: 20px;
-    }
+  .vector {
+    position: relative;
+    width: 36px;
+    height: 33.12px;
+    margin: auto;
   }
 </style>

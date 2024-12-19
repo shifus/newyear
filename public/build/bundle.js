@@ -397,27 +397,45 @@ var app = (function () {
     const file$3 = "src/components/Screen4.svelte";
 
     function create_fragment$3(ctx) {
-    	let div2;
+    	let div11;
     	let h2;
     	let t1;
+    	let div10;
     	let div1;
-    	let div0;
     	let p0;
     	let t3;
     	let p1;
     	let t5;
     	let p2;
     	let t7;
-    	let a;
+    	let div0;
+    	let span;
+    	let t9;
+    	let div9;
+    	let div4;
+    	let div2;
+    	let t10;
+    	let div3;
+    	let t11;
+    	let p3;
+    	let t13;
+    	let div8;
+    	let div5;
+    	let t14;
+    	let div6;
+    	let t15;
+    	let div7;
+    	let t16;
+    	let p4;
 
     	const block = {
     		c: function create() {
-    			div2 = element("div");
+    			div11 = element("div");
     			h2 = element("h2");
     			h2.textContent = "О проекте";
     			t1 = space();
+    			div10 = element("div");
     			div1 = element("div");
-    			div0 = element("div");
     			p0 = element("p");
     			p0.textContent = "Выбирайте высокие коэффициенты, заключайте пари, получайте яркие эмоции от побед!";
     			t3 = space();
@@ -427,48 +445,107 @@ var app = (function () {
     			p2 = element("p");
     			p2.textContent = "CQ.ru совместно с букмекерской компанией «Лига Ставок» запустили новогодний проект. Делайте ставки на спортивные события с большими коэффициентами и выигрывайте топовые призы!";
     			t7 = space();
-    			a = element("a");
-    			a.textContent = "ПОЛУЧИТЬ ПРОМОКОД";
-    			attr_dev(h2, "class", "project-title svelte-gju6pr");
+    			div0 = element("div");
+    			span = element("span");
+    			span.textContent = "ПОЛУЧИТЬ ПРОМОКОД";
+    			t9 = space();
+    			div9 = element("div");
+    			div4 = element("div");
+    			div2 = element("div");
+    			t10 = space();
+    			div3 = element("div");
+    			t11 = space();
+    			p3 = element("p");
+    			p3.textContent = "Заключайте пари в «Лиге Ставок»";
+    			t13 = space();
+    			div8 = element("div");
+    			div5 = element("div");
+    			t14 = space();
+    			div6 = element("div");
+    			t15 = space();
+    			div7 = element("div");
+    			t16 = space();
+    			p4 = element("p");
+    			p4.textContent = "Следите за розыгрышами призов";
+    			attr_dev(h2, "class", "project-title svelte-n6zlre");
     			add_location(h2, file$3, 5, 2, 90);
-    			attr_dev(p0, "class", "highlight-text svelte-gju6pr");
+    			attr_dev(p0, "class", "highlight-text svelte-n6zlre");
     			add_location(p0, file$3, 8, 6, 205);
-    			attr_dev(p1, "class", "rules-text svelte-gju6pr");
+    			attr_dev(p1, "class", "rules-text svelte-n6zlre");
     			add_location(p1, file$3, 9, 6, 323);
-    			attr_dev(p2, "class", "details-text svelte-gju6pr");
+    			attr_dev(p2, "class", "details-text svelte-n6zlre");
     			add_location(p2, file$3, 10, 6, 369);
-    			attr_dev(a, "href", "#");
-    			attr_dev(a, "class", "promo-button svelte-gju6pr");
-    			add_location(a, file$3, 11, 6, 579);
-    			attr_dev(div0, "class", "project-description svelte-gju6pr");
-    			add_location(div0, file$3, 7, 4, 165);
-    			attr_dev(div1, "class", "project-frame svelte-gju6pr");
-    			add_location(div1, file$3, 6, 2, 133);
-    			attr_dev(div2, "class", "about-project svelte-gju6pr");
-    			add_location(div2, file$3, 4, 0, 60);
+    			attr_dev(span, "class", "promo-button-text svelte-n6zlre");
+    			add_location(span, file$3, 12, 8, 614);
+    			attr_dev(div0, "class", "promo-button svelte-n6zlre");
+    			add_location(div0, file$3, 11, 6, 579);
+    			attr_dev(div1, "class", "project-description svelte-n6zlre");
+    			add_location(div1, file$3, 7, 4, 165);
+    			attr_dev(div2, "class", "image svelte-n6zlre");
+    			add_location(div2, file$3, 17, 8, 766);
+    			attr_dev(div3, "class", "image svelte-n6zlre");
+    			add_location(div3, file$3, 18, 8, 800);
+    			attr_dev(div4, "class", "image-frame svelte-n6zlre");
+    			add_location(div4, file$3, 16, 6, 732);
+    			attr_dev(p3, "class", "row-text svelte-n6zlre");
+    			add_location(p3, file$3, 20, 6, 845);
+    			attr_dev(div5, "class", "image svelte-n6zlre");
+    			add_location(div5, file$3, 22, 8, 941);
+    			attr_dev(div6, "class", "image svelte-n6zlre");
+    			add_location(div6, file$3, 23, 8, 975);
+    			attr_dev(div7, "class", "image svelte-n6zlre");
+    			add_location(div7, file$3, 24, 8, 1009);
+    			attr_dev(div8, "class", "image-frame svelte-n6zlre");
+    			add_location(div8, file$3, 21, 6, 907);
+    			attr_dev(p4, "class", "row-text svelte-n6zlre");
+    			add_location(p4, file$3, 26, 6, 1054);
+    			attr_dev(div9, "class", "right-column svelte-n6zlre");
+    			add_location(div9, file$3, 15, 4, 699);
+    			attr_dev(div10, "class", "project-frame svelte-n6zlre");
+    			add_location(div10, file$3, 6, 2, 133);
+    			attr_dev(div11, "class", "about-project svelte-n6zlre");
+    			add_location(div11, file$3, 4, 0, 60);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
     		},
     		m: function mount(target, anchor) {
-    			insert_dev(target, div2, anchor);
-    			append_dev(div2, h2);
-    			append_dev(div2, t1);
-    			append_dev(div2, div1);
+    			insert_dev(target, div11, anchor);
+    			append_dev(div11, h2);
+    			append_dev(div11, t1);
+    			append_dev(div11, div10);
+    			append_dev(div10, div1);
+    			append_dev(div1, p0);
+    			append_dev(div1, t3);
+    			append_dev(div1, p1);
+    			append_dev(div1, t5);
+    			append_dev(div1, p2);
+    			append_dev(div1, t7);
     			append_dev(div1, div0);
-    			append_dev(div0, p0);
-    			append_dev(div0, t3);
-    			append_dev(div0, p1);
-    			append_dev(div0, t5);
-    			append_dev(div0, p2);
-    			append_dev(div0, t7);
-    			append_dev(div0, a);
+    			append_dev(div0, span);
+    			append_dev(div10, t9);
+    			append_dev(div10, div9);
+    			append_dev(div9, div4);
+    			append_dev(div4, div2);
+    			append_dev(div4, t10);
+    			append_dev(div4, div3);
+    			append_dev(div9, t11);
+    			append_dev(div9, p3);
+    			append_dev(div9, t13);
+    			append_dev(div9, div8);
+    			append_dev(div8, div5);
+    			append_dev(div8, t14);
+    			append_dev(div8, div6);
+    			append_dev(div8, t15);
+    			append_dev(div8, div7);
+    			append_dev(div9, t16);
+    			append_dev(div9, p4);
     		},
     		p: noop,
     		i: noop,
     		o: noop,
     		d: function destroy(detaching) {
-    			if (detaching) detach_dev(div2);
+    			if (detaching) detach_dev(div11);
     		}
     	};
 
@@ -514,27 +591,31 @@ var app = (function () {
     const file$2 = "src/components/FinalSection.svelte";
 
     function create_fragment$2(ctx) {
-    	let div3;
+    	let div5;
     	let h2;
     	let t1;
-    	let div2;
-    	let div0;
+    	let div1;
     	let p0;
     	let t3;
     	let p1;
     	let t5;
     	let a;
     	let t7;
-    	let div1;
+    	let div0;
+    	let t8;
+    	let div4;
+    	let p2;
+    	let t10;
+    	let div3;
+    	let div2;
 
     	const block = {
     		c: function create() {
-    			div3 = element("div");
+    			div5 = element("div");
     			h2 = element("h2");
     			h2.textContent = "Расписание стримов";
     			t1 = space();
-    			div2 = element("div");
-    			div0 = element("div");
+    			div1 = element("div");
     			p0 = element("p");
     			p0.textContent = "14 января 14:00 Мск";
     			t3 = space();
@@ -544,47 +625,65 @@ var app = (function () {
     			a = element("a");
     			a.textContent = "Смотреть";
     			t7 = space();
-    			div1 = element("div");
-    			attr_dev(h2, "class", "schedule-title svelte-13uzvmn");
+    			div0 = element("div");
+    			t8 = space();
+    			div4 = element("div");
+    			p2 = element("p");
+    			p2.textContent = "Разработчик проекта:";
+    			t10 = space();
+    			div3 = element("div");
+    			div2 = element("div");
+    			attr_dev(h2, "class", "schedule-title svelte-62qpy3");
     			add_location(h2, file$2, 5, 2, 90);
-    			attr_dev(p0, "class", "stream-date svelte-13uzvmn");
-    			add_location(p0, file$2, 8, 6, 208);
-    			attr_dev(p1, "class", "stream-description svelte-13uzvmn");
-    			add_location(p1, file$2, 9, 6, 261);
+    			attr_dev(p0, "class", "stream-date");
+    			add_location(p0, file$2, 7, 4, 176);
+    			attr_dev(p1, "class", "stream-description");
+    			add_location(p1, file$2, 8, 4, 227);
     			attr_dev(a, "href", "#");
-    			attr_dev(a, "class", "stream-link svelte-13uzvmn");
-    			add_location(a, file$2, 10, 6, 334);
-    			attr_dev(div0, "class", "stream-info svelte-13uzvmn");
-    			add_location(div0, file$2, 7, 4, 176);
-    			attr_dev(div1, "class", "bell svelte-13uzvmn");
-    			add_location(div1, file$2, 12, 4, 394);
-    			attr_dev(div2, "class", "schedule-frame svelte-13uzvmn");
-    			add_location(div2, file$2, 6, 2, 143);
-    			attr_dev(div3, "class", "final-section svelte-13uzvmn");
-    			add_location(div3, file$2, 4, 0, 60);
+    			attr_dev(a, "class", "stream-link");
+    			add_location(a, file$2, 9, 4, 298);
+    			attr_dev(div0, "class", "bell");
+    			add_location(div0, file$2, 10, 4, 347);
+    			attr_dev(div1, "class", "schedule-frame");
+    			add_location(div1, file$2, 6, 2, 143);
+    			attr_dev(p2, "class", "developer-text svelte-62qpy3");
+    			add_location(p2, file$2, 13, 4, 414);
+    			attr_dev(div2, "class", "vector svelte-62qpy3");
+    			add_location(div2, file$2, 15, 6, 494);
+    			attr_dev(div3, "class", "logo svelte-62qpy3");
+    			add_location(div3, file$2, 14, 4, 469);
+    			attr_dev(div4, "class", "footer-frame svelte-62qpy3");
+    			add_location(div4, file$2, 12, 2, 383);
+    			attr_dev(div5, "class", "final-section svelte-62qpy3");
+    			add_location(div5, file$2, 4, 0, 60);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
     		},
     		m: function mount(target, anchor) {
-    			insert_dev(target, div3, anchor);
-    			append_dev(div3, h2);
-    			append_dev(div3, t1);
+    			insert_dev(target, div5, anchor);
+    			append_dev(div5, h2);
+    			append_dev(div5, t1);
+    			append_dev(div5, div1);
+    			append_dev(div1, p0);
+    			append_dev(div1, t3);
+    			append_dev(div1, p1);
+    			append_dev(div1, t5);
+    			append_dev(div1, a);
+    			append_dev(div1, t7);
+    			append_dev(div1, div0);
+    			append_dev(div5, t8);
+    			append_dev(div5, div4);
+    			append_dev(div4, p2);
+    			append_dev(div4, t10);
+    			append_dev(div4, div3);
     			append_dev(div3, div2);
-    			append_dev(div2, div0);
-    			append_dev(div0, p0);
-    			append_dev(div0, t3);
-    			append_dev(div0, p1);
-    			append_dev(div0, t5);
-    			append_dev(div0, a);
-    			append_dev(div2, t7);
-    			append_dev(div2, div1);
     		},
     		p: noop,
     		i: noop,
     		o: noop,
     		d: function destroy(detaching) {
-    			if (detaching) detach_dev(div3);
+    			if (detaching) detach_dev(div5);
     		}
     	};
 
