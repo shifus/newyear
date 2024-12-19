@@ -184,7 +184,7 @@
         <div class="additional-info">
           <p>Участники акции занимают место в таблице согласно наиболее высокому выигрышному коэффициенту</p>
           <p>Приз за первое место iPhone 14 Pro</p>
-          <p>Розыгрыш призов проходит на лайв-стримах канала twitch.tv/cq_ru. Рас��казание стримов смотрите ниже</p>
+          <p>Розыгрыш призов проходит на лайв-стримах канала twitch.tv/cq_ru. Рассказание стримов смотрите ниже</p>
         </div>
       </div>
     </div>
@@ -192,6 +192,17 @@
 </section>
 
 <style>
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Убираем горизонтальный скролл на уровне документа */
+}
+
+.page-wrapper, .first-screen, .second-screen, .third-screen {
+  width: 100%;
+  overflow-x: hidden; /* Убираем горизонтальный скролл на уровне контейнеров */
+}
+
 .main-container {
   display: flex;
   flex-direction: column;
@@ -227,7 +238,7 @@
   position: relative;
   height: auto;
   display: flex;
-  flex-wrap: nowrap; /* Убираем перенос строк */
+  flex-wrap: wrap;
   gap: 5vw;
   align-items: flex-start;
   max-width: 100%;
@@ -302,11 +313,11 @@ background-color: #00CC00;
 
 .right-side {
   flex: 0 0 auto;
-  min-width: 200px; /* Устанавливаем минимальную ширину для ёлки */
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 2vh 2vw;
+  margin-right: 2vw;
   border: 2px solid pink;
   background: rgba(255, 192, 203, 0.1);
   max-height: 80vh;
@@ -369,20 +380,15 @@ background-color: #00CC00;
 }
 
 .second-screen {
-  overflow-x: hidden; /* Убираем горизонтальный скролл */
   display: flex;
   flex-direction: column;
-  height: auto; /* Устанавливаем высоту в auto */
-  flex: 0 1 auto; /* Изменяем flex, чт��бы занимать только необходимое пространство */
   width: 100%;
   padding: 48px;
   background: #15154D;
   border-radius: 16px;
-  display: flex;
-  flex-direction: column;
   align-items: center;
   gap: 32px;
-  border: 2px solid lime;
+  overflow-x: hidden; /* Убираем горизонтальный скролл */
 }
 
 .main-prize {
@@ -507,10 +513,12 @@ background-color: #00CC00;
 
 .leaderboard {
   display: flex;
+  flex-direction: row;
   gap: 12px;
   width: 100%;
   margin-top: 32px;
   border: 2px solid teal;
+  overflow-x: hidden; /* Убираем горизонтальный скролл */
 }
 
 .leaderboard-content {
