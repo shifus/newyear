@@ -13,11 +13,7 @@
   <div class="footer-frame">
     <a href="#" class="user-agreement">Пользовательское соглашение</a>
     <p class="developer-text">Разработчик проекта:</p>
-    <div class="logo">
-      <img src="/images/logo_1_CQ_test.png" alt="CQ" class="logo_1_CQ">
-      <img src="/images/logo_point.png" alt="." class="logo_point">
-      <img src="/images/logo_3_RU.png" alt="RU" class="logo_3_RU">
-    </div>
+    <img src="/images/Лого.png" alt="Лого" class="logo">
   </div>
 </div>
 
@@ -69,8 +65,7 @@
   }
 
   .logo {
-    position: relative;
     width: 48px;
     height: 48px;
-    background: #
+  }
 </style>
