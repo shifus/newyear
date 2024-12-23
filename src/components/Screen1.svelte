@@ -361,15 +361,18 @@
   }
 
   .main-prize {
-    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
     padding: 32px;
+    gap: 32px;
+    width: 100%;
+    max-width: 1296px;
     background: rgba(15, 15, 55, 0.7);
     border: 1px solid rgba(0, 255, 116, 0.2);
     backdrop-filter: blur(5px);
     border-radius: 16px;
-    display: flex;
-    gap: 32px;
-    position: relative;
   }
 
   .prize-header {
@@ -431,10 +434,12 @@
 
   .prize-image {
     position: absolute;
+    width: 100px;
+    height: auto;
     right: 32px;
-    bottom: -59px;
-    height: 264px;
+    bottom: 0;
     object-fit: contain;
+    z-index: 1;
   }
 
   .additional-prizes {
