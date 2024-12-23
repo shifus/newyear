@@ -216,7 +216,7 @@
 <style>
   /* Общие стили */
   * {
-    box-sizing: border-box; /* Учитываем рамки и отступы в общей ши��не */
+    box-sizing: border-box; /* Учитываем рамки и отступы в общей шине */
   }
 
   html, body {
@@ -434,9 +434,9 @@
 
   .prize-image {
     position: absolute;
-    width: 350px;
+    width: 15%;
     height: auto;
-    right: 262px;
+    left: 70%;
     bottom: 0;
     object-fit: contain;
     z-index: 1;
