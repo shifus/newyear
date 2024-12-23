@@ -1,3 +1,4 @@
+<!-- App.svelte -->
 <script>
 	import Screen1 from './components/Screen1.svelte';
 </script>

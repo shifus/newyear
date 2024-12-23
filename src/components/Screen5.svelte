@@ -1,8 +1,9 @@
+<!-- Screen5.svelte -->
 <script>
   // Логика компонента, если необходимо
 </script>
 
-<div class="final-section">
+<div class="Screen5">
   <h2 class="schedule-title">Расписание стримов</h2>
   <div class="schedule-frame">
     <div class="schedule-details">
@@ -20,7 +21,7 @@
 </div>
 
 <style>
-  .final-section {
+  .Screen5 {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -36,7 +37,7 @@
   .schedule-title {
     width: 100%;
     max-width: 1264px;
-    font-family: 'TT Travels';
+    font-family: 'TT Travels', sans-serif;
     font-weight: 600;
     font-size: 36px;
     color: #FFFFFF;
@@ -51,7 +52,7 @@
     padding: 32px;
     gap: 16px;
     width: 100%;
-    max-width: 1264px;
+    max-width: 1000px;
     background: #0F0F37;
     border-radius: 16px;
   }
@@ -65,7 +66,7 @@
   }
 
   .stream-date, .stream-description, .stream-link {
-    font-family: 'TT Travels';
+    font-family: 'TT Travels', sans-serif;
     font-size: 18px;
     color: #FFFFFF;
   }
@@ -88,14 +89,14 @@
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    max-width: 1264px;
+    max-width: 1000px;
     padding: 16px;
     background: #0F0F37;
     border-radius: 16px;
   }
 
   .developer-text, .user-agreement {
-    font-family: 'TT Travels';
+    font-family: 'TT Travels', sans-serif;
     font-weight: 500;
     font-size: 18px;
     color: #FFFFFF;
