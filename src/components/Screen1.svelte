@@ -216,7 +216,7 @@
 <style>
   /* Общие стили */
   * {
-    box-sizing: border-box; /* Учитываем рамки и отступы в общей шине */
+    box-sizing: border-box; /* Учитываем рамки и отступы в общей ши��ине */
   }
 
   html, body {
@@ -402,8 +402,10 @@
 
   .specs-container {
     display: flex;
-    gap: 32px;
-    margin-top: 16px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 16px;
+    width: 100%;
   }
 
   .specs-column {
@@ -413,9 +415,8 @@
   }
 
   .spec-item {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
+    flex: 1 1 45%;
+    min-width: 150px;
   }
 
   .spec-label {
@@ -434,10 +435,11 @@
 
   .prize-image {
     position: absolute;
-    width: 15%;
-    height: auto;
-    left: 70%;
-    bottom: 0;
+    width: 200px;
+    height: 225px;
+    left: calc(50% - 80px/2 + 230px);
+    bottom: 3.5px;
+    background: linear-gradient(180deg, rgba(15, 15, 55, 0) 44.17%, rgba(15, 15, 55, 0.85) 100%), url('/path/to/your/image.png');
     object-fit: contain;
     z-index: 1;
   }
@@ -653,7 +655,7 @@
   }
 
   .leaderboard-table {
-    /* Добавьте стили для таблицы, если необходимо */
+    /* Добавьте стили для табли��ы, если необходимо */
   }
 
   .table-frame {
@@ -823,9 +825,67 @@
       position: relative;
       z-index: 2;
     }
+
+    .main-prize {
+        flex-direction: column;
+        align-items: center;
+        padding: 16px;
+        gap: 16px;
+    }
+
+    .specs-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .prize-image {
+        position: static;
+        width: 50%;
+        margin: 0 auto;
+    }
+
+    .additional-prizes {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        width: 100%;
+    }
+
+    .prize-card {
+        width: 100%;
+        max-width: none;
+        margin: 0 auto;
+    }
+
+    .leaderboard {
+        flex-direction: column;
+        gap: 16px;
+        width: 100%;
+    }
+
+    .leaderboard-content, .merch-column {
+        width: 100%;
+        max-width: none;
+        margin: 0 auto;
+    }
+
+    .leaderboard-rows {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .leaderboard-row {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 16px;
+        gap: 8px;
+        width: 100%;
+    }
   }
 
-  /* Добавляем промежуточную точку для планшетов */
+  /* Добавляем промежуточную точку для планш��тов */
   @media (min-width: 769px) and (max-width: 1024px) {
     .description {
       font-size: 16px;
