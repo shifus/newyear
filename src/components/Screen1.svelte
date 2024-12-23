@@ -1,6 +1,6 @@
 <script>
-  import Screen4 from './Screen4.svelte'; // Импортируем Screen4
-  import Screen5 from './Screen5.svelte'; // Импортируем Screen5
+  import Screen4 from './Screen4.svelte';
+  import Screen5 from './Screen5.svelte';
 
   // Функция, вызываемая при клике на кнопку «Получить промокод»
   function handlePromoClick() {
@@ -10,13 +10,11 @@
 </script>
 
 <div class="page-wrapper">
-  <!-- Первый экран -->
+  <!-- Стартовая страница -->
   <div class="screen-container">
     <section class="first-screen">
       <picture>
-        <!-- Мобильная версия -->
         <source srcset="/images/header_mob.png" media="(max-width: 768px)">
-        <!-- Десктопная версия -->
         <img src="/images/header.png" alt="Header" class="header-image" />
       </picture>
 
@@ -34,7 +32,6 @@
           <p class="description">
             Заключайте пари на высокие коэффициенты. Призы достанутся 100 одателям самых больших выигрышных кэфов!
           </p>
-          <!-- Кнопка с обработчиком клика -->
           <button class="promo-button" on:click={handlePromoClick}>
             Получить промокод
           </button>
@@ -45,8 +42,8 @@
       </div>
     </section>
   </div>
-  
-  <!-- Второй экран -->
+
+  <!-- Призы конкурса -->
   <div class="screen-container">
     <section class="second-screen">
       <div class="main-prize">
@@ -162,61 +159,56 @@
       </div>
     </section>
   </div>
-  
-  <!-- Добавляем Screen4 и Screen5 -->
-  <div class="screen1">
-    <Screen4 /> <!-- Добавляем Screen4 -->
-    <Screen5 /> <!-- Добавляем Screen5 -->
-  </div>
-  
-  <!-- Четвёртый экран (Screen4) -->
-  <!-- Screen4 будет импортирован выше и отображён здесь -->
-  
-  <!-- Пятый экран (Screen5) -->
-  <!-- Screen5 будет импортирован выше и отображён здесь -->
-</div>
 
-<section class="third-screen">
-  <div class="leaderboard-container">
-    <div class="leaderboard-left">
-      <h2 class="leaderboard-title">Таблица конкурса</h2>
-      <p class="leaderboard-description">
-        100 призов достанутся участникам, с самыми большими выигрышными коэффициентами
-      </p>
-      <a href="#" class="previous-winners-link">Смотреть предыдущих победителей</a>
-      
-      <div class="leaderboard-table">
-        <!-- Здесь будет таблица -->
-        <div class="table-frame">
-          <!-- Таблица будет добавлена позже -->
-        </div>
-      </div>
-    </div>
-
-    <div class="leaderboard-right">
-      <div class="actions-container">
-        <button class="action-button">Введите промокод</button>
-        <button class="action-button">Узнать место</button>
-        
-        <p class="promo-description">
-          Введите уникальный промокод, чтобы узнать своё место в таблице. 
-          Промокод находится в личном кабинете БК «Лига Ставок» в разделе «Промокоды».
+  <!-- Таблица конкурса -->
+  <section class="third-screen">
+    <div class="leaderboard-container">
+      <div class="leaderboard-left">
+        <h2 class="leaderboard-title">Таблица конкурса</h2>
+        <p class="leaderboard-description">
+          100 призов достанутся участникам, с самыми большими выигрышными коэффициентами
         </p>
+        <a href="#" class="previous-winners-link">Смотреть предыдущих победителей</a>
+        
+        <div class="leaderboard-table">
+          <!-- Здесь будет таблица -->
+          <div class="table-frame">
+            <!-- Таблица будет добавлена позже -->
+          </div>
+        </div>
+      </div>
 
-        <div class="additional-info">
-          <p>Участники акции занимают место в таблице согласно наиболее высокому выигрышному коэффициенту</p>
-          <p>Приз за первое место iPhone 14 Pro</p>
-          <p>Розыгрыш призов проходит на лайв-стримах канала twitch.tv/cq_ru. Рассказание стримов смотрите ниже</p>
+      <div class="leaderboard-right">
+        <div class="actions-container">
+          <button class="action-button">Введите промокод</button>
+          <button class="action-button">Узнать место</button>
+          
+          <p class="promo-description">
+            Введите уникальный промокод, чтобы узнать своё место в таблице. 
+            Промокод находится в личном кабинете БК «Лига Ставок» в разделе «Промокоды».
+          </p>
+
+          <div class="additional-info">
+            <p>Участники акции занимают место в таблице согласно наиболее высокому выигрышному коэффициенту</p>
+            <p>Приз за первое место iPhone 14 Pro</p>
+            <p>Розыгрыш призов проходит на лайв-стримах канала twitch.tv/cq_ru. Рассказание стримов смотрите ниже</p>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
+
+  <!-- О проекте -->
+  <Screen4 />
+
+  <!-- Расписание стримов -->
+  <Screen5 />
+</div>
 
 <style>
   /* Общие стили */
   * {
-    box-sizing: border-box; /* Учитываем рамки и отступы в общей ши��ине */
+    box-sizing: border-box; /* Учитываем рамки и отступы в общей ширине */
   }
 
   html, body {
@@ -655,7 +647,7 @@
   }
 
   .leaderboard-table {
-    /* Добавьте стили для табли��ы, если необходимо */
+    /* Добавьте стили для таблицы, если необходимо */
   }
 
   .table-frame {
@@ -885,7 +877,7 @@
     }
   }
 
-  /* Добавляем промежуточную точку для планш��тов */
+  /* Добавляем промежуточную точку для планшетов */
   @media (min-width: 769px) and (max-width: 1024px) {
     .description {
       font-size: 16px;
