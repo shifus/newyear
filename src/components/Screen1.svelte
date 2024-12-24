@@ -156,7 +156,7 @@
         <div class="merch-column">
           <div class="merch-content">
             <div class="merch-images">
-              <!-- Здесь будут изображения м��рча -->
+              <!-- Здесь будут изображения мерча -->
             </div>
             <div class="merch-status">
               <span>Мерч разыгран</span>
@@ -191,7 +191,7 @@
         <button class="action-button">Узнать место</button>
         
         <p class="promo-description">
-          ����ведите уникальный промокод, чтобы узнать своё место в таблице. 
+          Введите уникальный промокод, чтобы узнать своё место в таблице. 
           Промокод находится в личном кабинете БК «ига Ставок»  разделе «Промокоды».
         </p>
 
@@ -656,7 +656,7 @@
   }
 
   .leaderboard-table {
-    /* Добавьте стили ля таблицы, есл�� н��обходимо */
+    /* Добавьте стили ля таблицы, если необходимо */
   }
 
   .table-frame {
@@ -893,7 +893,7 @@
       width: 100%;
       padding: 8px 16px;
       gap: 16px;
-      background: #15154D;
+      background: #d11717;
       border-radius: 16px;
       z-index: 2;
     }
@@ -1009,27 +1009,32 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 8px 48px;
-    gap: 24px;
-    position: absolute;
-    width: 100%;
-    height: 48px;
-    left: 0;
-    top: 24px;
-    background: #15154D;
+    padding: 20px;
+    gap: 20px;
+
+    position: sticky;
+    top: 0;
+    height: 80px;
+    background: #1A1A4F;
+    border: 2px solid #00FF00;
     border-radius: 16px;
+    z-index: 1000;
   }
 
   .logo-container {
-    position: relative;
+    display: flex;
+    align-items: center;
   }
 
   .logo {
     width: 100px;
-    height: 32px;
-    flex: none;
-    order: 0;
-    flex-grow: 0;
+    height: auto;
+  }
+
+  .candy-cane {
+    width: 50px;
+    height: auto;
+    margin-left: 10px;
   }
 
   .menu {
