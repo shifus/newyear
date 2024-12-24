@@ -16,6 +16,7 @@
       <picture>
         <source srcset="/images/header_mob.png" media="(max-width: 768px)">
         <img src="/images/header.png" alt="Header" class="header-image" />
+        <div class="candy-cane"></div>
       </picture>
 
       <div class="content">
@@ -25,7 +26,7 @@
             С ЛИГОЙ СТАВОК
           </h1>
           <p class="description">
-            Лига ставок поздравляет всех с Новым Годом! Желаем всего да побольше, особенно больше высоких выигрышных кэфов!
+            Лига ставок поздравляет всех с Новым Годом! Жел��ем всего да побольше, особенно больше высоких выигрышных кэфов!
             И анонсируем новый спецпроект, где больше однозначно лучше! 
             Получите уникальный промокод для участия в розыгрыше.
           </p>
@@ -178,15 +179,15 @@
         </div>
       </div>
 
-      <div class="leaderboard-right">
-        <div class="actions-container">
-          <button class="action-button">Введите промокод</button>
-          <button class="action-button">Узнать место</button>
-          
-          <p class="promo-description">
-            Введите уникальный промокод, чтобы узнать своё место в таблице. 
-            Промокод находится в личном кабинете БК «Лига Ставок» в разделе «Промокоды».
-          </p>
+    <div class="leaderboard-right">
+      <div class="actions-container">
+        <button class="action-button">Введите промокод</button>
+        <button class="action-button">Узнать место</button>
+        
+        <p class="promo-description">
+          Введите уникальный промокод, чтобы узнать своё место в таблице. 
+          Промокод находится в личном кабинете БК «ига Ставок» в разделе «Промокоды».
+        </p>
 
           <div class="additional-info">
             <p>Участники акции занимают место в таблице согласно наиболее высокому выигрышному коэффициенту</p>
@@ -219,7 +220,7 @@
 
   .page-wrapper, .screen-container, .first-screen, .second-screen, .third-screen {
     width: 100%;
-    overflow-x: hidden; /* Убираем горизонтальный скролл на уровне контейнеров */
+    overflow-x: hidden; /* Убираем горизонтальный скролл на уровне кон��ейнеров */
   }
 
   .page-wrapper {
@@ -242,6 +243,7 @@
   }
 
   .header-image {
+    position: relative;
     display: block;
     width: 100%;
     height: auto;
@@ -647,7 +649,7 @@
   }
 
   .leaderboard-table {
-    /* Добавьте стили для таблицы, если необходимо */
+    /* Добавьте стили ля таблицы, если необходимо */
   }
 
   .table-frame {
@@ -877,7 +879,7 @@
     }
   }
 
-  /* Добавляем промежуточную точку для планшетов */
+  /* Добавляем промежуточную точку ля планшетов */
   @media (min-width: 769px) and (max-width: 1024px) {
     .description {
       font-size: 16px;
@@ -903,6 +905,29 @@
 
     .left-side {
       max-width: 60%;
+    }
+  }
+
+  picture {
+    position: relative;
+    display: block;
+  }
+
+  .candy-cane {
+    position: absolute;
+    width: 119.71px;
+    height: 119.71px;
+    left: 40px;
+    bottom: -70px;
+    background: url('/images/Trost.png') no-repeat center center;
+    background-size: contain;
+    transform: rotate(30deg);
+    z-index: 2;
+  }
+
+  @media (max-width: 768px) {
+    .candy-cane {
+        display: none;
     }
   }
 </style>
