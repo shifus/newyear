@@ -156,7 +156,7 @@
         <div class="merch-column">
           <div class="merch-content">
             <div class="merch-images">
-              <!-- Здесь будут изображения мерча -->
+              <!-- Здесь будут изображения м��рча -->
             </div>
             <div class="merch-status">
               <span>Мерч разыгран</span>
@@ -191,7 +191,7 @@
         <button class="action-button">Узнать место</button>
         
         <p class="promo-description">
-          Введите уникальный промокод, чтобы узнать своё место в таблице. 
+          ����ведите уникальный промокод, чтобы узнать своё место в таблице. 
           Промокод находится в личном кабинете БК «ига Ставок»  разделе «Промокоды».
         </p>
 
@@ -656,7 +656,7 @@
   }
 
   .leaderboard-table {
-    /* Добавьте стили ля таблицы, если необходимо */
+    /* Добавьте стили ля таблицы, есл�� н��обходимо */
   }
 
   .table-frame {
@@ -878,11 +878,77 @@
 
     .leaderboard-row {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
+        justify-content: space-between;
         align-items: center;
         padding: 16px;
         gap: 8px;
         width: 100%;
+    }
+
+    .header {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      padding: 8px 16px;
+      gap: 16px;
+      background: #15154D;
+      border-radius: 16px;
+      z-index: 2;
+    }
+
+    .menu {
+      justify-content: center;
+      width: 100%;
+      background: #15154D;
+      padding: 8px 0;
+      border-radius: 16px;
+    }
+
+    .menu-item {
+      font-size: 16px;
+      text-align: center;
+    }
+
+    .first-screen {
+      margin-top: 100px; /* Увеличиваем отступ сверху для первого экрана */
+      padding-top: 20px; /* Добавляем внутренний отступ сверху */
+    }
+
+    .title {
+      margin-top: 32px; /* Добавляем отступ сверху для заголовка */
+      margin-bottom: 32px;
+    }
+
+    .additional-prizes {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      width: 100%;
+    }
+
+    .prize-card {
+      width: 100%;
+      max-width: none;
+      margin: 0 auto;
+    }
+
+    .leaderboard-row {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      padding: 16px;
+      gap: 8px;
+      width: 100%;
+    }
+
+    .place,
+    .prize,
+    .freebet {
+      font-size: 16px;
+      text-align: center;
     }
   }
 
