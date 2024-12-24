@@ -24,6 +24,9 @@
           <div class="menu-item">Призы</div>
         </div>
       </div>
+      <div class="header-mobile">
+        <img src="/images/header_mob.png" alt="Мобильны�� заголовок" class="header-mobile-image" />
+      </div>
 
       <div class="content">
         <div class="left-side">
@@ -187,11 +190,11 @@
 
     <div class="leaderboard-right">
       <div class="actions-container">
-        <button class="action-button">Введите промокод</button>
+        <button class="action-button">В��едите промокод</button>
         <button class="action-button">Узнать место</button>
         
         <p class="promo-description">
-          Введите уникальный промокод, чтобы узнать своё место в таблице. 
+          ����ведите уникальный промокод, чтобы узнать своё место в таблице. 
           Промокод находится в личном кабинете БК «ига Ставок»  разделе «Промокоды».
         </p>
 
@@ -221,7 +224,7 @@
   html, body {
     margin: 0;
     padding: 0;
-    overflow-x: hidden; /* Убираем горизонтальный скролл на уровне документа */
+    overflow-x: hidden; /* Убираем горизонтальный скролл на уровне докумен��а */
   }
 
   .page-wrapper, .screen-container, .first-screen, .second-screen, .third-screen {
@@ -254,7 +257,7 @@
     width: 100%;
     height: auto;
     margin: 0;
-    background: rgba(128, 128, 128, 0.1);
+    background: #00ff22;
     box-sizing: border-box;
     padding: 0;
   }
@@ -886,17 +889,6 @@
         width: 100%;
     }
 
-    .header {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      width: 100%;
-      padding: 8px 16px;
-      gap: 16px;
-      background: #d11717;
-      border-radius: 16px;
-      z-index: 2;
-    }
 
     .menu {
       justify-content: center;
@@ -952,7 +944,7 @@
     }
   }
 
-  /* Добавляем промежуточную точку ля планшетов */
+  /* Добавляем помежуточную точку ля планшетов */
   @media (min-width: 769px) and (max-width: 1024px) {
     .description {
       font-size: 16px;
@@ -1015,10 +1007,33 @@
     position: sticky;
     top: 0;
     height: 80px;
-    background: #1A1A4F;
-    border: 2px solid #00FF00;
+    background: rgba(15, 15, 55, 0.7);
     border-radius: 16px;
     z-index: 1000;
+  }
+
+  .header-mobile {
+    display: none; /* Скрываем на десктопной версии */
+  }
+
+  .header-mobile-image {
+    width: 100%;
+    height: auto;
+  }
+
+  @media (max-width: 768px) {
+    .header {
+      display: none; /* Скрываем на мобильной версии */
+    }
+
+    .header-mobile {
+      display: block; /* Показываем на мобильной версии */
+      position: fixed; /* Фиксированное позиционирование */
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 1000;
+    }
   }
 
   .logo-container {
