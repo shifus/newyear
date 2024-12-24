@@ -13,11 +13,17 @@
   <!-- Стартовая страница -->
   <div class="screen-container">
     <section class="first-screen">
-      <picture>
-        <source srcset="/images/header_mob.png" media="(max-width: 768px)">
-        <img src="/images/header.png" alt="Header" class="header-image" />
-        <div class="candy-cane"></div>
-      </picture>
+      <div class="header">
+        <div class="logo-container">
+          <img src="/images/Ligalogo.png" alt="Логотип" class="logo" />
+          <div class="candy-cane"></div>
+        </div>
+        <div class="menu">
+          <div class="menu-item">Таблица участников</div>
+          <div class="menu-item">О проекте</div>
+          <div class="menu-item">Призы</div>
+        </div>
+      </div>
 
       <div class="content">
         <div class="left-side">
@@ -26,7 +32,7 @@
             С ЛИГОЙ СТАВОК
           </h1>
           <p class="description">
-            Лига ставок поздравляет всех с Новым Годом! Жел��ем всего да побольше, особенно больше высоких выигрышных кэфов!
+            Лига ставок поздравляет всех с Новым Годом! Желаем всего да побольше, особенно больше высоких выигрышных кэфов!
             И анонсируем новый спецпроект, где больше однозначно лучше! 
             Получите уникальный промокод для участия в розыгрыше.
           </p>
@@ -186,7 +192,7 @@
         
         <p class="promo-description">
           Введите уникальный промокод, чтобы узнать своё место в таблице. 
-          Промокод находится в личном кабинете БК «ига Ставок» в разделе «Промокоды».
+          Промокод находится в личном кабинете БК «ига Ставок»  разделе «Промокоды».
         </p>
 
           <div class="additional-info">
@@ -220,7 +226,7 @@
 
   .page-wrapper, .screen-container, .first-screen, .second-screen, .third-screen {
     width: 100%;
-    overflow-x: hidden; /* Убираем горизонтальный скролл на уровне кон��ейнеров */
+    overflow-x: hidden; /* Убираем горизонтальный скролл на уровне контейнеров */
   }
 
   .page-wrapper {
@@ -917,8 +923,8 @@
     position: absolute;
     width: 119.71px;
     height: 119.71px;
-    left: 40px;
-    bottom: -70px;
+    left: 50px;
+    bottom: -60px;
     background: url('/images/Trost.png') no-repeat center center;
     background-size: contain;
     transform: rotate(30deg);
@@ -928,6 +934,89 @@
   @media (max-width: 768px) {
     .candy-cane {
         display: none;
+    }
+  }
+
+  .header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 48px;
+    gap: 24px;
+    position: absolute;
+    width: 100%;
+    height: 48px;
+    left: 0;
+    top: 24px;
+    background: #15154D;
+    border-radius: 16px;
+  }
+
+  .logo-container {
+    position: relative;
+  }
+
+  .logo {
+    width: 100px;
+    height: 32px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+  }
+
+  .menu {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 24px;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+  }
+
+  .menu-item {
+    font-family: 'TT Travels';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+  }
+
+  .menu-item:nth-child(1) {
+    width: 199px;
+  }
+
+  .menu-item:nth-child(2) {
+    width: 101px;
+  }
+
+  .menu-item:nth-child(3) {
+    width: 65px;
+  }
+
+  @media (max-width: 768px) {
+    .header {
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      padding: 8px 16px;
+      gap: 16px;
+      left: 0;
+      top: 0;
+    }
+
+    .menu {
+      justify-content: center;
+      width: 100%;
+    }
+
+    .menu-item {
+      font-size: 16px;
     }
   }
 </style>
