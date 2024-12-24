@@ -346,6 +346,7 @@
     align-items: center;
     justify-content: center;
     padding: 2vh 2vw;
+    margin-right: 5vw;
     max-height: 80vh;
     overflow: hidden;
     margin-top: 50px;
@@ -981,15 +982,14 @@
   }
 
   .candy-cane {
-    position: absolute;
-    width: 119.71px;
-    height: 119.71px;
-    left: 50px;
-    bottom: -60px;
+    width: 50px;
+    height: 50px;
+    margin-left: 10px;
     background: url('/images/Trost.png') no-repeat center center;
     background-size: contain;
     transform: rotate(30deg);
-    z-index: 2;
+    position: relative;
+    top: -20px;
   }
 
   @media (max-width: 768px) {
@@ -1049,11 +1049,14 @@
   }
 
   .candy-cane {
-    width: 50px;
-    height: auto;
-    margin-left: 10px;
+    width: 130px;
+    height: 130px;
+    margin-left: -50px;
     background: url('/images/Trost.png') no-repeat center center;
     background-size: contain;
+    transform: rotate(0deg);
+    position: relative;
+    top: 18px;
   }
 
   .menu {
