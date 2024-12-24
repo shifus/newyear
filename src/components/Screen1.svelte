@@ -25,7 +25,7 @@
         </div>
       </div>
       <div class="header-mobile">
-        <img src="/images/header_mob.png" alt="Мобильны�� заголовок" class="header-mobile-image" />
+        <img src="/images/header_mob.png" alt="Мобильный заголовок" class="header-mobile-image" />
       </div>
 
       <div class="content">
@@ -190,7 +190,7 @@
 
     <div class="leaderboard-right">
       <div class="actions-container">
-        <button class="action-button">В��едите промокод</button>
+        <button class="action-button">Введите промокод</button>
         <button class="action-button">Узнать место</button>
         
         <p class="promo-description">
@@ -337,6 +337,7 @@
     max-width: 100%;
     max-height: 80vh;
     object-fit: contain;
+    transform: translateX(15%);
   }
 
   .right-side {
@@ -345,10 +346,11 @@
     align-items: center;
     justify-content: center;
     padding: 2vh 2vw;
-    margin-right: 2vw;
     max-height: 80vh;
     overflow: hidden;
     margin-top: 50px;
+    position: relative;
+    left: 1%;
   }
 
   /* Второй экран */
