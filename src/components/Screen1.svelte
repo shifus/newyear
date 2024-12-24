@@ -25,7 +25,7 @@
         </div>
       </div>
       <div class="header-mobile">
-        <img src="/images/header_mob.png" alt="Мобильный заголовок" class="header-mobile-image" />
+        <img src="/images/header_mob.png" alt="Мобильны�� заголовок" class="header-mobile-image" />
       </div>
 
       <div class="content">
@@ -190,7 +190,7 @@
 
     <div class="leaderboard-right">
       <div class="actions-container">
-        <button class="action-button">Введите промокод</button>
+        <button class="action-button">В��едите промокод</button>
         <button class="action-button">Узнать место</button>
         
         <p class="promo-description">
@@ -311,7 +311,7 @@
   .promo-button {
     background-color: #00FF00;
     color: #ffffff;
-    padding: 15px 30px;
+    padding: 25px 100px;
     border: none;
     border-radius: 5px;
     font-size: 18px;
