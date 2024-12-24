@@ -1012,6 +1012,7 @@
     background: #1A1A4F;
     border-radius: 16px;
     z-index: 1000;
+    margin-top: 30px;
   }
 
   .header-mobile {
