@@ -345,6 +345,7 @@
     margin-right: 2vw;
     max-height: 80vh;
     overflow: hidden;
+    margin-top: 50px;
   }
 
   /* Второй экран */
