@@ -25,7 +25,7 @@
         </div>
       </div>
       <div class="header-mobile">
-        <img src="/images/header_mob.png" alt="Мобильны�� заголовок" class="header-mobile-image" />
+        <img src="/images/header_mob.png" alt="Мобильный заголовок" class="header-mobile-image" />
       </div>
 
       <div class="content">
@@ -190,11 +190,11 @@
 
     <div class="leaderboard-right">
       <div class="actions-container">
-        <button class="action-button">В��едите промокод</button>
+        <button class="action-button">Введите промокод</button>
         <button class="action-button">Узнать место</button>
         
         <p class="promo-description">
-          ����ведите уникальный промокод, чтобы узнать своё место в таблице. 
+          Введите уникальный промокод, чтобы узнать своё место в таблице. 
           Промокод находится в личном кабинете БК «ига Ставок»  разделе «Промокоды».
         </p>
 
@@ -224,7 +224,7 @@
   html, body {
     margin: 0;
     padding: 0;
-    overflow-x: hidden; /* Убираем горизонтальный скролл на уровне докумен��а */
+    overflow-x: hidden; /* Убираем горизонтальный скролл на уровне документа */
   }
 
   .page-wrapper, .screen-container, .first-screen, .second-screen, .third-screen {
@@ -1006,8 +1006,8 @@
 
     position: sticky;
     top: 0;
-    height: 80px;
-    background: rgba(15, 15, 55, 0.7);
+    height: 40px;
+    background: #1A1A4F;
     border-radius: 16px;
     z-index: 1000;
   }
@@ -1050,6 +1050,8 @@
     width: 50px;
     height: auto;
     margin-left: 10px;
+    background: url('/images/Trost.png') no-repeat center center;
+    background-size: contain;
   }
 
   .menu {
