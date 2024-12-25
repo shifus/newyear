@@ -326,7 +326,7 @@
     display: inline-block;
     text-align: center;
     margin-top: 20px;
-    z-index: 2;
+    z-index: 10;
   }
 
   .promo-button:hover {
@@ -1126,14 +1126,15 @@
 
   .santa-image {
     position: absolute;
-    top: -10px;
-    right: -10px;
+    top: -30px;
+    right: 10px;
     width: 70px;
     height: auto;
     z-index: 1;
   }
 
   .promo-button {
-    z-index: 2;
+    position: relative;
+    z-index: 10;
   }
 </style>
