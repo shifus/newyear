@@ -42,9 +42,12 @@
           <p class="description">
             Заключайте пари на высокие коэффициенты. Призы достанутся 100 одателям самых больших выигрышных кэфов!
           </p>
-          <button class="promo-button" on:click={handlePromoClick}>
-            Получить промокод
-          </button>
+          <div class="promo-container">
+            <button class="promo-button" on:click={handlePromoClick}>
+              Получить промокод
+            </button>
+            <img src="/images/santa.png" alt="Санта" class="santa-image" />
+          </div>
         </div>
         <div class="right-side">
           <img src="/images/christmas-tree.png" alt="Новогодняя ёлка" class="tree-image">
@@ -114,7 +117,7 @@
           <div class="leaderboard-headers">
             <div class="header-place">Место</div>
             <div class="header-prize">Приз</div>
-            <div class="header-freebet">Фрибет</div>
+            <div class="header-freebet">������рибет</div>
           </div>
 
           <div class="leaderboard-rows">
@@ -323,6 +326,7 @@
     display: inline-block;
     text-align: center;
     margin-top: 20px;
+    z-index: 2;
   }
 
   .promo-button:hover {
@@ -1113,5 +1117,23 @@
     .menu-item {
       font-size: 16px;
     }
+  }
+
+  .promo-container {
+    position: relative;
+    display: inline-block;
+  }
+
+  .santa-image {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    width: 70px;
+    height: auto;
+    z-index: 1;
+  }
+
+  .promo-button {
+    z-index: 2;
   }
 </style>
