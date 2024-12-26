@@ -50,7 +50,10 @@
           </div>
         </div>
         <div class="right-side">
-          <img src="/images/christmas-tree.png" alt="Новогодняя ёлка" class="tree-image">
+          <div class="tree-container">
+            <img src="/images/your-tree-image.png" alt="Ёлка" class="tree-image" />
+            <img src="/images/Подарки.png" alt="Подарки" class="gifts-image" />
+          </div>
         </div>
       </div>
     </section>
@@ -117,7 +120,7 @@
           <div class="leaderboard-headers">
             <div class="header-place">Место</div>
             <div class="header-prize">Приз</div>
-            <div class="header-freebet">������рибет</div>
+            <div class="header-freebet">����рибет</div>
           </div>
 
           <div class="leaderboard-rows">
@@ -342,6 +345,14 @@
     max-height: 80vh;
     object-fit: contain;
     transform: translateX(15%);
+  }
+
+  .gifts-image {
+    position: absolute; /* Устанавливаем абсолютное позиционирование для подарков */
+    bottom: 10px; /* Смещаем изображение подарков вниз */
+    right: 10px; /* Смещаем изображение подарков вправо */
+    width: 50px; /* Устанавливаем ширину подарков */
+    height: auto; /* Автоматически рассчитываем высоту */
   }
 
   .right-side {
@@ -1137,4 +1148,24 @@
     position: relative;
     z-index: 10;
   }
+
+  .tree-container {
+    position: relative; /* Устанавливаем относительное позиционирование для контейнера */
+  }
+
+  .tree-image {
+    max-width: 100%;
+    max-height: 80vh;
+    object-fit: contain;
+    transform: translateX(15%);
+  }
+
+  .gifts-image {
+    position: absolute; /* Устанавливаем абсолютное позиционирование для подарков */
+    bottom: 10px; /* Смещаем изображение подарков вниз */
+    right: 10px; /* Смещаем изображение подарков вправо */
+    width: 50px; /* Устанавливаем ширину подарков */
+    height: auto; /* Автоматически рассчитываем высоту */
+  }
+
 </style>
