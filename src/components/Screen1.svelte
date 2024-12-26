@@ -51,7 +51,7 @@
         </div>
         <div class="right-side">
           <div class="tree-container">
-            <img src="/images/your-tree-image.png" alt="Ёлка" class="tree-image" />
+            <img src="/images/christmas-tree.png" alt="Ёлка" class="tree-image" />
             <img src="/images/Подарки.png" alt="Подарки" class="gifts-image" />
           </div>
         </div>
