@@ -40,7 +40,7 @@
             Получите уникальный промокод для участия в розыгрыше.
           </p>
           <p class="description">
-            Заключайте пари на высокие коэффициенты. Призы достанутся 100 одателям самых больших выигрышных кэфов!
+            Заключайте пари на высокие коэффициенты. Призы достанутся 100 обладателям самых больших выигрышных кэфов!
           </p>
           <div class="promo-container">
             <button class="promo-button" on:click={handlePromoClick}>
@@ -292,6 +292,7 @@
   }
 
   .title {
+    font-family: 'TT Travels', sans-serif;
     font-size: 3rem; /* Устанавливаем фиксированный размер шрифта */
     line-height: 1.2;
     white-space: pre-line;
@@ -307,6 +308,7 @@
   }
 
   .description {
+    font-family: 'TT Travels', sans-serif;
     color: #ffffff;
     font-size: 18px;
     line-height: 1.5;
@@ -315,6 +317,7 @@
   }
 
   .promo-button {
+    font-family: 'TT Travels', sans-serif;
     background-color: #00FF00;
     color: #ffffff;
     padding: 25px 100px;
@@ -1087,7 +1090,7 @@
   }
 
   .menu-item {
-    font-family: 'TT Travels';
+    font-family: 'TT Travels', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 18px;
