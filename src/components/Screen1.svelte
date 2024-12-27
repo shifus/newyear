@@ -120,7 +120,7 @@
           <div class="leaderboard-headers">
             <div class="header-place">Место</div>
             <div class="header-prize">Приз</div>
-            <div class="header-freebet">����рибет</div>
+            <div class="header-freebet">Фрибет</div>
           </div>
 
           <div class="leaderboard-rows">
@@ -249,7 +249,7 @@
   .first-screen {
     position: relative;
     padding: 0;
-    margin-bottom: 50px; /* Фиксированный отступ между первым и вторым экраном */
+    margin-bottom: 0px; /* Фиксированный отступ между первым и вторым экраном */
     overflow: hidden;
     display: flex;
     flex-direction: column;
@@ -1164,7 +1164,7 @@
     position: absolute; /* Устанавливаем абсолютное позиционирование для подарков */
     bottom: 10px; /* Смещаем изображение подарков вниз */
     right: 10px; /* Смещаем изображение подарков вправо */
-    width: 50px; /* Устанавливаем ширину подарков */
+    width: 150px; /* Устанавливаем ширину подарков */
     height: auto; /* Автоматически рассчитываем высоту */
   }
 
