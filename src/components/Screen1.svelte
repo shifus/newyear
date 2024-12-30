@@ -28,7 +28,8 @@
         <img src="/images/header_mob.png" alt="Мобильный заголовок" class="header-mobile-image" />
       </div>
 
-      <div class="content">
+      <!-- ПК версия -->
+      <div class="content desktop-version">
         <div class="left-side">
           <h1 class="title">
             В НОВЫЙ ГОД<br>
@@ -39,8 +40,36 @@
             И анонсируем новый спецпроект, где больше однозначно лучше! 
             Получите уникальный промокод для участия в розыгрыше.
           </p>
+          <div class="promo-container">
+            <button class="promo-button" on:click={handlePromoClick}>
+              Получить промокод
+            </button>
+            <img src="/images/santa.png" alt="Санта" class="santa-image" />
+          </div>
+        </div>
+        
+        <div class="right-side">
+          <div class="tree-container">
+            <img src="/images/christmas-tree.png" alt="Ёлка" class="tree-image" />
+            <img src="/images/Подарки.png" alt="Подарки" class="gifts-image" />
+            <img src="/images/zvezda_1.png" alt="Звезда 1" class="star star-1" />
+            <img src="/images/zvezda_2.png" alt="Звезда 2" class="star star-2" />
+            <img src="/images/zvezda_3.png" alt="Звезда 3" class="star star-3" />
+          </div>
+        </div>
+      </div>
+
+      <!-- Мобильная версия -->
+      <div class="content mobile-container">
+        <div class="left-side">
+          <h1 class="title">
+            В НОВЫЙ ГОД<br>
+            С ЛИГОЙ СТАВОК
+          </h1>
           <p class="description">
-            Заключайте пари на высокие коэффициенты. Призы достанутся 100 обладателям самых больших выигрышных кэфов!
+            Лига ставок поздравляет всех с Новым Годом! Желаем всего да побольше, особенно больше высоких выигрышных кэфов!
+            И анонсируем новый спецпроект, где больше однозначно лучше! 
+            Получите уникальный промокод для участия в розыгрыше.
           </p>
           <div class="promo-container">
             <button class="promo-button" on:click={handlePromoClick}>
@@ -49,10 +78,14 @@
             <img src="/images/santa.png" alt="Санта" class="santa-image" />
           </div>
         </div>
+        
         <div class="right-side">
           <div class="tree-container">
             <img src="/images/christmas-tree.png" alt="Ёлка" class="tree-image" />
             <img src="/images/Подарки.png" alt="Подарки" class="gifts-image" />
+            <img src="/images/zvezda_1.png" alt="Звезда 1" class="star star-1" />
+            <img src="/images/zvezda_2.png" alt="Звезда 2" class="star star-2" />
+            <img src="/images/zvezda_3.png" alt="Звезда 3" class="star star-3" />
           </div>
         </div>
       </div>
@@ -1169,6 +1202,98 @@
     right: 10px; /* Смещаем изображение подарков вправо */
     width: 150px; /* Устанавливаем ширину подарков */
     height: auto; /* Автоматически рассчитываем высоту */
+  }
+
+  .star {
+    position: absolute; /* Устанавливаем абсолютное позиционирование для звезд */
+    height: auto; /* Автоматически рассчитываем высоту */
+  }
+
+  .star-1 {
+    top: 70px; /* Начальное положение по высоте */
+    left: 160px; /* Начальное положение по горизонтали */
+    width: 35px; /* Устанавливаем начальную ширину для звезды 1 */
+  }
+
+  .star-2 {
+    top: 180px; /* Начальное положение по высоте */
+    left: 220px; /* Начальное положение по горизонтали */
+    width: 12px; /* Устанавливаем начальную ширину для звезды 2 */
+  }
+
+  .star-3 {
+    top: 250px; /* Начальное положение по высоте */
+    left: 150px; /* Начальное положение по горизонтали */
+    width: 25px; /* Устанавливаем начальную ширину для звезды 3 */
+  }
+
+  .mobile-container {
+    display: none; /* Скрываем на десктопе */
+  }
+
+  /* Медиа-запрос для мобильных устройств */
+  @media (max-width: 768px) {
+    .mobile-container {
+      display: block;
+      position: relative;
+      width: 320px;
+      margin: 0 auto;
+      background: #15154D; /* Яркий красный фон для тестирования */
+      border-radius: 16px;
+      padding: 20px;
+      box-sizing: border-box;
+      border: 2px solid #00FF74;
+      box-shadow: 0 0 10px rgba(0, 255, 116, 0.2);
+      z-index: 1;
+    }
+
+    .content {
+      justify-content: center;
+    }
+
+    /* Убираем стандартные отступы внутри контейнера */
+    .left-side,
+    .right-side {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+    }
+  }
+
+  /* Убедимся, что контейнер не перекрывается другими элементами */
+  .left-side .mobile-container,
+  .right-side .mobile-container {
+    z-index: 1;
+    margin-bottom: 20px;
+  }
+
+  /* Стили для ПК версии */
+  .desktop-version {
+    display: flex;
+  }
+
+  /* Стили для мобильной версии */
+  .mobile-container {
+    display: none;
+    background: #15154D;
+    border-radius: 16px;
+    border: 2px solid #00FF74;
+    box-shadow: 0 0 10px rgba(0, 255, 116, 0.2);
+    padding: 20px;
+    box-sizing: border-box;
+  }
+
+  /* Медиа-запрос для мобильных устройств */
+  @media (max-width: 768px) {
+    .desktop-version {
+      display: none;
+    }
+
+    .mobile-container {
+      display: block;
+      width: 320px;
+      margin: 0 auto;
+    }
   }
 
 </style>
