@@ -821,7 +821,7 @@
     }
 
     .title {
-      font-size: 8vw;
+      font-size: 32px;
       margin-bottom: 20px;
       text-align: center;
     }
@@ -1356,13 +1356,6 @@
 
   .description-secondary {
     margin-top: 20px; /* Добавляем отступ сверху */
-  }
-
-  @media (max-width: 768px) {
-    .gifts-image {
-        width: 100px; /* Уменьшаем размер в ~4 раза */
-        height: auto;
-    }
   }
 
 </style>
