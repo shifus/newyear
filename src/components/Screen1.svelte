@@ -393,6 +393,7 @@
     max-height: 80vh;
     object-fit: contain;
     transform: translateX(15%);
+    z-index: 1;
   }
 
   .gifts-image {
@@ -1215,14 +1216,13 @@
   }
 
   .tree-container {
-    position: relative; /* Устанавливаем относительное позиционирование для контейнера */
+    position: relative;
+    z-index: 1;
   }
 
   .tree-image {
-    max-width: 100%;
-    max-height: 80vh;
-    object-fit: contain;
-    transform: translateX(15%);
+    position: relative;
+    z-index: 1;
   }
 
   .gifts-image {
@@ -1234,26 +1234,31 @@
   }
 
   .star {
-    position: absolute; /* Устанавливаем абсолютное позиционирование для звезд */
-    height: auto; /* Автоматически рассчитываем высоту */
+    position: absolute;
+    height: auto;
+    z-index: 999;
+    pointer-events: none;
   }
 
   .star-1 {
-    top: 70px; /* Начальное положение по высоте */
-    left: 160px; /* Начальное положение по горизонтали */
-    width: 35px; /* Устанавливаем начальную ширину для звезды 1 */
+    top: 30px;
+    left: 20px;
+    width: 25px;
+    z-index: 999;
   }
 
   .star-2 {
-    top: 180px; /* Начальное положение по высоте */
-    left: 220px; /* Начальное положение по горизонтали */
-    width: 12px; /* Устанавливаем начальную ширину для звезды 2 */
+    top: 120px;
+    left: 40px;
+    width: 9px;
+    z-index: 999;
   }
 
   .star-3 {
-    top: 250px; /* Начальное положение по высоте */
-    left: 150px; /* Начальное положение по горизонтали */
-    width: 25px; /* Устанавливаем начальную ширину для звезды 3 */
+    top: 200px;
+    left: 10px;
+    width: 15px;
+    z-index: 999;
   }
 
   .mobile-container {
