@@ -32,14 +32,20 @@
       <div class="content desktop-version">
         <div class="left-side">
           <h1 class="title">
-            В НОВЫЙ ГОД<br>
-            С ЛИГОЙ СТАВОК
+            <span class="first-line">В НОВЫЙ ГОД</span>
+            <span class="second-line">С ЛИГОЙ СТАВОК</span>
           </h1>
-          <p class="description">
-            Лига ставок поздравляет всех с Новым Годом! Желаем всего да побольше, особенно больше высоких выигрышных кэфов!
-            И анонсируем новый спецпроект, где больше однозначно лучше! 
-            Получите уникальный промокод для участия в розыгрыше.
-          </p>
+          <div class="description-container">
+            <p class="description">
+              Лига ставок поздравляет всех с Новым Годом! Желаем всего да побольше, особенно больше высоких выигрышных кэфов!
+              И анонсируем новый спецпроект, где больше однозначно лучше! 
+              Получите уникальный промокод для участия в розыгрыше.
+            </p>
+            
+            <p class="description description-secondary">
+              Заключайте пари на высокие коэффициенты. Призы достанутся 100 обладателям самых больших выигрышных кэфов!
+            </p>
+          </div>
           <div class="promo-container">
             <button class="promo-button" on:click={handlePromoClick}>
               Получить промокод
@@ -63,14 +69,20 @@
       <div class="content mobile-container">
         <div class="left-side">
           <h1 class="title">
-            В НОВЫЙ ГОД<br>
-            С ЛИГОЙ СТАВОК
+            <span class="first-line">В НОВЫЙ ГОД</span>
+            <span class="second-line">С ЛИГОЙ СТАВОК</span>
           </h1>
-          <p class="description">
-            Лига ставок поздравляет всех с Новым Годом! Желаем всего да побольше, особенно больше высоких выигрышных кэфов!
-            И анонсируем новый спецпроект, где больше однозначно лучше! 
-            Получите уникальный промокод для участия в розыгрыше.
-          </p>
+          <div class="description-container">
+            <p class="description">
+              Лига ставок поздравляет всех с Новым Годом! Желаем всего да побольше, особенно больше высоких выигрышных кэфов!
+              И анонсируем новый спецпроект, где больше однозначно лучше! 
+              Получите уникальный промокод для участия в розыгрыше.
+            </p>
+            
+            <p class="description description-secondary">
+              Заключайте пари на высокие коэффициенты. Призы достанутся 100 обладателям самых больших выигрышных кэфов!
+            </p>
+          </div>
           <div class="promo-container">
             <button class="promo-button" on:click={handlePromoClick}>
               Получить промокод
@@ -794,7 +806,10 @@
 
     .right-side {
       width: 100%;
-      margin-top: 0vh;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
 
     .header-image {
@@ -810,6 +825,12 @@
       text-align: center;
     }
 
+    .title .first-line,
+    .title .second-line {
+      display: block;
+      white-space: nowrap;
+    }
+
     .description {
       font-size: 16px;
       margin-bottom: 15px;
@@ -818,11 +839,19 @@
     }
 
     .promo-button {
-      width: calc(100% - 40px);
-      max-width: 280px;
-      font-size: 16px;
-      padding: 12px 20px;
+      width: 110%;
+      max-width: none;
       margin: 15px auto;
+      padding: 15px 20px;
+      display: block;
+      text-align: center;
+    }
+
+    .promo-container {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      position: relative;
     }
 
     .tree-image {
@@ -1258,6 +1287,30 @@
       padding: 0;
       width: 100%;
     }
+
+    .right-side {
+        width: 100%;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .tree-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        position: relative;
+    }
+
+    .tree-image {
+        transform: none;
+        max-width: 100%;
+        margin: 0 auto;
+        width: 500px;
+        height: auto;
+    }
   }
 
   /* Убедимся, что контейнер не перекрывается другими элементами */
@@ -1294,6 +1347,10 @@
       width: 320px;
       margin: 0 auto;
     }
+  }
+
+  .description-secondary {
+    margin-top: 20px; /* Добавляем отступ сверху */
   }
 
 </style>
