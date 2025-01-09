@@ -1241,22 +1241,22 @@
   }
 
   .star-1 {
-    top: 30px;
-    left: 20px;
+    top: 70px;
+    left: 120px;
     width: 25px;
     z-index: 999;
   }
 
   .star-2 {
-    top: 120px;
-    left: 40px;
-    width: 9px;
+    top: 180px;
+    left: 180px;
+    width: 8px;
     z-index: 999;
   }
 
   .star-3 {
-    top: 200px;
-    left: 10px;
+    top: 250px;
+    left: 130px;
     width: 15px;
     z-index: 999;
   }
@@ -1357,5 +1357,25 @@
   .description-secondary {
     margin-top: 20px; /* Добавляем отступ сверху */
   }
+
+  @media (max-width: 768px) {
+    .star-1 {
+        top: 70px;
+        left: 20px;
+        width: 25px;
+    }
+
+    .star-2 {
+        top: 180px;
+        left: 60px;
+        width: 8px;
+    }
+
+    .star-3 {
+        top: 250px;
+        left: 10px;
+        width: 15px;
+    }
+}
 
 </style>
