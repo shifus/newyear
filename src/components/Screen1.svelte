@@ -286,7 +286,7 @@
   .page-wrapper {
     display: flex;
     flex-direction: column;
-    overflow-y: auto;
+   
     gap: 50px; /* Фиксированный отступ между экранами */
   }
 
@@ -296,10 +296,10 @@
     padding: 0;
     margin-bottom: 0px; /* Фиксированный отступ между первым и вторым экраном */
     overflow: hidden;
-    display: flex;
     flex-direction: column;
     height: auto; /* Устанавливаем высоту в auto */
     flex: 0 1 auto; /* Занимает только необходимое пространство */
+    margin: 0; /* Убираем лишний отступ */
   }
 
   .header-image {
@@ -988,7 +988,7 @@
     }
 
     .first-screen {
-      margin-top: 100px; /* Увеличиваем отступ сверху для первого экрана */
+      margin-top: 00px; /* Увеличиваем отступ сверху для первого экрана */
       padding-top: 20px; /* Добавляем внутренний отступ сверху */
     }
 
@@ -1112,11 +1112,19 @@
 
     .header-mobile {
       display: block; /* Показываем на мобильной версии */
-      position: fixed; /* Фиксированное позиционирование */
-      top: 0;
+      position: sticky; /* Позиционирование, чтобы оставаться на месте */
+      top: -780px;
       left: 0;
       width: 100%;
-      z-index: 1000;
+      z-index: 1000; /* Убедитесь, что элемент находится поверх других */
+      background-color: #1A1A4F; /* Убедитесь, что фон установлен */
+      margin: -10px 0 30px 0; /* Добавьте отступ снизу */
+      padding: 0; /* Убедитесь, что нет отступов */
+    }
+
+    /* Убедитесь, что контент не перекрывает header-mobile */
+    .content {
+      margin-top: 50px; /* Отрегулируйте отступ, чтобы контент не перекрывал фиксированный хедер */
     }
   }
 
@@ -1276,7 +1284,6 @@
       border-radius: 16px;
       padding: 20px;
       box-sizing: border-box;
-      border: 2px solid #00FF74;
       box-shadow: 0 0 10px rgba(0, 255, 116, 0.2);
       z-index: 1;
     }
@@ -1335,7 +1342,6 @@
     display: none;
     background: #15154D;
     border-radius: 16px;
-    border: 2px solid #00FF74;
     box-shadow: 0 0 10px rgba(0, 255, 116, 0.2);
     padding: 20px;
     box-sizing: border-box;
