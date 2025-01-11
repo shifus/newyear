@@ -994,6 +994,7 @@
     .title {
       margin-top: 32px; /* Добавляем отступ сверху для заголовка */
       margin-bottom: 32px;
+      margin-left: 6px;
     }
 
     .additional-prizes {
