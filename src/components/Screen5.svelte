@@ -111,4 +111,54 @@
     width: 48px;
     height: 48px;
   }
+
+  @media (max-width: 768px) {
+    .Screen5 {
+      padding: 5vw;
+      gap: 4vw;
+      max-width: 100vw;
+    }
+
+    .schedule-title {
+      font-size: 6vw;
+      margin-left: 5vw;
+    }
+
+    .schedule-frame {
+      padding: 4vw;
+      max-width: 90vw;
+    }
+
+    .schedule-details {
+      margin-left: 3vw;
+      gap: 2vw;
+    }
+
+    .stream-date, 
+    .stream-description, 
+    .stream-link {
+      font-size: 4vw;
+    }
+
+    .bell {
+      width: 25vw;
+      height: 25vw;
+      margin-top: -15vw;
+    }
+
+    .footer-frame {
+      padding: 4vw;
+      max-width: 90vw;
+    }
+
+    .developer-text, 
+    .user-agreement {
+      font-size: 4vw;
+    }
+
+    .logo {
+      width: 12vw;
+      height: 12vw;
+    }
+  }
 </style>
