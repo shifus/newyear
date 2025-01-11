@@ -823,7 +823,6 @@
     .title {
       font-size: 32px;
       margin-bottom: 20px;
-      text-align: center;
     }
 
     .title .first-line,
