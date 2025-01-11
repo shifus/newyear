@@ -274,41 +274,106 @@
 
   @media (max-width: 768px) {
     .about-project {
-      padding: 32px;
-    }
-
-    .project-frame {
-      flex-direction: column;
-      gap: 16px;
-      height: auto;
+      padding: 5vw;
+      gap: 4vw;
+      max-width: 100vw;
     }
 
     .project-title {
-      font-size: 28px;
+      font-size: 6vw;
+      margin-left: 5vw;
+      width: 90vw;
     }
 
-    .highlight-text {
-      font-size: 20px;
-    }
-
-    .right-column {
-      align-items: center;
+    .project-frame {
+      padding: 4vw;
+      gap: 4vw;
+      width: 90vw;
+      display: flex;
+      flex-direction: column;
     }
 
     .santa-image {
-      width: 60px;
-      height: 60px;
-      top: -20px;
+      width: 25vw;
+      height: 25vw;
+      top: -12vw;
+    }
+
+    .project-description {
+      width: 90vw;
+      gap: 2vw;
+    }
+
+    .highlight-text {
+      width: 85vw;
+      font-size: 5vw;
+    }
+
+    .rules-text {
+      width: 85vw;
+      font-size: 4vw;
+    }
+
+    .details-text {
+      width: 85vw;
+      font-size: 4vw;
     }
 
     .promo-button {
       width: 80vw;
-      font-size: 4vw;
+      height: auto;
+      padding: 3vw 6vw;
     }
 
     .promo-button-text {
-      width: auto; /* Чтобы текст не был ограничен */
-      font-size: inherit;
+      font-size: 4vw;
+    }
+
+    .right-column {
+      width: 90vw;
+      gap: 3vw;
+      display: flex;
+      flex-direction: column;
+      margin-top: 4vw;
+      visibility: visible;
+    }
+
+    .lamp-text-block {
+      gap: 2vw;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      width: 100%;
+      visibility: visible;
+    }
+
+    .image-frame {
+      display: flex;
+      flex-direction: row;
+      gap: 2vw;
+      height: auto;
+      visibility: visible;
+    }
+
+    .image {
+      width: 10vw;
+      height: 10vw;
+      display: block;
+      visibility: visible;
+    }
+
+    .image-lamp {
+      background-size: contain;
+      display: block;
+      visibility: visible;
+    }
+
+    .row-text {
+      width: 80vw;
+      font-size: 4vw;
+      color: #FFFFFF;
+      display: block;
+      visibility: visible;
     }
   }
 </style>
