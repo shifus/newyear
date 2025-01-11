@@ -1384,4 +1384,17 @@
     }
 }
 
+  @media (max-width: 768px) {
+    .content.mobile-container {
+      width: 100vw; /* Растягиваем на всю ширину viewport */
+      max-width: 100vw;
+      margin: 0;
+      padding: 5vw;
+      box-sizing: border-box;
+      overflow-x: hidden; /* Предотвращаем горизонтальный скролл */
+    }
+    
+    /* ... остальные стили остаются без изменений ... */
+  }
+
 </style>
