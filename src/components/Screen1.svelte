@@ -291,18 +291,20 @@
       </div>
 
       <div class="leaderboard-right">
-        <button class="action-button">Введите промокод</button>
-        <button class="action-button">Узнать место</button>
-        
-        <p class="promo-description">
-          Введите уникальный промокод, чтобы узнать своё место в таблице. 
-          Промокод находится в личном кабинете БК «ига Ставок» разделе «Промокоды».
-        </p>
+        <div class="actions-container">
+          <button class="action-button">Введите промокод</button>
+          <button class="action-button">Узнать место</button>
+          
+          <p class="promo-description">
+            Введите уникальный промокод, чтобы узнать своё место в таблице. 
+            Промокод находится в личном кабинете БК «ига Ставок» разделе «Промокоды».
+          </p>
 
-        <div class="additional-info">
-          <p>Участники акции занимают место в таблице согласно наиболее высокому выигрышному коэффициенту</p>
-          <p>Приз за первое место iPhone 14 Pro</p>
-          <p>Розыгрыш призов проходит на лайв-стримах канала twitch.tv/cq_ru. Рассказание стримов смотрите ниже</p>
+          <div class="additional-info">
+            <p>Участники акции занимают место в таблице согласно наиболее высокому выигрышному коэффициенту</p>
+            <p>Приз за первое место iPhone 14 Pro</p>
+            <p>Розыгрыш призов проходит на лайв-стримах канала twitch.tv/cq_ru. Рассказание стримов смотрите ниже</p>
+          </div>
         </div>
       </div>
     </div>
@@ -724,34 +726,31 @@
   /* Третий экран */
   .third-screen {
     width: 100%;
-    min-height: 100vh;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 3vw;
-    background: linear-gradient(180deg, #0F0F37 0%, #1A1A4F 100%);
-    overflow-x: hidden; /* Убираем горизонтальный скролл */
+    justify-content: center; /* Центрируем содержимое */
+    transform: translateX(10%); /* Сдвигаем на 10% вправо */
   }
 
   .leaderboard-container {
     display: flex;
-    justify-content: space-between; /* Размещаем элементы по краям */
+    justify-content: flex-start; /* Размещаем элементы по левому краю */
     width: 100%;
   }
 
   .leaderboard-left {
-    flex: 1; /* Занимает оставшееся пространство */
+    flex: 0 0 auto; /* Устанавливаем фиксированную ширину для левой колонки */
+    max-width: 60%; /* Ограничиваем максимальную ширину */
   }
 
   .leaderboard-right {
     width: 300px; /* Фиксированная ширина для правой колонки */
-    padding-left: 20px; /* Отступ слева для отделения от таблицы */
+    padding-left: 10px; /* Уменьшаем отступ слева для отделения от таблицы */
   }
 
   .actions-container {
     display: flex;
     flex-direction: column;
-    gap: 16px; /* Отступы между элементами */
+    gap: 8px; /* Уменьшаем отступы между элементами */
   }
 
   .promo-description, .additional-info p {
@@ -879,11 +878,7 @@
     color: #ffffff;
   }
 
-  .additional-info {
-    padding: 2vw;
-    background: rgba(15, 15, 55, 0.6);
-    border-radius: 1vw;
-  }
+
 
   .additional-info p {
     font-size: 1.1vw;
