@@ -224,6 +224,11 @@
     <div class="leaderboard-container">
       <div class="leaderboard-left">
         <div class="table-frame">
+          <!-- Заголовок конкурса -->
+          <div class="contest-title">Таблица конкурса</div>
+          <div class="contest-description">100 призов достанутся участникам, с самыми большими выигрышными коэффициентами</div>
+          <a href="#" class="previous-winners-link">Смотреть предыдущих победителей</a>
+
           <!-- Заголовки -->
           <div class="table-headers">
             <div class="header-left">Имя</div>
@@ -291,7 +296,7 @@
       </div>
 
       <div class="leaderboard-right">
-        <div class="actions-container">
+        <div class="actions-container" style="margin-top: 190px;">
           <button class="action-button">Введите промокод</button>
           <button class="action-button">Узнать место</button>
           
@@ -1504,6 +1509,53 @@
       top: -40px !important; /* Также корректируем позицию */
       right: -25px !important;
     }
+  }
+
+  .contest-title {
+    width: 1136px;
+    height: 43px;
+    font-family: 'TT Travels';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 120%;
+    color: #FFFFFF;
+    margin-bottom: 8px; /* Отступ снизу */
+  }
+
+  .contest-description {
+    width: 1136px;
+    height: 29px;
+    font-family: 'TT Travels';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 120%;
+    color: #ABBAF0;
+    margin-bottom: 8px; /* Отступ снизу */
+  }
+
+  .previous-winners-link {
+    width: 368px;
+    height: 22px;
+    font-family: 'TT Travels';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 120%;
+    color: #00AB4E;
+    text-decoration: none; /* Убираем подчеркивание */
+    margin-bottom: 16px; /* Отступ снизу */
+  }
+
+  .actions-container {
+    display: flex;
+    flex-direction: column;
+    gap: 8px; /* Уменьшаем отступы между элементами */
+  }
+
+  .promo-description, .additional-info p {
+    color: #FFFFFF; /* Белый цвет текста */
   }
 
 </style>
