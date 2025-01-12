@@ -819,6 +819,7 @@
     display: flex;
     flex-direction: column;
     width: 100%;
+    flex-grow: 1; /* Позволяет растягивать строки */
   }
 
   .table-row {
@@ -827,6 +828,7 @@
     width: 100%;
     height: 52px;
     padding: 0 8px; /* Отступы по бокам */
+    flex-grow: 1; /* Позволяет строкам занимать доступное пространство */
   }
 
   .left-column {
