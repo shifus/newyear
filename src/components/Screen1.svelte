@@ -138,7 +138,7 @@
         </div>
         
         <img src="/images/iphone14pro.png" alt="iPhone 14 Pro" class="prize-image">
-        <img src="/images/gift.png" class="gift-decoration" alt="gift" style="position: absolute; top: -80px; right: -20px; width: 180px; height: auto; z-index: -1; mix-blend-mode: multiply;">
+        <img src="/images/gift.png" class="gift-decoration" alt="gift" style="position: absolute; top: -80px; right: -50px; width: 180px; height: auto; z-index: -1; mix-blend-mode: multiply;">
       </div>
 
       <div class="additional-prizes">
@@ -1396,6 +1396,14 @@
     }
     
     /* ... остальные стили остаются без изменений ... */
+  }
+
+  @media (max-width: 768px) {
+    .gift-decoration {
+      width: 90px !important; /* Уменьшаем в два раза */
+      top: -40px !important; /* Также корректируем позицию */
+      right: -25px !important;
+    }
   }
 
 </style>
