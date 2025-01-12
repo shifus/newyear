@@ -107,7 +107,7 @@
   <!-- Призы конкурса -->
   <div class="screen-container">
     <section class="second-screen">
-      <div class="main-prize">
+      <div class="main-prize" style="position: relative;">
         <div class="prize-header">
           <span class="prize-label">Главный приз</span>
         </div>
@@ -138,7 +138,7 @@
         </div>
         
         <img src="/images/iphone14pro.png" alt="iPhone 14 Pro" class="prize-image">
-        <img src="/images/gift.png" class="gift-decoration" alt="gift" style="position: absolute; top: -80px; right: -20px; width: 180px; height: auto; z-index: -1; opacity: 1;">
+        <img src="/images/gift.png" class="gift-decoration" alt="gift" style="position: absolute; top: -80px; right: -20px; width: 180px; height: auto; z-index: -1; mix-blend-mode: multiply;">
       </div>
 
       <div class="additional-prizes">
