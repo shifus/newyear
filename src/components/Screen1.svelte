@@ -223,97 +223,86 @@
   <section class="third-screen">
     <div class="leaderboard-container">
       <div class="leaderboard-left">
-        <h2 class="leaderboard-title">Таблица конкурса</h2>
-        <p class="leaderboard-description">
-          100 призов достанутся участникам, с самыми большими выигрышными коэффициентами
-        </p>
-        <a href="#" class="previous-winners-link">Смотреть предыдущих победителей</a>
-        
-        <div class="leaderboard-table">
-          <!-- Здесь будет таблица -->
-          <div class="table-frame">
-            <!-- Заголовки -->
-            <div class="table-headers">
-              <div class="header-left">Имя</div>
-              <div class="header-right">Коэффициент</div>
-            </div>
+        <div class="table-frame">
+          <!-- Заголовки -->
+          <div class="table-headers">
+            <div class="header-left">Имя</div>
+            <div class="header-right">Коэффициент</div>
+          </div>
 
-            <!-- Строки таблицы -->
-            <div class="table-rows">
-              <div class="table-row">
-                <div class="left-column">
-                  <div class="name">1. Михаил</div>
-                  <div class="phone">+7 (999) *** ** 32</div>
-                </div>
-                <div class="right-column">
-                  <div class="coefficient">10.65</div>
-                </div>
+          <!-- Строки таблицы -->
+          <div class="table-rows">
+            <div class="table-row">
+              <div class="left-column">
+                <div class="name">1. Михаил</div>
+                <div class="phone">+7 (999) *** ** 32</div>
               </div>
-              <div class="table-row">
-                <div class="left-column">
-                  <div class="name">2. Александр</div>
-                  <div class="phone">+7 (999) *** ** 45</div>
-                </div>
-                <div class="right-column">
-                  <div class="coefficient">9.87</div>
-                </div>
+              <div class="right-column">
+                <div class="coefficient">10.65</div>
               </div>
-              <div class="table-row">
-                <div class="left-column">
-                  <div class="name">3. Дмитрий</div>
-                  <div class="phone">+7 (999) *** ** 78</div>
-                </div>
-                <div class="right-column">
-                  <div class="coefficient">9.54</div>
-                </div>
+            </div>
+            <div class="table-row">
+              <div class="left-column">
+                <div class="name">2. Александр</div>
+                <div class="phone">+7 (999) *** ** 45</div>
               </div>
-              <div class="table-row">
-                <div class="left-column">
-                  <div class="name">4. Иван</div>
-                  <div class="phone">+7 (999) *** ** 91</div>
-                </div>
-                <div class="right-column">
-                  <div class="coefficient">9.21</div>
-                </div>
+              <div class="right-column">
+                <div class="coefficient">9.87</div>
               </div>
-              <div class="table-row">
-                <div class="left-column">
-                  <div class="name">5. Сергей</div>
-                  <div class="phone">+7 (999) *** ** 23</div>
-                </div>
-                <div class="right-column">
-                  <div class="coefficient">8.95</div>
-                </div>
+            </div>
+            <div class="table-row">
+              <div class="left-column">
+                <div class="name">3. Дмитрий</div>
+                <div class="phone">+7 (999) *** ** 78</div>
               </div>
-              <div class="table-row">
-                <div class="left-column">
-                  <div class="name">6. Андрей</div>
-                  <div class="phone">+7 (999) *** ** 67</div>
-                </div>
-                <div class="right-column">
-                  <div class="coefficient">8.76</div>
-                </div>
+              <div class="right-column">
+                <div class="coefficient">9.54</div>
+              </div>
+            </div>
+            <div class="table-row">
+              <div class="left-column">
+                <div class="name">4. Иван</div>
+                <div class="phone">+7 (999) *** ** 91</div>
+              </div>
+              <div class="right-column">
+                <div class="coefficient">9.21</div>
+              </div>
+            </div>
+            <div class="table-row">
+              <div class="left-column">
+                <div class="name">5. Сергей</div>
+                <div class="phone">+7 (999) *** ** 23</div>
+              </div>
+              <div class="right-column">
+                <div class="coefficient">8.95</div>
+              </div>
+            </div>
+            <div class="table-row">
+              <div class="left-column">
+                <div class="name">6. Андрей</div>
+                <div class="phone">+7 (999) *** ** 67</div>
+              </div>
+              <div class="right-column">
+                <div class="coefficient">8.76</div>
               </div>
             </div>
           </div>
         </div>
       </div>
 
-    <div class="leaderboard-right">
-      <div class="actions-container">
+      <div class="leaderboard-right">
         <button class="action-button">Введите промокод</button>
         <button class="action-button">Узнать место</button>
         
         <p class="promo-description">
           Введите уникальный промокод, чтобы узнать своё место в таблице. 
-          Промокод находится в личном кабинете БК «ига Ставок»  разделе «Промокоды».
+          Промокод находится в личном кабинете БК «ига Ставок» разделе «Промокоды».
         </p>
 
-          <div class="additional-info">
-            <p>Участники акции занимают место в таблице согласно наиболее высокому выигрышному коэффициенту</p>
-            <p>Приз за первое место iPhone 14 Pro</p>
-            <p>Розыгрыш призов проходит на лайв-стримах канала twitch.tv/cq_ru. Рассказание стримов смотрите ниже</p>
-          </div>
+        <div class="additional-info">
+          <p>Участники акции занимают место в таблице согласно наиболее высокому выигрышному коэффициенту</p>
+          <p>Приз за первое место iPhone 14 Pro</p>
+          <p>Розыгрыш призов проходит на лайв-стримах канала twitch.tv/cq_ru. Рассказание стримов смотрите ниже</p>
         </div>
       </div>
     </div>
@@ -746,18 +735,27 @@
 
   .leaderboard-container {
     display: flex;
-    gap: 3vw;
-    max-width: 95vw;
+    justify-content: space-between; /* Размещаем элементы по краям */
     width: 100%;
-    align-items: flex-start;
-    margin: 0 auto;
   }
 
   .leaderboard-left {
-    flex: 1;
+    flex: 1; /* Занимает оставшееся пространство */
+  }
+
+  .leaderboard-right {
+    width: 300px; /* Фиксированная ширина для правой колонки */
+    padding-left: 20px; /* Отступ слева для отделения от таблицы */
+  }
+
+  .actions-container {
     display: flex;
     flex-direction: column;
-    gap: 2vh;
+    gap: 16px; /* Отступы между элементами */
+  }
+
+  .promo-description, .additional-info p {
+    color: #FFFFFF; /* Белый цвет текста */
   }
 
   .leaderboard-title {
