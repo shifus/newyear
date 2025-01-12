@@ -138,6 +138,7 @@
         </div>
         
         <img src="/images/iphone14pro.png" alt="iPhone 14 Pro" class="prize-image">
+        <img src="/images/gift.png" class="gift-decoration" alt="gift" style="position: absolute; top: -80px; right: -20px; width: 180px; height: auto; z-index: -1; opacity: 1;">
       </div>
 
       <div class="additional-prizes">
