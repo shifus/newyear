@@ -1402,4 +1402,18 @@
     }
   }
 
+  .merch-images img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  @media (max-width: 768px) {
+    .merch-images img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+
 </style>
