@@ -211,10 +211,7 @@
         <div class="merch-column">
           <div class="merch-content">
             <div class="merch-images">
-              <!-- Здесь будут изображения мерча -->
-            </div>
-            <div class="merch-status">
-              <span>Мерч разыгран</span>
+              <img src="/images/Merch.png" alt="Мерч" style="width: 100%; height: 100%; object-fit: cover;">
             </div>
           </div>
         </div>
@@ -651,7 +648,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 140px;
     gap: 16px;
   }
 
