@@ -232,7 +232,69 @@
         <div class="leaderboard-table">
           <!-- Здесь будет таблица -->
           <div class="table-frame">
-            <!-- Таблица будет добавлена позже -->
+            <!-- Заголовки -->
+            <div class="table-headers">
+              <div class="header-left">Имя</div>
+              <div class="header-right">Коэффициент</div>
+            </div>
+
+            <!-- Строки таблицы -->
+            <div class="table-rows">
+              <div class="table-row">
+                <div class="left-column">
+                  <div class="name">1. Михаил</div>
+                  <div class="phone">+7 (999) *** ** 32</div>
+                </div>
+                <div class="right-column">
+                  <div class="coefficient">10.65</div>
+                </div>
+              </div>
+              <div class="table-row">
+                <div class="left-column">
+                  <div class="name">2. Александр</div>
+                  <div class="phone">+7 (999) *** ** 45</div>
+                </div>
+                <div class="right-column">
+                  <div class="coefficient">9.87</div>
+                </div>
+              </div>
+              <div class="table-row">
+                <div class="left-column">
+                  <div class="name">3. Дмитрий</div>
+                  <div class="phone">+7 (999) *** ** 78</div>
+                </div>
+                <div class="right-column">
+                  <div class="coefficient">9.54</div>
+                </div>
+              </div>
+              <div class="table-row">
+                <div class="left-column">
+                  <div class="name">4. Иван</div>
+                  <div class="phone">+7 (999) *** ** 91</div>
+                </div>
+                <div class="right-column">
+                  <div class="coefficient">9.21</div>
+                </div>
+              </div>
+              <div class="table-row">
+                <div class="left-column">
+                  <div class="name">5. Сергей</div>
+                  <div class="phone">+7 (999) *** ** 23</div>
+                </div>
+                <div class="right-column">
+                  <div class="coefficient">8.95</div>
+                </div>
+              </div>
+              <div class="table-row">
+                <div class="left-column">
+                  <div class="name">6. Андрей</div>
+                  <div class="phone">+7 (999) *** ** 67</div>
+                </div>
+                <div class="right-column">
+                  <div class="coefficient">8.76</div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -727,13 +789,60 @@
   }
 
   .table-frame {
-    padding: 2.5vw;
-    gap: 1.5vw;
-    width: 50vw;
-    min-height: 55vh;
-    background: rgba(15, 15, 55, 0.7);
-    border-radius: 1.5vw;
-    box-shadow: 0 0 2vw rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
+    gap: 16px;
+    width: 904px;
+    height: 533px;
+    background: #0F0F37;
+    border-radius: 16px;
+  }
+
+  .table-headers {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 16px;
+  }
+
+  .header-left, .header-right {
+    font-family: 'TT Travels';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    color: #FFFFFF;
+  }
+
+  .table-rows {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .table-row {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 52px;
+    padding: 0 8px; /* Отступы по бокам */
+  }
+
+  .left-column {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .right-column {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; /* Выровнять по правому краю */
+  }
+
+  .name, .phone, .coefficient {
+    color: #FFFFFF; /* Белый цвет текста */
   }
 
   .leaderboard-right {
@@ -1399,20 +1508,6 @@
       width: 90px !important; /* Уменьшаем в два раза */
       top: -40px !important; /* Также корректируем позицию */
       right: -25px !important;
-    }
-  }
-
-  .merch-images img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-
-  @media (max-width: 768px) {
-    .merch-images img {
-      width: 100%;
-      height: 100%;
-      object-fit: contain;
     }
   }
 
