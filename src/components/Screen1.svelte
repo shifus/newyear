@@ -866,7 +866,6 @@
     font-size: 1.6vw;
     margin-bottom: 2vh;
     display: inline-block;
-    padding: 0.5vh 1vw;
     color: #00AB4E;
     text-decoration: none;
   }
