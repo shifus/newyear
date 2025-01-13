@@ -738,18 +738,42 @@
 
   .leaderboard-container {
     display: flex;
-    justify-content: flex-start; /* Размещаем элементы по левому краю */
+    justify-content: space-between;
     width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 20px;
   }
 
   .leaderboard-left {
-    flex: 0 0 auto; /* Устанавливаем фиксированную ширину для левой колонки */
-    max-width: 60%; /* Ограничиваем максимальную ширину */
+    flex: 0 0 65%;
+    max-width: 904px;
   }
 
   .leaderboard-right {
-    width: 300px; /* Фиксированная ширина для правой колонки */
-    padding-left: 10px; /* Уменьшаем отступ слева для отделения от таблицы */
+    flex: 0 0 30%;
+    padding-left: 10px;
+  }
+
+  @media (max-width: 768px) {
+    .leaderboard-container {
+      flex-direction: column;
+      align-items: center;
+      padding: 0 20px;
+    }
+
+    .leaderboard-left {
+      flex: none;
+      width: 100%;
+      max-width: 100%;
+    }
+
+    .leaderboard-right {
+      flex: none;
+      width: 100%;
+      max-width: 400px;
+      margin-top: 20px;
+    }
   }
 
   .actions-container {
