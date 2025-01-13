@@ -733,7 +733,7 @@
     width: 100%;
     display: flex;
     justify-content: center; /* Центрируем содержимое */
-    transform: translateX(10%); /* Сдвигаем на 10% вправо */
+    transform: translateX(-3%); /* Сдвигаем на 20% влево */
   }
 
   .leaderboard-container {
@@ -777,13 +777,40 @@
   }
 
   .actions-container {
-    display: flex;
-    flex-direction: column;
-    gap: 8px; /* Уменьшаем отступы между элементами */
+    position: sticky; /* Делаем контейнер липким */
+    top: 190px; /* Фиксированное расстояние от верха */
+    width: 400px; /* Фиксированная ширина */
+    min-width: 400px; /* Минимальная ширина */
+    padding: 20px;
+    background: #15154D; /* Добавляем фон */
+    border-radius: 16px;
+    z-index: 10;
   }
 
-  .promo-description, .additional-info p {
-    color: #FFFFFF; /* Белый цвет текста */
+  .action-button {
+    width: 100%;
+    min-height: 50px; /* Фиксированная минимальная высота */
+    margin-bottom: 10px;
+    font-size: 18px; /* Фиксированный размер шрифта */
+    white-space: nowrap; /* Предотвращаем перенос текста */
+  }
+
+  .promo-description {
+    font-size: 16px; /* Фиксированный размер шрифта */
+    line-height: 1.4;
+    margin: 15px 0;
+    width: 100%;
+  }
+
+  .additional-info {
+    width: 100%;
+  }
+
+  .additional-info p {
+    font-size: 14px; /* Фиксированный размер шрифта */
+    line-height: 1.4;
+    margin-bottom: 10px;
+    white-space: normal; /* Разрешаем перенос текста в информационном блоке */
   }
 
   .leaderboard-title {
@@ -882,37 +909,11 @@
   .actions-container {
     display: flex;
     flex-direction: column;
-    gap: 1.5vh;
+    gap: 8px; /* Уменьшаем отступы между элементами */
   }
 
-  .action-button {
-    width: 100%;
-    padding: 1.2vh 1.5vw;
-    font-size: 1.6vw;
-    cursor: pointer;
-    background-color: #00AB4E;
-    color: #ffffff;
-    border: none;
-    border-radius: 5px;
-    transition: background-color 0.3s;
-  }
-
-  .action-button:hover {
-    background-color: #00CC00;
-  }
-
-  .promo-description {
-    font-size: 1.3vw;
-    margin-bottom: 2vh;
-    color: #ffffff;
-  }
-
-
-
-  .additional-info p {
-    font-size: 0.7vw;
-    margin-bottom: 1vh;
-    color: #ffffff;
+  .promo-description, .additional-info p {
+    color: #FFFFFF; /* Белый цвет текста */
   }
 
   /* Адаптивные стили */
