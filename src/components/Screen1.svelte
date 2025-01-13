@@ -1694,4 +1694,15 @@
     }
   }
 
+  @media (max-width: 768px) {
+    #about-project .about-project.svelte-pzasak {
+      padding: 32px !important;
+      gap: 16px !important;
+      width: 60vw !important;
+      max-width: 60vw !important;
+      margin: 0 auto !important;
+      transform: scale(0.7) translateX(20%) !important;
+    }
+  }
+
 </style>

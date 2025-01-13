@@ -286,9 +286,11 @@
     }
 
     .project-frame {
+      transform: translateX(-4%);
+      width: 90%;
+      margin: 0;
       padding: 4vw;
       gap: 4vw;
-      width: 90vw;
       display: flex;
       flex-direction: column;
     }
