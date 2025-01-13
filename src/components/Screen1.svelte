@@ -803,9 +803,9 @@
     margin-bottom: 10px;
     font-size: 18px;
     white-space: nowrap;
-    background: transparent; /* Прозрачный фон */
-    border: 2px solid #00AB4E; /* Зелёная обводка */
-    color: #00AB4E; /* Зелёный цвет текста */
+    background: transparent;
+    border: 2px solid #00AB4E;
+    color: #00AB4E;
     border-radius: 8px;
     cursor: pointer;
     transition: all 0.3s ease;
@@ -1601,6 +1601,16 @@
 
   .promo-description, .additional-info p {
     color: #FFFFFF; /* Белый цвет текста */
+  }
+
+  /* Новый стиль для кнопки "Узнать место" */
+  .action-button:nth-child(2) {
+    background: #00AB4E;
+    color: #FFFFFF;
+  }
+
+  .action-button:nth-child(2):hover {
+    background: #009544; /* Немного темнее при наведении */
   }
 
 </style>
