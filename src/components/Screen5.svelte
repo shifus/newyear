@@ -15,8 +15,10 @@
   </div>
   <div class="footer-frame">
     <a href="#" class="user-agreement">Пользовательское соглашение</a>
-    <p class="developer-text">Разработчик проекта:</p>
-    <img src="/images/Лого.png" alt="Лого" class="logo">
+    <div class="developer-container">
+      <p class="developer-text">Разработчик проекта:</p>
+      <img src="/images/Лого.png" alt="Лого" class="logo">
+    </div>
   </div>
 </div>
 
@@ -95,7 +97,24 @@
     border-radius: 16px;
   }
 
-  .developer-text, .user-agreement {
+  .developer-container {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .developer-text {
+    font-family: 'TT Travels', sans-serif;
+    font-size: 18px;
+    color: #FFFFFF;
+  }
+
+  .logo {
+    width: 48px;
+    height: 48px;
+  }
+
+  .user-agreement {
     font-family: 'TT Travels', sans-serif;
     font-weight: 500;
     font-size: 18px;
@@ -105,11 +124,6 @@
   .user-agreement {
     text-decoration: none;
     color: #FFFFFF;
-  }
-
-  .logo {
-    width: 48px;
-    height: 48px;
   }
 
   @media (max-width: 768px) {
@@ -149,6 +163,10 @@
     .footer-frame {
       padding: 4vw;
       max-width: 90vw;
+      justify-content: flex-start;
+      gap: 0;
+      padding-left: 0;
+      margin-left: -20px;
     }
 
     .developer-text, 
@@ -159,6 +177,12 @@
     .logo {
       width: 12vw;
       height: 12vw;
+      margin-left: -20px;
+    }
+
+    .developer-container {
+      margin-right: auto;
+      margin-left: -50px;
     }
   }
 </style>
