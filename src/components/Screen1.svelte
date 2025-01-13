@@ -1619,4 +1619,19 @@
     }
   }
 
+  @media (max-width: 768px) {
+    .actions-container {
+      transform: translateX(-3%); /* Уменьшаем смещение влево */
+      width: 100%;
+      min-width: auto;
+      margin-right: auto;
+      margin-left: auto;
+      overflow: hidden;
+    }
+
+    .actions-container-mobile {
+      margin-top: 0 !important;
+    }
+  }
+
 </style>
