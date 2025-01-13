@@ -7,6 +7,16 @@
     console.log('Кнопка "Получить промокод" нажата');
     alert('Промокод получен! Нажмите ОК, чтобы продолжить.');
   }
+
+  // Функция для обработки ввода промокода
+  function handlePromoCodeInput() {
+    alert('Вы успешно ввели промокод!');
+  }
+
+  // Функция для обработки проверки места
+  function handleCheckPlace() {
+    alert('Вот ваше место');
+  }
 </script>
 
 <div class="page-wrapper">
@@ -297,8 +307,8 @@
 
       <div class="leaderboard-right">
         <div class="actions-container" style="margin-top: 190px;">
-          <button class="action-button">Введите промокод</button>
-          <button class="action-button">Узнать место</button>
+          <button class="action-button" on:click={handlePromoCodeInput}>Введите промокод</button>
+          <button class="action-button" on:click={handleCheckPlace}>Узнать место</button>
           
           <p class="promo-description">
             Введите уникальный промокод, чтобы узнать своё место в таблице. 
@@ -789,10 +799,20 @@
 
   .action-button {
     width: 100%;
-    min-height: 50px; /* Фиксированная минимальная высота */
+    min-height: 50px;
     margin-bottom: 10px;
-    font-size: 18px; /* Фиксированный размер шрифта */
-    white-space: nowrap; /* Предотвращаем перенос текста */
+    font-size: 18px;
+    white-space: nowrap;
+    background: transparent; /* Прозрачный фон */
+    border: 2px solid #00AB4E; /* Зелёная обводка */
+    color: #00AB4E; /* Зелёный цвет текста */
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+
+  .action-button:hover {
+    background: rgba(0, 171, 78, 0.1); /* Лёгкий зелёный фон при наведении */
   }
 
   .promo-description {
