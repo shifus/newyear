@@ -17,6 +17,18 @@
   function handleCheckPlace() {
     alert('Вот ваше место');
   }
+
+  // Добавим плавный скролл для всех внутренних ссылок
+  function handleScroll(e) {
+    const href = e.currentTarget.getAttribute('href');
+    if (href.startsWith('#')) {
+      e.preventDefault();
+      const element = document.querySelector(href);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+  }
 </script>
 
 <div class="page-wrapper">
@@ -29,9 +41,9 @@
           <div class="candy-cane"></div>
         </div>
         <div class="menu">
-          <div class="menu-item">Таблица участников</div>
-          <div class="menu-item">О проекте</div>
-          <div class="menu-item">Призы</div>
+          <a href="#leaderboard-table" class="menu-item">Таблица участников</a>
+          <a href="#prizes" class="menu-item">Призы</a>
+          <a href="#about-project" class="menu-item">О проекте</a>
         </div>
       </div>
       <div class="header-mobile">
@@ -116,7 +128,7 @@
 
   <!-- Призы конкурса -->
   <div class="screen-container">
-    <section class="second-screen">
+    <section class="second-screen" id="prizes">
       <div class="main-prize" style="position: relative;">
         <div class="prize-header">
           <span class="prize-label">Главный приз</span>
@@ -230,7 +242,7 @@
   </div>
 
   <!-- Таблица конкурса -->
-  <section class="third-screen">
+  <section class="third-screen" id="leaderboard-table">
     <div class="leaderboard-container">
       <div class="leaderboard-left">
         <div class="table-frame">
@@ -326,7 +338,9 @@
   </section>
 
   <!-- О проекте -->
-  <Screen4 />
+  <section id="about-project">
+    <Screen4 />
+  </section>
 
   <!-- Расписание стримов -->
   <Screen5 />
@@ -936,6 +950,43 @@
     color: #FFFFFF; /* Белый цвет текста */
   }
 
+  /* Новый стиль для кнопки "Узнать место" */
+  .action-button:nth-child(2) {
+    background: #00AB4E;
+    color: #FFFFFF;
+  }
+
+  .action-button:nth-child(2):hover {
+    background: #009544; /* Немного темнее при наведении */
+  }
+
+  @media (max-width: 768px) {
+    .actions-container-mobile {
+      margin-top: 0 !important;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .actions-container {
+      transform: translateX(0); /* Убираем смещение влево */
+      width: 90%; /* Немного уменьшаем ширину */
+      min-width: auto;
+      margin-right: auto;
+      margin-left: auto;
+      overflow: hidden;
+    }
+
+    .actions-container-mobile {
+      margin-top: 0 !important;
+    }
+  }
+
+  .menu-item {
+    cursor: pointer;
+    text-decoration: none; /* Убираем подчеркивание у ссылок */
+    color: inherit;
+  }
+
   /* Адаптивные стили */
   @media (max-width: 768px) {
     .title, .description, .promo-button {
@@ -1233,7 +1284,7 @@
   .header {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
     padding: 20px;
     gap: 20px;
@@ -1306,9 +1357,7 @@
     align-items: flex-start;
     padding: 0px;
     gap: 24px;
-    flex: none;
-    order: 1;
-    flex-grow: 0;
+    margin-left: 900px;
   }
 
   .menu-item {
@@ -1320,6 +1369,8 @@
     display: flex;
     align-items: center;
     color: #FFFFFF;
+    white-space: nowrap;
+    text-decoration: none;
   }
 
   .menu-item:nth-child(1) {
