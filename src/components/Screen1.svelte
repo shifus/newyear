@@ -1577,7 +1577,16 @@
     font-size: 24px;
     line-height: 120%;
     color: #ABBAF0;
-    margin-bottom: 8px; /* Отступ снизу */
+    margin-bottom: 8px;
+  }
+
+  @media (max-width: 768px) {
+    .contest-description {
+      width: auto;
+      height: auto;
+      word-wrap: break-word;
+      overflow: visible;
+    }
   }
 
   .previous-winners-link {
@@ -1621,8 +1630,8 @@
 
   @media (max-width: 768px) {
     .actions-container {
-      transform: translateX(-3%); /* Уменьшаем смещение влево */
-      width: 100%;
+      transform: translateX(0); /* Убираем смещение влево */
+      width: 90%; /* Немного уменьшаем ширину */
       min-width: auto;
       margin-right: auto;
       margin-left: auto;
