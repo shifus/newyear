@@ -306,7 +306,7 @@
       </div>
 
       <div class="leaderboard-right">
-        <div class="actions-container" style="margin-top: 190px;">
+        <div class="actions-container actions-container-mobile" style="margin-top: 190px;">
           <button class="action-button" on:click={handlePromoCodeInput}>Введите промокод</button>
           <button class="action-button" on:click={handleCheckPlace}>Узнать место</button>
           
@@ -1611,6 +1611,12 @@
 
   .action-button:nth-child(2):hover {
     background: #009544; /* Немного темнее при наведении */
+  }
+
+  @media (max-width: 768px) {
+    .actions-container-mobile {
+      margin-top: 0 !important;
+    }
   }
 
 </style>
