@@ -141,6 +141,9 @@
     .schedule-frame {
       padding: 4vw;
       max-width: 90vw;
+      transform: translateX(-5%);
+      width: 90%;
+      margin: 0;
     }
 
     .schedule-details {
