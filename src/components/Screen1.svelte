@@ -425,8 +425,8 @@
   .title {
     font-family: 'TT Travels', sans-serif;
     font-size: calc(24px + 2vw) !important;
-    line-height: 1.2;
-    color: #0ff658;
+    line-height: 1.1;
+    color: #00AB4E;
     text-align: left;
     margin-bottom: 3vh;
     white-space: normal;
@@ -1785,6 +1785,15 @@
       margin: 0 auto !important;
       transform: scale(0.7) translateX(20%) !important;
     }
+  }
+
+  @font-face {
+    font-family: 'TT Travels';
+    src: url('/fonts/tttravels-extrabold.woff2') format('woff2'),
+         url('/fonts/tttravels-extrabold.woff') format('woff');
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
   }
 
 </style>
