@@ -424,12 +424,12 @@
 
   .title {
     font-family: 'TT Travels', sans-serif;
-    font-size: 3rem;
+    font-size: calc(24px + 2vw) !important;
     line-height: 1.2;
     color: #0ff658;
     text-align: left;
     margin-bottom: 3vh;
-    white-space: normal; /* Разрешаем перенос */
+    white-space: normal;
   }
 
   .title .first-line,
@@ -451,13 +451,13 @@
   .description {
     font-family: 'TT Travels', sans-serif;
     color: #ffffff;
-    font-size: 18px;
+    font-size: calc(6px + 1.2vw) !important;
     line-height: 1.5;
     margin-bottom: 20px;
     max-width: 800px;
     display: flex;
     flex-direction: column;
-    gap: 16px;
+    gap: calc(4px + 1vw);
   }
 
   .description-line {
