@@ -59,13 +59,16 @@
           </h1>
           <div class="description-container">
             <p class="description">
-              Лига ставок поздравляет всех с Новым Годом! Желаем всего да побольше, особенно больше высоких выигрышных кэфов!
-              И анонсируем новый спецпроект, где больше однозначно лучше! 
-              Получите уникальный промокод для участия в розыгрыше.
+              <span class="description-line">Лига ставок, поздравляет всех с Новым Годом!</span>
+              <span class="description-line">Желает всего да побольше, особенно больше высоких выигрышных кэфов!</span>
+              <span class="description-line">И анонсирует новый спецпроект, где больше однозначно лучше!</span>
+              <span class="description-line">Получите уникальный промокод для участия в розыгрыше.</span>
             </p>
             
             <p class="description description-secondary">
-              Заключайте пари на высокие коэффициенты. Призы достанутся 100 обладателям самых больших выигрышных кэфов!
+              <span class="description-line">Заключайте пари на высокие коэффициенты.</span>
+              <span class="description-line">Призы достанутся 100 обладателям самых больших</span>
+              <span class="description-line">выигрышных кэфов!</span>
             </p>
           </div>
           <div class="promo-container">
@@ -96,13 +99,16 @@
           </h1>
           <div class="description-container">
             <p class="description">
-              Лига ставок поздравляет всех с Новым Годом! Желаем всего да побольше, особенно больше высоких выигрышных кэфов!
-              И анонсируем новый спецпроект, где больше однозначно лучше! 
-              Получите уникальный промокод для участия в розыгрыше.
+              <span class="description-line">Лига ставок, поздравляет всех с Новым Годом!</span>
+              <span class="description-line">Желает всего да побольше, особенно больше высоких выигрышных кэфов!</span>
+              <span class="description-line">И анонсирует новый спецпроект, где больше однозначно лучше!</span>
+              <span class="description-line">Получите уникальный промокод для участия в розыгрыше.</span>
             </p>
             
             <p class="description description-secondary">
-              Заключайте пари на высокие коэффициенты. Призы достанутся 100 обладателям самых больших выигрышных кэфов!
+              <span class="description-line">Заключайте пари на высокие коэффициенты.</span>
+              <span class="description-line">Призы достанутся 100 обладателям самых больших</span>
+              <span class="description-line">выигрышных кэфов!</span>
             </p>
           </div>
           <div class="promo-container">
@@ -418,18 +424,28 @@
 
   .title {
     font-family: 'TT Travels', sans-serif;
-    font-size: 3rem; /* Устанавливаем фиксированный размер шрифта */
+    font-size: 3rem;
     line-height: 1.2;
-    white-space: pre-line;
     color: #0ff658;
     text-align: left;
     margin-bottom: 3vh;
+    white-space: normal; /* Разрешаем перенос */
+  }
+
+  .title .first-line,
+  .title .second-line {
+    display: block; /* Каждая строка будет с новой строки */
+    white-space: nowrap; /* Запрещаем перенос внутри строки */
   }
 
   .title br {
     margin-bottom: -1.3em;
     display: block;
     content: "";
+  }
+
+  .description-container {
+    margin-bottom: 20px;
   }
 
   .description {
@@ -439,6 +455,37 @@
     line-height: 1.5;
     margin-bottom: 20px;
     max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .description-line {
+    display: block;
+    white-space: nowrap;
+    width: 100%;
+    line-height: 0.3;
+  }
+
+  p.description.description-secondary {
+    margin-top: 60px !important; /* Принудительно устанавливаем большой отступ */
+  }
+
+  @media (max-width: 768px) {
+    .description {
+      font-size: 16px;
+      padding: 0 10px;
+      gap: 12px;
+    }
+
+    .description-line {
+      white-space: normal;
+      line-height: 1.3;
+    }
+
+    p.description.description-secondary {
+      margin-top: 30px !important; /* Меньший отступ для мобильных */
+    }
   }
 
   .promo-button {
@@ -1024,6 +1071,8 @@
     .title {
       font-size: 32px;
       margin-bottom: 20px;
+      margin-top: 32px;
+      margin-left: 6px;
     }
 
     .title .first-line,
