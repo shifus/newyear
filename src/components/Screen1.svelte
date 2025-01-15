@@ -476,15 +476,27 @@
       font-size: 16px;
       padding: 0 10px;
       gap: 12px;
+      display: block;
     }
 
     .description-line {
+      display: inline;
       white-space: normal;
-      line-height: 1.3;
+      width: auto;
+      line-height: 1.4;
     }
 
     p.description.description-secondary {
-      margin-top: 30px !important; /* Меньший отступ для мобильных */
+      margin-top: 40px !important;
+      display: block;
+    }
+
+    .desktop-version {
+      display: none;
+    }
+
+    .mobile-container {
+      display: block;
     }
   }
 
