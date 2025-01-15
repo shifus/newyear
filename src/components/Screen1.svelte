@@ -428,7 +428,7 @@
     line-height: 1.1;
     color: #00AB4E;
     text-align: left;
-    margin-bottom: 3vh;
+    margin-bottom: calc(30px + 1.5vw);
     white-space: normal;
   }
 
