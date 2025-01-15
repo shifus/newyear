@@ -1353,10 +1353,15 @@
   .menu {
     display: flex;
     flex-direction: row;
-    align-items: flex-start;
+    align-items: center;
     padding: 0px;
     gap: 24px;
-    margin-left: 900px;
+    position: absolute;
+    top: 50%;
+    right: 100px;
+    transform: translateY(-50%);
+    z-index: 1001;
+    background: transparent;
   }
 
   .menu-item {
@@ -1370,6 +1375,22 @@
     color: #FFFFFF;
     white-space: nowrap;
     text-decoration: none;
+  }
+
+  @media (max-width: 768px) {
+    .menu {
+      position: absolute;
+      top: 50%;
+      right: 50px;
+      justify-content: center;
+      width: auto;
+      padding: 8px 16px;
+      border-radius: 16px;
+    }
+
+    .menu-item {
+      font-size: 14px;
+    }
   }
 
   .menu-item:nth-child(1) {
