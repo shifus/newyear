@@ -452,9 +452,10 @@
     font-family: 'TT Travels', sans-serif;
     color: #ffffff;
     font-size: calc(6px + 1.2vw) !important;
-    line-height: 1.5;
+    font-weight: 500;
+    line-height: 26px;
     margin-bottom: 20px;
-    max-width: 800px;
+    max-width: 777.5px;
     display: flex;
     flex-direction: column;
     gap: calc(4px + 1vw);
@@ -1795,5 +1796,14 @@
     font-style: normal;
     font-display: swap;
   }
+
+  @font-face {
+    font-family: 'TT Travels';
+    src: url('/fonts/tttravels-medium.woff2') format('woff2'),
+         url('/fonts/tttravels-medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
 
 </style>
