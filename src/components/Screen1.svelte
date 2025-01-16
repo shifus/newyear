@@ -633,6 +633,7 @@
   }
 
   .spec-label {
+    font-family: 'TT Travels', sans-serif;
     font-size: 16px;
     color: #ABBAF0;
     font-weight: 500;
@@ -640,9 +641,10 @@
   }
 
   .spec-value {
+    font-family: 'TT Travels', sans-serif;
     font-size: 24px;
     color: #FFFFFF;
-    font-weight: 600;
+    font-weight: 600; /* SemiBold для значений (128 GB и т.д.) */
     line-height: 140%;
   }
 
@@ -678,8 +680,9 @@
   }
 
   .prize-card-category {
+    font-family: 'TT Travels', sans-serif;
     font-size: 18px;
-    font-weight: 600;
+    font-weight: 600; /* SemiBold как в спецификациях */
     line-height: 110%;
     color: #FFFFFF;
   }
