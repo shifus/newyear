@@ -886,14 +886,17 @@
     width: 100%;
     min-height: 50px;
     margin-bottom: 10px;
-    font-size: 18px;
+    font-family: 'TT Travels', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
     white-space: nowrap;
     background: transparent;
     border: 2px solid #00AB4E;
-    color: #00AB4E;
+    color: #FFFFFF;
     border-radius: 8px;
     cursor: pointer;
     transition: all 0.3s ease;
+    text-transform: uppercase;
   }
 
   .action-button:hover {
