@@ -1730,14 +1730,12 @@
   @media (max-width: 768px) {
     .contest-description {
       width: 100%;
-      max-width: 560px;
+      max-width: 320px;
       height: auto;
       white-space: normal;
       word-wrap: break-word;
       overflow: visible;
       margin: 0 auto;
-      font-size: 14px;
-      line-height: 1.2;
     }
   }
 
@@ -1907,6 +1905,12 @@
         line-height: 1.2;
         color: #FFFFFF;
     }
+  }
+
+  .table-row .phone {
+    font-family: 'TT Travels', sans-serif;
+    font-weight: 500;
+    color: #ABBAF0;
   }
 
 </style>
