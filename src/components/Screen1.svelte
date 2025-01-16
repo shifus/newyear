@@ -601,11 +601,13 @@
     font-size: 16px;
     font-weight: 600;
     line-height: 140%;
+    font-family: 'TT Travels', sans-serif;
   }
 
   .prize-title {
+    font-family: 'TT Travels', sans-serif;
     font-size: 64px;
-    font-weight: 700;
+    font-weight: 800;
     line-height: 110%;
     color: #FFFFFF;
     margin: 8px 0;
@@ -1082,10 +1084,9 @@
     }
 
     .title {
-      font-size: 32px;
-      margin-bottom: 20px;
-      margin-top: 32px;
-      margin-left: 6px;
+      font-size: calc(20px + 2vw) !important;
+      margin-top: calc(20px + 1.5vw);
+      margin-bottom: calc(25px + 1.5vw);
     }
 
     .title .first-line,
@@ -1095,10 +1096,10 @@
     }
 
     .description {
-      font-size: 16px;
-      margin-bottom: 15px;
-      padding: 0 10px;
-      text-align: left;
+      font-size: calc(14px + 1vw) !important;
+      line-height: 1.4;
+      gap: calc(6px + 0.8vw);
+      max-width: 100%;
     }
 
     .promo-button {
@@ -1245,8 +1246,7 @@
     }
 
     .menu-item {
-      font-size: 16px;
-      text-align: center;
+      font-size: calc(14px + 0.5vw);
     }
 
     .first-screen {
