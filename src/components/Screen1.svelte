@@ -688,8 +688,9 @@
   }
 
   .prize-card-model {
+    font-family: 'TT Travels', sans-serif;
     font-size: 32px;
-    font-weight: 700;
+    font-weight: 700; /* Bold начертание */
     line-height: 110%;
     color: #FFFFFF;
     margin-top: 8px;
@@ -1799,6 +1800,15 @@
     font-style: normal;
     font-display: swap;
   }
+  
+  @font-face {
+    font-family: 'TT Travels';
+    src: url('/fonts/tttravels-bold.woff2') format('woff2'),
+         url('/fonts/tttravels-bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
 
   @font-face {
     font-family: 'TT Travels';
