@@ -113,7 +113,7 @@
           </div>
           <div class="promo-container">
             <button class="promo-button" on:click={handlePromoClick}>
-              Получить промокод
+              ПОЛУЧИТЬ ПРОМОКОД
             </button>
             <img src="/images/santa.png" alt="Санта" class="santa-image" />
           </div>
