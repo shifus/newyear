@@ -21,11 +21,6 @@
       <p class="details-text">
         CQ.ru совместно с букмекерской компанией «Лига Ставок» запустили новогодний проект. Делайте ставки на спортивные события с большими коэффициентами и выигрывайте топовые призы!
       </p>
-
-      <!-- Используем <button> для лучшей семантики и доступности -->
-      <button class="promo-button" on:click={handlePromoClick}>
-        <span class="promo-button-text">ПОЛУЧИТЬ ПРОМОКОД</span>
-      </button>
     </div>
 
     <div class="right-column">
@@ -55,6 +50,11 @@
         </div>
         <p class="row-text">Следите за розыгрышами призов</p>
       </div>
+
+      <!-- Перемещаем кнопку сюда -->
+      <button class="promo-button" on:click={handlePromoClick}>
+        <span class="promo-button-text">ПОЛУЧИТЬ ПРОМОКОД</span>
+      </button>
     </div>
   </div>
 </div>
