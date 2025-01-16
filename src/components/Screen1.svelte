@@ -42,8 +42,8 @@
         </div>
         <div class="menu">
           <a href="#leaderboard-table" class="menu-item">Таблица участников</a>
-          <a href="#prizes" class="menu-item">Призы</a>
           <a href="#about-project" class="menu-item">О проекте</a>
+          <a href="#prizes" class="menu-item">Призы</a>
         </div>
       </div>
       <div class="header-mobile">
@@ -451,7 +451,7 @@
   .description {
     font-family: 'TT Travels', sans-serif;
     color: #ffffff;
-    font-size: calc(6px + 1.2vw) !important;
+    font-size: calc(1px + 1.1vw) !important;
     font-weight: 500;
     line-height: 26px;
     margin-bottom: 20px;
@@ -503,7 +503,7 @@
 
   .promo-button {
     font-family: 'TT Travels', sans-serif;
-    background-color: #00FF00;
+    background-color: #00AB4E;
     color: #ffffff;
     padding: 25px 100px;
     border: none;
@@ -1430,7 +1430,7 @@
     font-family: 'TT Travels', sans-serif;
     font-style: normal;
     font-weight: 700;
-    font-size: 18px;
+    font-size: 14px;
     line-height: 22px;
     display: flex;
     align-items: center;
