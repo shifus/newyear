@@ -951,9 +951,9 @@
     padding: 24px;
     gap: 16px;
     width: 904px;
-    height: 533px;
     background: #0F0F37;
     border-radius: 16px;
+    height: auto; /* Убираем фиксированную высоту */
   }
 
   .table-headers {
@@ -1718,7 +1718,7 @@
   }
 
   .contest-description {
-    width: 560px;
+    width: 1136px;
     height: 29px;
     font-family: 'TT Travels';
     font-style: normal;
@@ -1731,13 +1731,10 @@
 
   @media (max-width: 768px) {
     .contest-description {
-      width: 100%;
-      max-width: 320px;
-      height: auto;
-      white-space: normal;
-      word-wrap: break-word;
-      overflow: visible;
-      margin: 0 auto;
+        width: auto;
+        height: auto;
+        word-wrap: break-word;
+        overflow: visible;
     }
   }
 
@@ -1915,6 +1912,40 @@
     font-weight: 700;
     line-height: 19.2px;
     text-transform: uppercase;
+  }
+
+  .contest-description.svelte-d60aj9.svelte-d60aj9 {
+    width: 1136px;
+    height: 29px;
+    font-family: 'TT Travels';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 120%;
+    color: #ABBAF0;
+    margin-bottom: 8px;
+  }
+
+  .svelte-d60aj9.svelte-d60aj9 {
+    box-sizing: border-box;
+  }
+
+  @media (max-width: 768px) {
+    .contest-description {
+        width: 100%;
+        max-width: 560px;
+        height: auto;
+        white-space: normal;
+        word-wrap: break-word;
+        overflow: visible;
+        margin: 0 auto;
+        font-size: 14px;
+        line-height: 1.2;
+    }
+  }
+
+  .phone {
+    color: #ABBAF0;
   }
 
 </style>
