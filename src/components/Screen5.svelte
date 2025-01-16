@@ -74,6 +74,9 @@
   }
 
   .stream-link {
+    font-family: 'TT Travels', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
     color: #00AB4E;
     text-decoration: none;
   }
@@ -123,6 +126,20 @@
 
   .user-agreement {
     text-decoration: none;
+    color: #FFFFFF;
+  }
+
+  .stream-date {
+    font-family: 'TT Travels', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    color: #ABBAF0;
+  }
+
+  .stream-description {
+    font-family: 'TT Travels', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
     color: #FFFFFF;
   }
 

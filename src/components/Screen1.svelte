@@ -1842,4 +1842,13 @@
     font-display: swap;
 }
 
+  @font-face {
+    font-family: 'TT Travels';
+    src: url('/fonts/tttravels-light.woff2') format('woff2'),
+         url('/fonts/tttravels-light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
 </style>
