@@ -1491,7 +1491,7 @@
   .promo-container {
     position: relative;
     display: inline-block;
-    margin-top: calc(10px + 2vw); /* Увеличиваем отступ, чтобы сдвинуть весь контейнер вниз */
+    margin-top: calc(1px + 1vw); /* Увеличиваем отступ, чтобы сдвинуть весь контейнер вниз */
   }
 
   .santa-image {
