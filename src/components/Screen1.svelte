@@ -738,6 +738,11 @@
   }
 
   .header-prize {
+    font-family: 'TT Travels', sans-serif;
+    font-size: 24px;
+    font-weight: 400; /* Regular начертание */
+    line-height: 120%;
+    color: #ABBAF0;
     flex: 1;
   }
 
@@ -971,7 +976,12 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-    flex-grow: 1; /* Позволяет растягивать строки */
+    flex-grow: 1;
+    font-family: 'TT Travels', sans-serif;
+    font-weight: 400; /* Regular начертание */
+    font-size: 24px;
+    line-height: 120%;
+    color: #FFFFFF;
   }
 
   .table-row {
@@ -1815,6 +1825,15 @@
     src: url('/fonts/tttravels-medium.woff2') format('woff2'),
          url('/fonts/tttravels-medium.woff') format('woff');
     font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+  @font-face {
+    font-family: 'TT Travels';
+    src: url('/fonts/tttravels-regular.woff2') format('woff2'),
+         url('/fonts/tttravels-regular.woff') format('woff');
+    font-weight: 400;
     font-style: normal;
     font-display: swap;
 }
