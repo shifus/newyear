@@ -593,24 +593,19 @@
   }
 
   .prize-label {
-    display: inline-flex;
-    padding: 8px 16px;
-    background: rgba(0, 255, 116, 0.1);
-    border-radius: 24px;
-    color: #00FF74;
-    font-size: 16px;
-    font-weight: 600;
-    line-height: 140%;
     font-family: 'TT Travels', sans-serif;
+    font-weight: 600; /* SemiBold */
+    font-size: 16px;
+    line-height: 140%;
+    color: #00FF74;
   }
 
   .prize-title {
     font-family: 'TT Travels', sans-serif;
+    font-weight: 800; /* ExtraBold */
     font-size: 64px;
-    font-weight: 800;
     line-height: 110%;
     color: #FFFFFF;
-    margin: 8px 0;
   }
 
   .specs-container {
@@ -634,17 +629,17 @@
 
   .spec-label {
     font-family: 'TT Travels', sans-serif;
+    font-weight: 500; /* Medium */
     font-size: 16px;
     color: #ABBAF0;
-    font-weight: 500;
     line-height: 140%;
   }
 
   .spec-value {
     font-family: 'TT Travels', sans-serif;
+    font-weight: 600; /* SemiBold */
     font-size: 24px;
     color: #FFFFFF;
-    font-weight: 600; /* SemiBold для значений (128 GB и т.д.) */
     line-height: 140%;
   }
 
@@ -1721,7 +1716,7 @@
   }
 
   .contest-description {
-    width: 1136px;
+    width: 560px;
     height: 29px;
     font-family: 'TT Travels';
     font-style: normal;
@@ -1734,10 +1729,15 @@
 
   @media (max-width: 768px) {
     .contest-description {
-      width: auto;
+      width: 100%;
+      max-width: 560px;
       height: auto;
+      white-space: normal;
       word-wrap: break-word;
       overflow: visible;
+      margin: 0 auto;
+      font-size: 14px;
+      line-height: 1.2;
     }
   }
 
@@ -1850,5 +1850,63 @@
     font-style: normal;
     font-display: swap;
 }
+
+  .leaderboard-row .place,
+  .leaderboard-row .prize,
+  .leaderboard-row .freebet {
+    font-family: 'TT Travels', sans-serif;
+    font-weight: 500; /* Medium начертание */
+    color: #FFFFFF;
+  }
+
+  .leaderboard-row .freebet {
+    font-family: 'TT Travels', sans-serif;
+    font-weight: 500;
+    color: #ABBAF0; /* Меняем цвет на голубой */
+  }
+
+  @media (max-width: 768px) {
+    .table-frame {
+        width: 100%;
+        padding: 16px;
+        margin: 0;
+        transform: none;
+    }
+
+    .leaderboard-container {
+        width: 100%;
+        padding: 0 16px;
+        transform: none;
+    }
+
+    .leaderboard-left {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .leaderboard-row {
+        padding: 8px;
+        width: 100%;
+    }
+
+    .leaderboard-headers,
+    .table-rows {
+        width: 100%;
+    }
+
+    .left-column,
+    .right-column {
+        font-size: 14px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .contest-title {
+        font-family: 'TT Travels', sans-serif;
+        font-size: 24px;
+        line-height: 1.2;
+        color: #FFFFFF;
+    }
+  }
 
 </style>
