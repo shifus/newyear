@@ -1907,10 +1907,12 @@
     }
   }
 
-  .table-row .phone {
+  .action-button {
     font-family: 'TT Travels', sans-serif;
-    font-weight: 500;
-    color: #ABBAF0;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 19.2px;
+    text-transform: uppercase;
   }
 
 </style>
