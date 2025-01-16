@@ -469,7 +469,7 @@
   }
 
   p.description.description-secondary {
-    margin-top: 60px !important; /* Принудительно устанавливаем большой отступ */
+    margin-top: calc(23px + 1.5vw) !important; /* Регулируем отступ между блоками описания */
   }
 
   @media (max-width: 768px) {
@@ -1491,7 +1491,7 @@
   .promo-container {
     position: relative;
     display: inline-block;
-    margin-top: calc(1px + 1vw); /* Увеличиваем отступ, чтобы сдвинуть весь контейнер вниз */
+    margin-top: calc(1px + 1.1vw); /* Увеличиваем отступ, чтобы сдвинуть весь контейнер вниз */
   }
 
   .santa-image {
