@@ -978,10 +978,11 @@
     width: 100%;
     flex-grow: 1;
     font-family: 'TT Travels', sans-serif;
-    font-weight: 400; /* Regular начертание */
+    font-weight: 400;
     font-size: 24px;
     line-height: 120%;
     color: #FFFFFF;
+    gap: 12px;
   }
 
   .table-row {
