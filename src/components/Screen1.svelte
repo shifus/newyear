@@ -899,10 +899,11 @@
   }
 
   .promo-description {
-    font-size: 16px; /* Фиксированный размер шрифта */
+    font-family: 'TT Travels', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
     line-height: 1.4;
-    margin: 15px 0;
-    width: 100%;
+    color: #FFFFFF;
   }
 
   .additional-info {
@@ -910,10 +911,11 @@
   }
 
   .additional-info p {
-    font-size: 14px; /* Фиксированный размер шрифта */
+    font-family: 'TT Travels', sans-serif;
+    font-weight: 500;
+    font-size: 9px;
     line-height: 1.4;
-    margin-bottom: 10px;
-    white-space: normal; /* Разрешаем перенос текста в информационном блоке */
+    color: #ABBAF0 !important;
   }
 
   .leaderboard-title {
