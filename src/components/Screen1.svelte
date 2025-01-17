@@ -1955,4 +1955,14 @@
     color: #ABBAF0;
   }
 
+  @media (max-width: 768px) {
+    .prize-title {
+      font-family: 'TT Travels';
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 20.88px;
+      text-align: left;
+    }
+  }
+
 </style>
