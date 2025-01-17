@@ -145,22 +145,22 @@
         <div class="specs-container">
           <div class="specs-column">
             <div class="spec-item">
-              <span class="spec-label">Объем памяти</span>
-              <span class="spec-value">128 GB</span>
+              <div class="spec-label">Объем памяти</div>
+              <div class="spec-value">128 GB</div>
             </div>
             <div class="spec-item">
-              <span class="spec-label">Процессор</span>
-              <span class="spec-value">A16 Bionic</span>
+              <div class="spec-label">Процессор</div>
+              <div class="spec-value">A16 Bionic</div>
             </div>
           </div>
           <div class="specs-column">
             <div class="spec-item">
-              <span class="spec-label">Цвет</span>
-              <span class="spec-value">Космический черный</span>
+              <div class="spec-label">Цвет</div>
+              <div class="spec-value">Космический черный</div>
             </div>
             <div class="spec-item">
-              <span class="spec-label">Камера</span>
-              <span class="spec-value">48 МП</span>
+              <div class="spec-label">Камера</div>
+              <div class="spec-value">48 МП</div>
             </div>
           </div>
         </div>
@@ -623,21 +623,24 @@
   }
 
   .spec-item {
-    flex: 1 1 45%;
-    min-width: 150px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
   }
 
   .spec-label {
-    font-family: 'TT Travels', sans-serif;
-    font-weight: 500; /* Medium */
+    font-family: 'TT Travels';
+    font-style: normal;
+    font-weight: 500;
     font-size: 16px;
     color: #ABBAF0;
     line-height: 140%;
   }
 
   .spec-value {
-    font-family: 'TT Travels', sans-serif;
-    font-weight: 600; /* SemiBold */
+    font-family: 'TT Travels';
+    font-style: normal;
+    font-weight: 600;
     font-size: 24px;
     color: #FFFFFF;
     line-height: 140%;
@@ -693,10 +696,6 @@
     line-height: 110%;
     color: #FFFFFF;
     margin-top: 8px;
-    text-align: center;
-    width: 100%;
-    word-wrap: break-word;
-    hyphens: auto;
   }
 
   .prize-card-image {
