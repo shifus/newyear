@@ -1981,4 +1981,11 @@
     }
   }
 
+  @media (max-width: 768px) {
+    .prize-card-model {
+      text-align: center;
+      width: 100%;
+    }
+  }
+
 </style>
