@@ -680,6 +680,10 @@
     font-weight: 600; /* SemiBold как в спецификациях */
     line-height: 110%;
     color: #FFFFFF;
+    text-align: center;
+    width: 100%;
+    word-wrap: break-word;
+    hyphens: auto;
   }
 
   .prize-card-model {
@@ -689,6 +693,10 @@
     line-height: 110%;
     color: #FFFFFF;
     margin-top: 8px;
+    text-align: center;
+    width: 100%;
+    word-wrap: break-word;
+    hyphens: auto;
   }
 
   .prize-card-image {
