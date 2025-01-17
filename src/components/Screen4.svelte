@@ -301,6 +301,7 @@
       width: 25vw;
       height: 25vw;
       top: -12vw;
+      left: 75%;
     }
 
     .project-description {
