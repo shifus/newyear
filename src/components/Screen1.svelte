@@ -1965,4 +1965,20 @@
     }
   }
 
+  @media (max-width: 768px) {
+    .specs-container {
+      align-items: flex-start;
+      width: 100%;
+    }
+
+    .spec-item {
+      align-items: flex-start;
+      text-align: left;
+    }
+
+    .spec-label, .spec-value {
+      text-align: left;
+    }
+  }
+
 </style>
